@@ -1,14 +1,17 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop'
+$checksum = '50ae45c041383bbe61d2dbf41433d3d4007b963cfb640bc5f08dba3501f39c79'
+$url = 'https://cisco.webex.com/client/WBXclient-40.2.12-18/webexapp.msi'
 
 $packageArgs = @{
-  packageName  = $env:ChocolateyPackageName
-  fileType     = 'MSI'
-
-  url          = 'https://akamaicdn.webex.com/client/webexapp.msi'
-  checksum     = '9C2D9C58CE7FA49E1FA5ACA50661B192DCC9595EABD15A92FC6E3BE8E9124783'
-  checksumType = 'sha256'
-
-  silentArgs   = "/qn /norestart /l*v `"$env:TEMP\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+  packageName    = 'webex-meetings'
+  unzipLocation  = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+  fileType       = 'msi'
+  url            = $url
+  silentArgs     = '/quiet /norestart'
+  validExitCodes = @(0)
+  softwareName   = 'webex-meetings*'
+  checksum       = $checksum
+  checksumType   = 'sha256'
 }
 
 Install-ChocolateyPackage @packageArgs
