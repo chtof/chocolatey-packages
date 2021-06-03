@@ -1,20 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$PackageParameters = Get-PackageParameters
-
-### PARAMETERS
-If ($PackageParameters.InstallDir) {
-  $installDir = $PackageParameters.InstallDir
-} Else {
-  $installDir = "$toolsDir"
-}
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  unzipLocation  = "$installDir"
+  unzipLocation  = "$toolsDir"
 
-  url            = 'https://github.com/mifi/lossless-cut/releases/download/v3.36.0/LosslessCut-win.zip'
-  checksum       = '65ad5926430d78d8ad2c30a178c4e77ed0fd9f6361294f98211f61a936a87be3'
+  url            = 'https://github.com/mifi/lossless-cut/releases/download/v3.27.0/LosslessCut-win.zip'
+  checksum       = '193684287f5b71b621d5734c7d6d7135130f55b426274fe16fabfc1caa2894ae'
   checksumType   = 'sha256'
 }
 
@@ -26,41 +18,73 @@ foreach ($file in $files) {
     New-Item "$file.ignore" -type file -force | Out-Null
 }
 
-$targetPath = Join-Path "$installDir" "LosslessCut.exe"
+$targetPath = Join-Path $toolsDir "LosslessCut.exe"
 
 # Add start menu shortcut
-If (-Not( $PackageParameters.NoStartMenu )) {
-  $programsPath = "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\"
-  $programsFilePath = Join-Path $programsPath "LosslessCut.lnk"
-  Install-ChocolateyShortcut -shortcutFilePath "$programsFilePath" -targetPath "$targetPath"
-}
-
-# Install desktop icon
-If ( $PackageParameters.DesktopIcon ) {  
-  Install-ChocolateyShortcut -shortcutFilePath "$Env:USERPROFILE\Desktop\Lossless Cut.lnk" -targetPath "$targetPath"
-}
+$programsPath = "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\"
+$programsFilePath = Join-Path $programsPath "LosslessCut.lnk"
+Install-ChocolateyShortcut -shortcutFilePath $programsFilePath -targetPath $targetPath
 
 # Add send to menu shortcut
 $sendtoPath = "$env:APPDATA\Microsoft\Windows\SendTo\"
 $sendtoFilePath = Join-Path $sendtoPath "Merge videos in LosslessCut.lnk"
 Install-ChocolateyShortcut -shortcutFilePath $sendtoFilePath -targetPath $targetPath
 
-# Set File Association for .MP4
-If((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\SystemFileAssociations\.mp4\Shell\cut") -ne $true) {  New-Item "HKLM:\SOFTWARE\Classes\SystemFileAssociations\.mp4\Shell\cut" -force -ea SilentlyContinue | Out-Null };
-If((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\SystemFileAssociations\.mp4\Shell\cut\command") -ne $true) {  New-Item "HKLM:\SOFTWARE\Classes\SystemFileAssociations\.mp4\Shell\cut\command" -force -ea SilentlyContinue | Out-Null};
-If((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe") -ne $true) {  New-Item "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe" -force -ea SilentlyContinue | Out-Null};
-If((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\DefaultIcon") -ne $true) {  New-Item "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\DefaultIcon" -force -ea SilentlyContinue | Out-Null};
-If((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell") -ne $true) {  New-Item "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell" -force -ea SilentlyContinue | Out-Null};
-If((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell\cut") -ne $true) {  New-Item "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell\cut" -force -ea SilentlyContinue | Out-Null};
-If((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell\cut\command") -ne $true) {  New-Item "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell\cut\command" -force -ea SilentlyContinue | Out-Null};
-If((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\SupportedTypes") -ne $true) {  New-Item "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\SupportedTypes" -force -ea SilentlyContinue | Out-Null}
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Classes\SystemFileAssociations\.mp4\Shell\cut' -Name '(default)' -Value 'Cut video in LosslessCut' -PropertyType String -Force -ea SilentlyContinue | Out-Null
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Classes\SystemFileAssociations\.mp4\Shell\cut' -Name 'Icon' -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe",0' -PropertyType String -Force -ea SilentlyContinue | Out-Null
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Classes\SystemFileAssociations\.mp4\Shell\cut\command' -Name '(default)' -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe" "%1"' -PropertyType String -Force -ea SilentlyContinue | Out-Null
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe' -Name '(default)' -Value 'LosslessCut' -PropertyType String -Force -ea SilentlyContinue | Out-Null
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\DefaultIcon' -Name '(default)' -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe",0' -PropertyType ExpandString -Force -ea SilentlyContinue | Out-Null
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell' -Name '(default)' -Value 'cut' -PropertyType String -Force -ea SilentlyContinue | Out-Null
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell\cut' -Name '(default)' -Value 'Cut video in LosslessCut' -PropertyType String -Force -ea SilentlyContinue | Out-Null
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell\cut' -Name 'Icon' -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe",0' -PropertyType String -Force -ea SilentlyContinue | Out-Null
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell\cut\command' -Name '(default)' -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe" "%1"' -PropertyType ExpandString -Force -ea SilentlyContinue | Out-Null
-New-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\SupportedTypes' -Name '.mp4' -Value '' -PropertyType String -Force -ea SilentlyContinue| Out-Null
+# Set File Association
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Clients\Media") -ne $true) { New-Item "HKLM:\SOFTWARE\Clients\Media" -Force -ea SilentlyContinue };
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut") -ne $true) { New-Item "HKLM:\SOFTWARE\Clients\Media\LosslessCut" -Force -ea SilentlyContinue };
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\Capabilities") -ne $true) { New-Item "HKLM:\SOFTWARE\Clients\Media\LosslessCut\Capabilities" -Force -ea SilentlyContinue };
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\DefaultIcon") -ne $true) { New-Item "HKLM:\SOFTWARE\Clients\Media\LosslessCut\DefaultIcon" -Force -ea SilentlyContinue };
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\Capabilities\FileAssociations") -ne $true) { New-Item "HKLM:\SOFTWARE\Clients\Media\LosslessCut\Capabilities\FileAssociations" -Force -ea SilentlyContinue };
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\shell") -ne $true) { New-Item "HKLM:\SOFTWARE\Clients\Media\LosslessCut\shell" -Force -ea SilentlyContinue };
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\shell\losslesscut") -ne $true) { New-Item "HKLM:\SOFTWARE\Clients\Media\LosslessCut\shell\losslesscut" -Force -ea SilentlyContinue };
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\shell\losslesscut\command") -ne $true) { New-Item "HKLM:\SOFTWARE\Clients\Media\LosslessCut\shell\losslesscut\command" -Force -ea SilentlyContinue };
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe") -ne $true) { New-Item "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe" -Force -ea SilentlyContinue };
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\DefaultIcon") -ne $true) { New-Item "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\DefaultIcon" -Force -ea SilentlyContinue };
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell") -ne $true) { New-Item "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell" -Force -ea SilentlyContinue };
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell\losslesscut") -ne $true) { New-Item "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell\losslesscut" -Force -ea SilentlyContinue };
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell\losslesscut\command") -ne $true) { New-Item "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell\losslesscut\command" -Force -ea SilentlyContinue };
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\SupportedTypes") -ne $true) { New-Item "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\SupportedTypes" -Force -ea SilentlyContinue };
+if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\RegisteredApplications") -ne $true) { New-Item "HKLM:\SOFTWARE\RegisteredApplications" -Force -ea SilentlyContinue };
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\Capabilities" -Name "Hidden" -Value "0" -PropertyType DWord -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\Capabilities" -Name "ApplicationName" -Value "LosslessCut" -PropertyType String -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\Capabilities" -Name "ApplicationDescription" -Value "LosslessCut is an editing tool that lets you cut or trim your videos." -PropertyType String -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\Capabilities" -Name "ApplicationIcon" -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe",0' -PropertyType String -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\DefaultIcon" -Name "(default)" -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe",0' -PropertyType String -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\shell" -Name "(default)" -Value "losslesscut" -PropertyType String -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\shell\losslesscut" -Name "(default)" -Value "Cut video in LosslessCut" -PropertyType String -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\shell\losslesscut" -Name "Icon" -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe",0' -PropertyType String -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\shell\losslesscut\command" -Name "(default)" -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe" "%1"' -PropertyType String -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe" -Name "(default)" -Value "LosslessCut" -PropertyType String -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\DefaultIcon" -Name "(default)" -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe",0' -PropertyType String -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell" -Name "(default)" -Value "losslesscut" -PropertyType String -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell\losslesscut" -Name "(default)" -Value "Cut video in LosslessCut" -PropertyType String -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell\losslesscut" -Name "Icon" -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe",0' -PropertyType String -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\shell\losslesscut\command" -Name "(default)" -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe" "%1"' -PropertyType String -Force -ea SilentlyContinue;
+New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\RegisteredApplications" -Name "LosslessCut" -Value "SOFTWARE\Clients\Media\LosslessCut\Capabilities" -PropertyType String -Force -ea SilentlyContinue;
+$extensions = @("mp4","avi","mpg","mkv","mov","wmv","webm","ts","mts","vob","m4v","flv","3gpp","mpeg","mpe","asf","qt","rm","ogv","ogg","tsv")
+foreach ($extension in $extensions) {
+  if ((Test-Path -LiteralPath ("HKLM:\SOFTWARE\Classes\.$extension")) -ne $true) { New-Item ("HKLM:\SOFTWARE\Classes\." + "$extension".ToUpper().ToUpper()) -Force -ea SilentlyContinue };
+  if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\.$extension\OpenWithList") -ne $true) { New-Item "HKLM:\SOFTWARE\Classes\.$extension\OpenWithList" -Force -ea SilentlyContinue };
+  if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\.$extension\OpenWithList\LosslessCut.exe") -ne $true) { New-Item "HKLM:\SOFTWARE\Classes\.$extension\OpenWithList\LosslessCut.exe" -Force -ea SilentlyContinue };
+  if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\.$extension\OpenWithProgids") -ne $true) { New-Item "HKLM:\SOFTWARE\Classes\.$extension\OpenWithProgids" -Force -ea SilentlyContinue };
+  if ((Test-Path -LiteralPath ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper())) -ne $true) { New-Item ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper().ToUpper()) -Force -ea SilentlyContinue };
+  if ((Test-Path -LiteralPath ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper() + "\DefaultIcon")) -ne $true) { New-Item ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper() + "\DefaultIcon") -Force -ea SilentlyContinue };
+  if ((Test-Path -LiteralPath ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper() + "\shell")) -ne $true) { New-Item ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper() + "\shell") -Force -ea SilentlyContinue };
+  if ((Test-Path -LiteralPath ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper() + "\shell\losslesscut")) -ne $true) { New-Item ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper() + "\shell\losslesscut") -Force -ea SilentlyContinue };
+  if ((Test-Path -LiteralPath ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper() + "\shell\losslesscut\command")) -ne $true) { New-Item ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper() + "\shell\losslesscut\command") -Force -ea SilentlyContinue };  
+  if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\SystemFileAssociations\.$extension\Shell\losslesscut") -ne $true) { New-Item "HKLM:\SOFTWARE\Classes\SystemFileAssociations\.$extension\Shell\losslesscut" -Force -ea SilentlyContinue };
+  if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Classes\SystemFileAssociations\.$extension\Shell\losslesscut\command") -ne $true) { New-Item "HKLM:\SOFTWARE\Classes\SystemFileAssociations\.$extension\Shell\losslesscut\command" -Force -ea SilentlyContinue };
+  New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Classes\.$extension\OpenWithProgids" -Name ("LosslessCut." + "$extension".ToUpper()) -Value "" -PropertyType String -Force -ea SilentlyContinue;
+  New-ItemProperty -LiteralPath ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper()) -Name "(default)" -Value ("$extension".ToUpper() + " Video") -PropertyType String -Force -ea SilentlyContinue;
+  New-ItemProperty -LiteralPath ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper() + "\DefaultIcon") -Name "(default)" -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe",0' -PropertyType String -Force -ea SilentlyContinue;
+  New-ItemProperty -LiteralPath ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper() + "\shell") -Name "(default)" -Value "losslesscut" -PropertyType String -Force -ea SilentlyContinue;
+  New-ItemProperty -LiteralPath ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper() + "\shell\losslesscut") -Name "(default)" -Value "Cut video in LosslessCut" -PropertyType String -Force -ea SilentlyContinue;
+  New-ItemProperty -LiteralPath ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper() + "\shell\losslesscut") -Name "Icon" -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe",0' -PropertyType String -Force -ea SilentlyContinue;
+  New-ItemProperty -LiteralPath ("HKLM:\SOFTWARE\Classes\LossLessCut." + "$extension".ToUpper() + "\shell\losslesscut\command") -Name "(default)" -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe" "%1"' -PropertyType String -Force -ea SilentlyContinue;  
+  New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Classes\SystemFileAssociations\.$extension\Shell\losslesscut" -Name "(default)" -Value "Cut video in LosslessCut" -PropertyType String -Force -ea SilentlyContinue;
+  New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Classes\SystemFileAssociations\.$extension\Shell\losslesscut" -Name "Icon" -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe",0' -PropertyType String -Force -ea SilentlyContinue;
+  New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Classes\SystemFileAssociations\.$extension\Shell\losslesscut\command" -Name "(default)" -Value '"C:\ProgramData\chocolatey\lib\lossless-cut\tools\LosslessCut.exe" "%1"' -PropertyType String -Force -ea SilentlyContinue;
+  New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Classes\Applications\LosslessCut.exe\SupportedTypes" -Name ".$extension" -Value "" -PropertyType String -Force -ea SilentlyContinue;
+  New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\Capabilities\FileAssociations" -Name ".$extension" -Value ("LosslessCut." + "$extension".ToUpper()) -PropertyType String -Force -ea SilentlyContinue;
+}
