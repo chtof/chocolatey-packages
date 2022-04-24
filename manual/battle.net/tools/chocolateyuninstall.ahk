@@ -1,11 +1,17 @@
 #NoEnv
 #NoTrayIcon
-#Warn  ; Enable warnings to assist with detecting common errors.
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
-SetTitleMatchMode, 1  ; A windows's title must start with the specified WinTitle to be a match.
-SetControlDelay 0  
-SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+#Warn ; Enable warnings to assist with detecting common errors.
+SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
+SetTitleMatchMode, 1 ; A windows's title must start with the specified WinTitle to be a match.
+SetControlDelay 0 
+SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
+winTitle1 = ahk_class BlizzardUninstallWindowClass ahk_exe Blizzard Uninstaller.exe
 ; Uninstall Battle.net
-WinWait, ahk_class BlizzardUninstallWindowClass ahk_exe Blizzard Uninstaller.exe,, 60
-ControlClick, x100 y180, ahk_class BlizzardUninstallWindowClass ahk_exe Blizzard Uninstaller.exe
+WinWait, %winTitle1%,, 15
+If WinExist(winTitle1)
+{
+    WinActivate
+    Send {Tab} ; Switch from No, don't uninstall
+    Send {Enter} ; Yes, uninstall
+}
