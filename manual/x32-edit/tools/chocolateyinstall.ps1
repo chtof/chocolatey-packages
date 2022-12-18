@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$toolsDir"
 
-  url           = 'https://mediadl.musictribe.com/download/software/behringer/X32/X32-Edit_PC_4.2.zip'
-  checksum      = 'a5971f783a5454f4ef66528d1e0d26510e984e07f524f3b179193f8e4e057192'
+  url           = 'https://mediadl.musictribe.com/download/software/behringer/X32/X32-Edit_PC_4.3.zip'
+  checksum      = '82108C184C90B32EF9EC22E809E39AFE2E479710F2594290FB9404AEA549C614'
   checksumType  = 'sha256'
 }
 

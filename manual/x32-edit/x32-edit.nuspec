@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>x32-edit</id>
-    <version>4.2</version>
+    <version>4.3</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/manual/x32-edit</packageSourceUrl>
     <owners>chtof</owners>
     <title>X32 Edit</title>
