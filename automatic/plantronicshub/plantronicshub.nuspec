@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>plantronicshub</id>
-    <version>3.24.2</version>
+    <version>3.25</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/plantronicshub</packageSourceUrl>
     <owners>chtof</owners>
     <title>Plantronics Hub</title>
