@@ -1,5 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
+$softwareName = 'Sublime Merge'
+
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
     
