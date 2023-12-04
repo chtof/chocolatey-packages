@@ -5,11 +5,11 @@ $packageArgs = @{
   packageName     = $env:ChocolateyPackageName
 
   url             = 'https://www.keepersecurity.com/desktop_electron/Win32/KeeperSetup32.msi'
-  checksum        = '663B03D923D13360449E3400D8AB4E7203EA9B960F3AD9B4C60648B442668B2F'
+  checksum        = '3403d07703123b4a9897500c2fb225b2c8d1abd6c7d561eba4783a33bfd12a21'
   checksumType    = 'sha256'
 
   url64           = 'https://www.keepersecurity.com/desktop_electron/packages/KeeperPasswordManager.msixbundle'
-  checksum64      = 'E07937D67F6A849DA75139CF63CA01DBD7F0AB86807346776D60377EDA4BD0C0'
+  checksum64      = '34f191e1c60c60967a8fd47ae8c06c86062d11992edb5bc982a2bca2e9f59b40'
   checksumType64  = 'sha256'
 
   silentArgs      = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
