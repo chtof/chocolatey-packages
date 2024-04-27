@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
   <id>chirp</id>
-  <version>2024.04.19</version>	
+  <version>2024.04.27</version>	
 	<packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/chirp</packageSourceUrl>
 	<owners>chtof</owners>
   <title>CHIRP</title>
@@ -26,7 +26,7 @@ CHIRP is distributed as a series of automatically-generated builds. Any time we 
 ]]></description>
   <releaseNotes>http://chirp.danplanet.com/projects/chirp/repository/revisions</releaseNotes>
 	<dependencies>
-    <dependency id="chirp.install" version="[2024.04.19]" />
+    <dependency id="chirp.install" version="[2024.04.27]" />
   </dependencies>
   </metadata>
   <files>  
