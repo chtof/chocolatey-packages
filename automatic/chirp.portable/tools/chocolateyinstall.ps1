@@ -4,7 +4,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = "$env:ChocolateyPackageName"
   destination   = "$toolsDir"
-  file64        = "$toolsDir\chirp-next-20240419-win64.zip"
+  file64        = "$toolsDir\chirp-next-20240427-win64.zip"
 }
 
 Get-ChocolateyUnzip @packageArgs
