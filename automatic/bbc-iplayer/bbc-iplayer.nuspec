@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>bbc-iplayer</id>
-    <version>2.13.18</version>
+    <version>2.14.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/bbc-iplayer</packageSourceUrl>
     <owners>chtof</owners>
     <title>BBC iPlayer</title>

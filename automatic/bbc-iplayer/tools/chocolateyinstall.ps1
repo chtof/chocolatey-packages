@@ -5,8 +5,8 @@ $processName = 'BBCiPlayerDownloads'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName  
 
-  url           = 'https://static.files.bbci.co.uk/iplayer-pc-download-app/releases/win32-x64/BBCiPlayerDownloadsSetup-2.13.18.exe'
-  checksum      = '6e97215f314290865f97edec2e50bb2bb54d236c0ce013b1df4c846352ecd649'
+  url           = 'https://static.files.bbci.co.uk/iplayer-pc-download-app/releases/win32-x64/BBCiPlayerDownloadsSetup-2.14.0.exe'
+  checksum      = ''
   checksumType  = 'sha256'
   
   silentArgs    = ''
