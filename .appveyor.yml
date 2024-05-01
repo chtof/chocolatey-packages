@@ -59,10 +59,10 @@ install:
 - ps: $PSVersionTable
 - git --version
 - ps: |
-    choco upgrade chocolatey
-    choco install au
-    choco install powershell -n
-    choco install wormies-au-helpers
+    choco upgrade --no-progress chocolatey
+    choco install --no-progress au
+    choco install --no-progress powershell -n
+    choco install --no-progress wormies-au-helpers
 #git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
 #    . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
 - ps: |
