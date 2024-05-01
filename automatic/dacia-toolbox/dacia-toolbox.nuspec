@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dacia-toolbox</id>
-    <version>2024.04.10</version>
+    <version>2024.4.10</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/dacia-toolbox</packageSourceUrl>
     <owners>chtof</owners>
     <title>Dacia Media Nav Evolution Toolbox</title>
