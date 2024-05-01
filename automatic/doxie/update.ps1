@@ -8,7 +8,7 @@ function global:au_GetLatest {
 
     $releases -match $regex | Out-Null
 
-    return @{ Version = semver($version) ; URL32 = $releases }
+    return @{ Version = semver($matches.Version) ; URL32 = $releases }
 }
 
 function global:au_SearchReplace {
