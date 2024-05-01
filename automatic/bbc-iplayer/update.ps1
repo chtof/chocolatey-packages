@@ -1,4 +1,4 @@
-﻿import-module au
+import-module au
 
 function global:au_GetLatest {
     $releases = Get-RedirectedUrl 'https://downloads-app.iplayer.api.bbc.co.uk/stable/win32-x64'    
@@ -12,10 +12,9 @@ function global:au_SearchReplace {
     @{
         "tools\chocolateyInstall.ps1" = @{
 			"(^(\s)*url\s*=\s*)('.*')" = "`${1}'$($Latest.URL32)'"
-            "(^(\s)*checksum\s*=\s*)('.*')" = "`${1}'$($Latest.Checksum32)'"
-            "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\bbciplayerdownloads-)[\d\.]+(.*)`"" = "`${1}$($Latest.Version)`${2}`""             
+            "(^(\s)*checksum\s*=\s*)('.*')" = "`${1}'$($Latest.Checksum32)'"            
         }
     }
 }
 
-update
+update -ChecksumFor None
