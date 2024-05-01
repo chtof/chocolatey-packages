@@ -25,7 +25,7 @@ function GetResultInformation([string]$url64) {
   $dest = "$env:TEMP\jami-x64.msi"
   Get-WebFile $url64 $dest | Out-Null
   # $version = Get-Item $dest | % { $_.VersionInfo.ProductVersion -replace '^([\d]+(\.[\d]+){1,3}).*', '$1' }
-  $version = Get-Date -format "yyyy.MM.dd"
+  $version = Get-Date -format "yyyy.M.d"
 
   $result = @{
     URL64          = $url64
@@ -61,7 +61,7 @@ function global:au_GetLatest {
   }
   else {
     $result = @{
-      URL64   = $downloadUrl            
+      URL64   = $downloadUrl
       Version = Get-Content "$PSScriptRoot\info" -Encoding UTF8 | select -First 1 | % { $_ -split '\|' } | select -Last 1
     }
   }
