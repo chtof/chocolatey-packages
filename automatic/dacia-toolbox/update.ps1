@@ -4,10 +4,14 @@ function global:au_GetLatest {
 	$releases = Get-RedirectedUrl 'https://dacia-ulc.naviextras.com/downloadagent?op=win'
 	$regex    = '/(?<VersionYY>[\d]+)_(?<VersionMM>\d+)_(?<VersionDD>\d+)_.*/'
 
+    $VersionYY = [int]$matches.VersionYY
+    $VersionMM = [int]$matches.VersionMM
+    $VersionDD = [int]$matches.VersionDD
+
     $releases -match $regex | Out-Null
 
     return @{
-        Version = $matches.VersionYY + '.' + $matches.VersionMM + '.' + $matches.VersionDD
+        Version = "$VersionYY" + '.' + "$VersionMM" + '.' + "$VersionDD"
         URL32   = $releases
     }
 }
