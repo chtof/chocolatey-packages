@@ -1,5 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
+. ..\..\helpers\semver_Helper.ps1
 
 function global:au_GetLatest {
 	$releases = Get-RedirectedUrl 'https://r.getdoxie.com/app/download_windows'    
@@ -7,7 +8,7 @@ function global:au_GetLatest {
 
     $releases -match $regex | Out-Null
 
-    return @{ Version = $matches.Version ; URL32 = $releases }
+    return @{ Version = semver($version) ; URL32 = $releases }
 }
 
 function global:au_SearchReplace {
