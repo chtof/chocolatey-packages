@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>apo-ok.portable</id>
-    <version>5.71</version>
+    <version>5.77</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/apo-ok.portable</packageSourceUrl>
     <owners>chtof</owners>
     <title>AutoPowerOptionsOK (Portable)</title>
