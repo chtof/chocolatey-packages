@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>epidata</id>
-    <version>4.6.0.6</version>
+    <version>4.7.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/epidata</packageSourceUrl>
     <owners>chtof</owners>
     <title>EpiData All-In-One (Manager, EntryClient and Analysis)</title>

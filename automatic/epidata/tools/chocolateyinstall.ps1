@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
 
-  url          = 'http://www.epidata.dk/downloads/setup.all-in-one.4.6.0.6.exe'
-  checksum     = 'b8a2e90ce7696c997fa141a8d1abdf439cee445d48d91a2610d7a15486ceee68'
+  url          = 'http://www.epidata.dk/downloads/epidata-all-in-one-setup.4.7.0.exe'
+  checksum     = 'cc3c239aca351c9c05dbaa5663b809d041f87ada00d02b7e43cd872e7a172dde'
   checksumType = 'sha256'
 
   silentArgs   = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
