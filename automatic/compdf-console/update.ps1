@@ -11,7 +11,7 @@ function global:au_GetLatest {
     $ie.Visible = $false
     $ie.Navigate($releases)
     while ($ie.Busy -eq $true){Start-Sleep -seconds 4;}
-    ($ie.Document.body.all.tags("strong") |% InnerText | Out-String) -match $regexVersion | Out-Null
+    ($ie.Document.getElementsByTagName("strong") |% InnerText | Out-String) -match $regexVersion | Out-Null
     $version = $matches.Version
 
     $download_page = Invoke-WebRequest -Uri $releases_en -UseBasicParsing
