@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>egnyte-desktop-app</id>
-    <version>3.14.4.122</version>
+    <version>3.17.0.143</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/egnyte-desktop-app</packageSourceUrl>
     <owners>chtof</owners>
     <title>Egnyte Desktop App</title>
