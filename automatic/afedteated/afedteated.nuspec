@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>afedteated</id>
-    <version>17.3.0.204</version>
+    <version>17.4.0.242</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/afedteated</packageSourceUrl>
     <owners>chtof</owners>
     <title>Advanced SystemCare Free</title>
