@@ -13,9 +13,9 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = "$installDir"
   # url            = 'https://github.com/mifi/lossless-cut/releases/download/v3.43.0/LosslessCut-win.zip'
-  url64          = 'https://github.com//mifi/lossless-cut/releases/download/v3.59.1/LosslessCut-win-x64.7z'
+  url64          = 'https://github.com//mifi/lossless-cut/releases/download/v3.61.0/LosslessCut-win-x64.7z'
   # checksum       = 'c5df41dac8d792215e75663f29be7c14410ef7e115bb2648ed5d4214aa7f00ec'
-  checksum64     = '54663de6f81bda72ac3fcd8c01bce3da751ad91d9e1eab75500335adbb6723f0'
+  checksum64     = '65051d92526972745c86e821cef1a636869490cae42327464b9663be71fda99c'
   checksumType   = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
