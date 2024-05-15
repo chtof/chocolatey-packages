@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>spacedesk-server</id>
-    <version>2.1.16</version>
+    <version>2.1.19</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/spacedesk-server</packageSourceUrl>
     <owners>chtof</owners>
     <title>Spacedesk Driver Software for Windows PRIMARY PC (server)</title>
