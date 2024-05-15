@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>webex</id>
-    <version>44.4.0.29432</version>
+    <version>44.5.0.29672</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/webex</packageSourceUrl>
     <owners>chtof</owners>
     <title>Cisco Webex</title>
