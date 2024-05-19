@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://ftp.lip6.fr/pub/lyx/bin/2.3.7/LyX-237-Installer-1-x64.exe
-   x64: https://ftp.lip6.fr/pub/lyx/bin/2.3.7/LyX-237-Installer-1-x64.exe
+   x32: https://lyx.mirror.garr.it/bin/2.3.8/LyX-238-Installer-1-x64.exe
+   x64: https://lyx.mirror.garr.it/bin/2.3.8/LyX-238-Installer-1-x64.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 091CD793C21CB24A87A52C6622F7DFE0A6921F0912847AE06EEA33A367FF92DA
-   checksum64: 091CD793C21CB24A87A52C6622F7DFE0A6921F0912847AE06EEA33A367FF92DA
+   checksum32: 202C3381573E7B8AACD0DBAD46A6BC09528AF00129C801192F97D2390BCFC355
+   checksum64: 202C3381573E7B8AACD0DBAD46A6BC09528AF00129C801192F97D2390BCFC355
 
 File 'LICENSE.txt' is obtained from:
    https://www.lyx.org/License
