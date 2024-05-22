@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cuda</id>
-    <version>12.4.1.551</version>
+    <version>12.5.0.555</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/cuda</packageSourceUrl>
     <owners>chtof</owners>
     <title>NVIDIA CUDA Toolkit</title>
