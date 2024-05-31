@@ -7,14 +7,14 @@ Package can be verified like this:
   
 1. Download:
   
-   x64: https://trac.chirp.danplanet.com/chirp_next/next-20240524/chirp-next-20240524-win64.zip
+   x64: https://trac.chirp.danplanet.com/chirp_next/next-20240531/chirp-next-20240531-win64.zip
    
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
   
    checksum type: sha256
-   checksum64: FC12FFE94DA5BD80448B4E7ADFEB8070D8701099D6DD2514C91822C52FA615EC
+   checksum64: D3CBFA3A0ED26FA09A186DC7B98887559D23C95B070C25745CEF5B7A50AB85E1
 
 File 'LICENSE.txt' is obtained from:
    http://chirp.danplanet.com/projects/chirp/repository/revisions/222c1830b798/entry/COPYING
