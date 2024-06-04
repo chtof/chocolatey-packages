@@ -4,8 +4,8 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
-  url           = 'https://github.com/ActivityWatch/activitywatch/releases/download/v0.12.2/activitywatch-v0.12.2-windows-x86_64.zip'
-  checksum      = '1e0ea0e873c520b808b6fe79b9eda75da97b0d58d8896f623b84bfb64b88438f'
+  url           = 'https://github.com/ActivityWatch/activitywatch/releases/download/v0.13.0/activitywatch-v0.13.0-windows-x86_64.zip'
+  checksum      = '0bb0216c791a3618e93e7e4d2a0366c92e1e38e895f7a4abfb52d0145947ae66'
   checksumType  = 'sha256'
 }
 
