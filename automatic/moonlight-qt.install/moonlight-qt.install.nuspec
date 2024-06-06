@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>moonlight-qt.install</id>
-    <version>5.0.1</version>
+    <version>6.0.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/moonlight-qt.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>Moonlight PC (Install)</title>
