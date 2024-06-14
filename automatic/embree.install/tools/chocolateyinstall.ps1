@@ -5,7 +5,7 @@ $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   filetype    = 'ZIP'
   destination = "$toolsDir"
-  file64      = "$toolsDir\embree-4.3.1.x64.windows.zip"  
+  file64      = "$toolsDir\embree-4.3.2.x64.windows.zip"  
 }
 
 Get-ChocolateyUnzip @packageArgs
