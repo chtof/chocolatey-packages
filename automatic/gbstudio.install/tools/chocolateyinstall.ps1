@@ -5,12 +5,12 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
 
-  url           = 'https://github.com//chrismaltby/gb-studio/releases/download/v3.2.1/gb-studio-windows-32bit-installer.zip'
-  checksum      = '09feb3faad0dc6155e1af5848821a39acbd9dd75e1f90e69d3136118040e4146'
+  url           = 'https://github.com//chrismaltby/gb-studio/releases/download/v4.0.0/gb-studio-windows-32bit-installer.zip'
+  checksum      = '801944a9690bf4b6e494e723c2dd38726c2957466bdc85caf93be1185632ccaa'
   checksumType  = 'sha256'
   
-  url64         = 'https://github.com//chrismaltby/gb-studio/releases/download/v3.2.1/gb-studio-windows-64bit-installer.zip'
-  checksum64    = '6ac6faa0dea1165246afdf8a10277a616706ec9a06de9f5fba7d05a92caa4f49'
+  url64         = 'https://github.com//chrismaltby/gb-studio/releases/download/v4.0.0/gb-studio-windows-64bit-installer.zip'
+  checksum64    = 'e8894cbf032823773e46501e22a59423a6809aeec891f6a8538441324247e190'
   checksumType64= 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
