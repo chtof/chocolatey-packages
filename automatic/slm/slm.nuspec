@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>slm</id>
-    <version>12.1.1</version>
+    <version>12.1.2</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/slm</packageSourceUrl>
     <owners>chtof</owners>
     <title>Softros LAN Messenger</title>
