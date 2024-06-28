@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>helix-alm-client</id>
-    <version>2024.1.0</version>
+    <version>2024.2.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/helix-alm-client</packageSourceUrl>
     <owners>chtof</owners>
     <title>Helix ALM Desktop Client</title>
