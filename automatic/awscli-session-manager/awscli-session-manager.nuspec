@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>awscli-session-manager</id>
-    <version>1.2.633.0</version>
+    <version>1.2.650.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/awscli-session-manager</packageSourceUrl>
     <owners>chtof</owners>
     <title>AWS Session Manager Plugin</title>
