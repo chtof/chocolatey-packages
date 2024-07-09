@@ -5,7 +5,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetTitleMatchMode, 1  ; A windows's title must start with the specified WinTitle to be a match.
 SetControlDelay 0
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-GNS_Version = 2.2.47
+GNS_Version = 2.2.48
 
 ; GNS3 Uninstall
 winTitle1 = GNS3%A_Space%%GNS_Version%%A_Space%Uninstall
