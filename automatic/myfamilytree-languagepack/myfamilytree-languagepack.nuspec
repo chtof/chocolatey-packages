@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>myfamilytree-languagepack</id>
-    <version>14.0.4.0</version>    
+    <version>14.1.0.0</version>    
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/myfamilytree-languagepack</packageSourceUrl>    
     <owners>chtof</owners>    
     <title>My Family Tree (Language Pack)</title>
