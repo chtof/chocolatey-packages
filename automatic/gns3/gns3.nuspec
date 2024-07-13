@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gns3</id>
-    <version>2.2.48</version>    
+    <version>2.2.48.1</version>    
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/gns3</packageSourceUrl>
     <owners>chtof</owners>
     <title>GNS3</title>
