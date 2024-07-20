@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>    
     <id>myfamilytree</id>    
-    <version>14.1.0.0</version>    
+    <version>14.1.1.0</version>    
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/myfamilytree</packageSourceUrl>    
     <owners>chtof</owners>    
     <title>My Family Tree</title>
@@ -73,7 +73,7 @@ Advanced date input with full support for partial dates, date ranges and text on
     <releaseNotes>https://chronoplexsoftware.com/myfamilytree/updates/versionhistory.htm</releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.6" />
-      <dependency id="myfamilytree-languagepack" version="[14.1.0.0]" />
+      <dependency id="myfamilytree-languagepack" version="[14.1.1.0]" />
     </dependencies>
   </metadata>
   <files>
