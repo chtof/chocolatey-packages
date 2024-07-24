@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>virtualhere-client</id>
-    <version>5.6.8</version>
+    <version>5.6.9</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/virtualhere-client</packageSourceUrl>
     <owners>chtof</owners>
     <title>VirtualHere USB Client</title>
