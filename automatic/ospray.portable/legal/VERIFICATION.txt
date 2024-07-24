@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com//ospray/ospray/releases/download/v3.1.0/ospray-3.1.0.x86_64.windows.zip
-   x64: https://github.com//ospray/ospray/releases/download/v3.1.0/ospray-3.1.0.x86_64.windows.zip
+   x32: https://github.com//RenderKit/ospray/releases/download/v3.2.0/ospray-3.2.0.x86_64.windows.zip
+   x64: https://github.com//RenderKit/ospray/releases/download/v3.2.0/ospray-3.2.0.x86_64.windows.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: DAF4FFE73DAD6A45C7D3C104F2ECB59819EB507581A55F6CE62EF4B27F2C0793
-   checksum64: DAF4FFE73DAD6A45C7D3C104F2ECB59819EB507581A55F6CE62EF4B27F2C0793
+   checksum32: 4347890FAD2243C84056A4C1449E2C48F0D99D4CDAE18F6649612F367018AEBA
+   checksum64: 4347890FAD2243C84056A4C1449E2C48F0D99D4CDAE18F6649612F367018AEBA
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/ospray/ospray/master/LICENSE.txt

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ospray.install</id>
-    <version>3.1.0</version>
+    <version>3.2.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/ospray.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>Intel® OSPRay (Install)</title>

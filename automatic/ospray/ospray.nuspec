@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ospray</id>
-    <version>3.1.0</version>
+    <version>3.2.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/ospray</packageSourceUrl>
     <owners>chtof</owners>
     <title>Intel® OSPRay</title>
@@ -37,7 +37,7 @@ OSPRay internally builds on top of [Intel Embree](http://www.apache.org/licenses
 ]]></description>
     <releaseNotes>http://www.ospray.org/news.html</releaseNotes>
     <dependencies>
-      <dependency id="ospray.install" version="[3.1.0]" />
+      <dependency id="ospray.install" version="[3.2.0]" />
     </dependencies>
   </metadata>
   <files></files>
