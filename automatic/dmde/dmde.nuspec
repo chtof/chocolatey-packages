@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dmde</id>
-    <version>4.0.6.806</version>
+    <version>4.2.0.814</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/dmde</packageSourceUrl>
     <owners>chtof</owners>
     <title>DMDE - DM Disk Editor and Data Recovery Software</title>
