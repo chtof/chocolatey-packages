@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
 
-  url          = 'https://developer.download.nvidia.com/compute/cuda/12.5.1/local_installers/cuda_12.5.1_555.85_windows.exe'
-  checksum     = '32e2400c86aff1ae19716074f9b7263ebb7a4a5cd49cab5dc029174f50898b3f'
+  url          = 'https://developer.download.nvidia.com/compute/cuda/12.6.0/local_installers/cuda_12.6.0_560.76_windows.exe'
+  checksum     = '0be24361bb4d6c02b8609fb4c0639821586dd299d445a26d8ef2fcb7eea2966a'
   checksumType = 'sha256'
 
   silentArgs   = '/s'
