@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>internet-download-manager</id>
-    <version>6.42.18</version>
+    <version>6.42.19</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/internet-download-manager</packageSourceUrl>
     <owners>chtof</owners>
     <title>Internet Download Manager</title>
