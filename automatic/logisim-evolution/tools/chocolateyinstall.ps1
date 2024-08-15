@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName  
   FileFullPath  = "$toolsDir\logisim-evolution.jar"
 
-  url           = 'https://github.com//logisim-evolution/logisim-evolution/releases/download/v3.8.0/logisim-evolution-3.8.0-all.jar'
-  checksum      = '4c59be7dadc2329d0e3219ca05ce9c2c858641b206fcea4e3821bb79aef06c2c'
+  url           = 'https://github.com//logisim-evolution/logisim-evolution/releases/download/v3.9.0/logisim-evolution-3.9.0-all.jar'
+  checksum      = '43153587a2cacd6cb6e70b57804b9f3d3d0ab08b0b86b2a7abd091712e0c9737'
   checksumType  = 'sha256'
 }
 
