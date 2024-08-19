@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>bandlab-assistant</id>
-    <version>10.8.0</version>
+    <version>10.8.1</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/bandlab-assistant</packageSourceUrl>
     <owners>chtof</owners>
     <title>BandLab Assistant</title>
