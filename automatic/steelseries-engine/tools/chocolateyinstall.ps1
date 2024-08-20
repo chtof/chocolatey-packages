@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
 
-  url           = 'https://engine.steelseriescdn.com/SteelSeriesGG68.0.0Setup.exe'
-  checksum      = '1edcfdbeef46b59f607f443e298b9b63c339fa0455efe0b12561c9610456fde1'
+  url           = 'https://engine.steelseriescdn.com/SteelSeriesGG69.0.0Setup.exe'
+  checksum      = '8f5175c055b8b3f93712335f3d0e8c9a93a8269638327866e2e87683270df999'
   checksumType  = 'sha256'
 
   silentArgs    = '/S'
