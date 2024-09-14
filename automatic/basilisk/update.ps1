@@ -1,7 +1,7 @@
 ﻿import-module au
 
 function global:au_GetLatest {
-    $releases = 'http://archive.palemoon.org/basilisk/'    
+    $releases = 'https://basilisk-browser.org/download.shtml'    
     $regex64  = 'basilisk-(?<Version>[\d]+)[\d]{6}.win64.installer.exe'
 
     $download_page = (Invoke-WebRequest -Uri $releases -UseBasicParsing).links
