@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>basilisk</id>
-    <version>2022.01.27</version>
+    <version>2024.09.12</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/basilisk</packageSourceUrl>
     <owners>chtof</owners>
     <title>Basilisk Browser</title>
@@ -40,7 +40,7 @@ This browser is created and maintained by the team behind [Pale Moon](http://www
 ]]></description>
     <releaseNotes>https://github.com/MoonchildProductions/UXP/releases</releaseNotes>
     <dependencies>
-      <dependency id="basilisk.install" version="[2022.01.27]" />
+      <dependency id="basilisk.install" version="[2024.09.12]" />
     </dependencies>
   </metadata>
   <files></files>
