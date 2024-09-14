@@ -49,6 +49,7 @@ If (-Not( $PackageParameters.NoSendToShortcut )) {
   Install-ChocolateyShortcut -shortcutFilePath "$programsFilePath" -targetPath "$targetPath"
 }
 
+<#
 # Set File Association
 If (-Not( $PackageParameters.DontRegisterApp )) {
 	if ((Test-Path -LiteralPath "HKLM:\SOFTWARE\Clients\Media") -ne $true) { New-Item "HKLM:\SOFTWARE\Clients\Media" -Force -ea SilentlyContinue };
@@ -109,3 +110,4 @@ If (-Not( $PackageParameters.DontRegisterApp )) {
 		New-ItemProperty -LiteralPath "HKLM:\SOFTWARE\Clients\Media\LosslessCut\Capabilities\FileAssociations" -Name ".$extension" -Value ("LosslessCut." + "$extension".ToUpper()) -PropertyType String -Force -ea SilentlyContinue;
 	}
 }
+#>
