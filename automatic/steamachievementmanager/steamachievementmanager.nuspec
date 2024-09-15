@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>steamachievementmanager</id>
-    <version>7.0.25</version>
+    <version>7.0.35</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/steamachievementmanager</packageSourceUrl>
     <owners>chtof</owners>
     <title>Steam Achievement Manager</title>
@@ -19,8 +19,7 @@
     <bugTrackerUrl>https://github.com/gibbed/SteamAchievementManager/issues</bugTrackerUrl>
     <tags>steamachievementmanager manager game achievement Steam</tags>
     <summary>A manager for game achievements in Steam.</summary>
-    <description><![CDATA[
-A manager for game achievements in Steam.
+    <description><![CDATA[A manager for game achievements in Steam.
 ]]></description>
     <releaseNotes>https://github.com/gibbed/SteamAchievementManager/releases/latest</releaseNotes>
   </metadata>
