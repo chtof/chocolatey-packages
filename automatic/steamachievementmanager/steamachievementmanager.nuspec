@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>steamachievementmanager</id>
-    <version>7.0.35</version>
+    <version>7.0.37</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/steamachievementmanager</packageSourceUrl>
     <owners>chtof</owners>
     <title>Steam Achievement Manager</title>

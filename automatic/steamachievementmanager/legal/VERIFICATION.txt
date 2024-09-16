@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com//gibbed/SteamAchievementManager/releases/download/7.0.35/SteamAchievementManager-7.0.35.zip
-   x64: https://github.com//gibbed/SteamAchievementManager/releases/download/7.0.35/SteamAchievementManager-7.0.35.zip
+   x32: https://github.com//gibbed/SteamAchievementManager/releases/download/7.0.37/SteamAchievementManager-7.0.37.zip
+   x64: https://github.com//gibbed/SteamAchievementManager/releases/download/7.0.37/SteamAchievementManager-7.0.37.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 1A6AA7BF862B2D95481317B19C12E5081921556871C7AAE329038A8B689EB14C
-   checksum64: 1A6AA7BF862B2D95481317B19C12E5081921556871C7AAE329038A8B689EB14C
+   checksum32: 9B194FE4E124FF2715C3FD5E7E65E7E999DDC58E4FA89EBB9FBD43938A50F7EA
+   checksum64: 9B194FE4E124FF2715C3FD5E7E65E7E999DDC58E4FA89EBB9FBD43938A50F7EA
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/gibbed/SteamAchievementManager/master/LICENSE.txt
