@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>klayout</id>
-    <version>0.29.6</version>
+    <version>0.29.7</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/klayout</packageSourceUrl>
     <owners>chtof</owners>
     <title>KLayout</title>
