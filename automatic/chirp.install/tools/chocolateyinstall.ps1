@@ -4,7 +4,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName  
   fileType      = 'exe'
-  file          = "$toolsDir\chirp-next-20240919-installer.exe"
+  file          = "$toolsDir\chirp-next-20240926-installer.exe"
   silentArgs    = '/S'
 }
 
