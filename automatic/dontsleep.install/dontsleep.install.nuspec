@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dontsleep.install</id>
-    <version>9.59</version>
+    <version>9.59.1</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/dontsleep.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>Don't Sleep (Install)</title>
