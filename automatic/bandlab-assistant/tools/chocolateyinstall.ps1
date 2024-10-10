@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
 
-  url           = 'https://static.bandlab.com/assistant/BandLab%20Assistant%20Setup%2010.8.2.exe'
-  checksum      = '7a008919069e001e26260a9bc66c64ebf7be58299fb9aba735d2378e873b6b19'
+  url           = 'https://static.bandlab.com/assistant/BandLab%20Assistant%20Setup%2010.8.3.exe'
+  checksum      = '04a93cc14a895a5aa8535bfdf07addb3a914fa502381d1f3bf6374b7b0d4dc2f'
   checksumType  = 'sha256'
 
   silentArgs    = '/S'
