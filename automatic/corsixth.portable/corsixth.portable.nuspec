@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>corsixth.portable</id>
-    <version>0.67</version>
+    <version>0.68.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/corsixth.portable</packageSourceUrl>
     <owners>chtof</owners>
     <title>CorsixTH (Portable)</title>
