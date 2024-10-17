@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ispc</id>
-    <version>1.24.0</version>
+    <version>1.25.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/ispc</packageSourceUrl>
     <owners>chtof</owners>
     <title>Intel SPMD Program Compiler</title>
