@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>die</id>
-    <version>3.09</version>
+    <version>3.10</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/die</packageSourceUrl>
     <owners>chtof</owners>
     <title>Detect It Easy</title>
