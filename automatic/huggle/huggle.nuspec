@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>huggle</id>
-    <version>3.4.12</version>
+    <version>3.4.13</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/huggle</packageSourceUrl>
     <owners>chtof</owners>
     <title>Huggle</title>
