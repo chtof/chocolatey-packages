@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com//LibreHardwareMonitor/LibreHardwareMonitor/releases/download/v0.9.3/LibreHardwareMonitor-net472.zip
-   x64: https://github.com//LibreHardwareMonitor/LibreHardwareMonitor/releases/download/v0.9.3/LibreHardwareMonitor-net472.zip
+   x32: https://github.com//LibreHardwareMonitor/LibreHardwareMonitor/releases/download/v0.9.4/LibreHardwareMonitor-net472.zip
+   x64: https://github.com//LibreHardwareMonitor/LibreHardwareMonitor/releases/download/v0.9.4/LibreHardwareMonitor-net472.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: EF33F7F3F4FCF00CB9B4DF0066CE6D8C5D13C7AC6D99DEFFCB6098EED9573973
-   checksum64: EF33F7F3F4FCF00CB9B4DF0066CE6D8C5D13C7AC6D99DEFFCB6098EED9573973
+   checksum32: D2E397CC4D33D65C6493DFF83B9335BC341A3AF31CAAFCEEF83F717FDAB37448
+   checksum64: D2E397CC4D33D65C6493DFF83B9335BC341A3AF31CAAFCEEF83F717FDAB37448
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/LibreHardwareMonitor/LibreHardwareMonitor/master/Licenses/LICENSE
