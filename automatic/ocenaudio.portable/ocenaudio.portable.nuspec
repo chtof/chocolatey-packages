@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ocenaudio.portable</id>
-    <version>3.14.7</version>
+    <version>3.14.8</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/ocenaudio.portable</packageSourceUrl>
     <owners>chtof</owners>
     <title>Ocenaudio (Portable)</title>
