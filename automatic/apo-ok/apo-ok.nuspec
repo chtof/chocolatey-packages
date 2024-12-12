@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>apo-ok</id>
-    <version>5.86</version>
+    <version>5.88</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/apo-ok</packageSourceUrl>
     <owners>chtof</owners>
     <title>AutoPowerOptionsOK</title>
@@ -56,7 +56,7 @@ Even for a PC beginner, this free program is no problem making the Windows PCs m
 ]]></description>
     <releaseNotes>http://www.softwareok.com/?seite=Microsoft/AutoPowerOptionsOK/History</releaseNotes>
     <dependencies>
-      <dependency id="apo-ok.install" version="[5.86]" />
+      <dependency id="apo-ok.install" version="[5.88]" />
     </dependencies>
   </metadata>
   <files></files>
