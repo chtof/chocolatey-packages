@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dontsleep.portable</id>
-    <version>9.63.1</version>
+    <version>9.69</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/dontsleep.portable</packageSourceUrl>
     <owners>chtof</owners>
     <title>Don't Sleep (Portable)</title>
