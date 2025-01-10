@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>phonerlite</id>
-    <version>3.27</version>
+    <version>3.28</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/phonerlite</packageSourceUrl>
     <owners>chtof</owners>
     <title>PhonerLite</title>
@@ -80,7 +80,7 @@ See http://phonerlite.de for all information.
 ]]></description>
   <releaseNotes>http://phonerlite.de/download_en.htm</releaseNotes>
   <dependencies>
-    <dependency id="phonerlite.install" version="[3.27]" />
+    <dependency id="phonerlite.install" version="[3.28]" />
   </dependencies>
   </metadata>
   <files></files>
