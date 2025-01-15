@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>eddie.install</id>
-    <version>2.21.8</version>
+    <version>2.24.6</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/eddie.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>Eddie - OpenVPN GUI (Install)</title>
