@@ -16,7 +16,7 @@ if ( [environment]::OSVersion.Version.Major -ne 10 )  {
 
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
-  file        = "$toolsDir\AutoDarkModeX_10.4.1.1.exe"
+  file        = "$toolsDir\AutoDarkModeX_10.4.2.29_x86.exe"
   silentArgs  = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 }
 
