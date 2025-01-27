@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>jekyll</id>
-    <version>4.3.4</version>
+    <version>4.4.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/jekyll</packageSourceUrl>
     <owners>chtof</owners>
     <title>Jekyll</title>
