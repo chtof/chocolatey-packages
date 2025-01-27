@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
     
-  url           = 'https://github.com//STJr/SRB2/releases/download/SRB2_release_2.2.14/SRB2-v2214-Installer.exe'
-  checksum      = '3f0725fbc19acfb4c05cb73d50058c7d64855adcacfc7ba757802ad468b20013'
+  url           = 'https://github.com//STJr/SRB2/releases/download/SRB2_release_2.2.15/SRB2-v2215-Installer.exe'
+  checksum      = 'b7d0e868a4b4a055187f2fa0cf9a93c12003e23b2548e47fdb1215476488a74d'
   checksumType  = 'sha256'
   
   
