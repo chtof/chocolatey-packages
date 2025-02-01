@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
     
-  url          = 'https://download.getdoxie.com/DoxieSetup-3.3.exe'
-  checksum     = '001a161901e6b23722717073d54f4f38cc16f08d12688c34a9b9ec982efca261'
+  url          = 'https://download.getdoxie.com/DoxieSetup-3.4.1.exe'
+  checksum     = '4a48b61542d0b279fd15ad90760b70967aed5efc3b7aaa00266d8147bf629ded'
   checksumType = 'sha256'
 
   silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
