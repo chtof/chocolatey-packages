@@ -9,13 +9,13 @@ $packageArgs = @{
   unzipLocation  = "$toolsDir"
   file           = Get-Item -path $toolsDir\*.zip
 
-  url			       = 'https://www.pspad.com/files/pspad/pspad507en.zip'
+  url			       = 'https://www.pspad.com/files/pspad/pspad551en.zip'
   checksumType	 = 'sha256'
-  checksum	   	 = '8ef79921d6337c6f2b8b8c86749e1bf1ff45a21e8347408045094e7e319f0d61'
+  checksum	   	 = '47027e3deb57d71d41ed5bbd6e862e107018ad4d5939374e4a6d5de06b35250d'
 
-  url64          = 'https://www.pspad.com/files/pspad/pspad507en_x64.zip'
+  url64          = 'https://www.pspad.com/files/pspad/pspad551en_x64.zip'
   checksumType64 = 'sha256'
-  checksum64     = 'd716746a074ff98b94bd5ba5a439446111bc8b280153202f3909e7cc33b10ad7'
+  checksum64     = 'b5458eb2eb9b410aaf670c0c8fb22e7f04842e69c9e077489285224ded003cb4'
 }
 
 # prevent chocolatey from creating shims for supplementary executables
