@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>octave</id>
-    <version>9.3.0</version>
+    <version>9.4.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/octave</packageSourceUrl>
     <owners>chtof</owners>
     <title>GNU Octave</title>
@@ -38,7 +38,7 @@ Everyone is encouraged to share this software with others under the terms of the
 ]]></description>
     <releaseNotes>https://www.gnu.org/software/octave/news.html</releaseNotes>
     <dependencies>
-      <dependency id="octave.install" version="9.3.0" />
+      <dependency id="octave.install" version="9.4.0" />
     </dependencies>
   </metadata>
   <files></files>
