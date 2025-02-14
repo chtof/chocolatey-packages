@@ -7,14 +7,14 @@ Remove-Item -Path "$toolsDir\*.exe" -ErrorAction SilentlyContinue
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   destination   = "$toolsDir"
-  fileFullPath  = "$toolsDir\Log4OM2_2_34_0_0.zip"  
+  fileFullPath  = "$toolsDir\Log4OM2_2_35_0_0.zip"  
 }
 Get-ChocolateyUnzip @packageArgs
 Remove-Item -Path $packageArgs.fileFullPath
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName  
-  file          = "$toolsDir\Log4OM2_2_34_0_0.exe"
+  file          = "$toolsDir\Log4OM2_2_35_0_0.exe"
   silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /components=""'
 }
 Install-ChocolateyInstallPackage @packageArgs
