@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>doxie</id>
-    <version>3.4.1.0</version>
+    <version>3.5.0.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/doxie</packageSourceUrl>
     <owners>chtof</owners>
     <title>Doxie</title>
