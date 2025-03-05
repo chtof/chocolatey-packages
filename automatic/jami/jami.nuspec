@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>jami</id>
-    <version>2025.3.2</version>
+    <version>2025.3.5</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/jami</packageSourceUrl>
     <owners>chtof</owners>
     <title>Jami</title>
