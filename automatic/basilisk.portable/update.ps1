@@ -1,9 +1,11 @@
-﻿import-module au
+﻿Import-Module au
 
 function global:au_GetLatest {
     $releases = 'https://basilisk-browser.org/download.shtml'
-    $regex32  = 'basilisk-(?<FullVersion32>[\d]+[\d]{6}).win32.zip'
-    $regex64  = 'basilisk-(?<FullVersion64>(?<Version>[\d]+)[\d]{6}).win64.zip'
+	# https://dl.basilisk-browser.org/basilisk-20250220144852.win32.7z
+    $regex32  = 'basilisk-(?<FullVersion32>[\d]+[\d]{6}).win32.7z'
+	# https://dl.basilisk-browser.org/basilisk-20250220144843.win64.7z
+    $regex64  = 'basilisk-(?<FullVersion64>(?<Version>[\d]+)[\d]{6}).win64.7z'
     
     $download_page = (Invoke-WebRequest -Uri $releases -UseBasicParsing).links
     $url32 = $download_page |? href -match $regex32 | Select -Last 1
@@ -14,8 +16,8 @@ function global:au_GetLatest {
 
     return @{
         Version = $version
-        URL32   = $releases + $url32.href
-        URL64   = $releases + $url64.href
+        URL32   = $url32.href
+        URL64   = $url64.href
     }
 }
 
