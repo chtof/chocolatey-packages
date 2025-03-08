@@ -7,11 +7,7 @@ function global:au_GetLatest {
    $output = github_GetInfo -ArgumentList @{
         repository = 'sedwards2009/extraterm'        
         regex32    = 'extratermqt-setup-(?<Version>[\d\.]*).exe$'
-   }
-
-   # append "-pre" to version
-   $output[1].Version += '-pre'
-
+   }     
    return $output
 }
 
