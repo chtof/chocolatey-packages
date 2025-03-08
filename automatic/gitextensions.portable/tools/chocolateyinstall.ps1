@@ -4,7 +4,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   destination   = "$toolsDir"
-  file          = "$toolsDir\GitExtensions-Portable-4.2.1.17611-b0c0b2848.zip"
+  file64        = "$toolsDir\GitExtensions-Portable-x64-5.2.1.18061-0d74cfdc3.zip"
 }
 
 # Prevent chocolatey from creating shims for supplementary executables
@@ -15,7 +15,7 @@ foreach ( $file in 'pageant.exe', 'plink.exe', 'puttygen.exe' ) {
   New-Item -path $toolsDir\GitExtensions\PuTTY -name "$file.ignore" -type File -force | Out-Null
 }
 
-Install-ChocolateyZipPackage @packageArgs
+Get-ChocolateyUnzip @packageArgs
 
 # Install start menu shortcut
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
