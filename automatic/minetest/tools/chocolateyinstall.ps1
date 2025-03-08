@@ -16,6 +16,6 @@ Remove-Item -Path $packageArgs.file,$packageArgs.file64
 
 # Install start menu shortcut
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
-$shortcutFilePath = Join-Path $programs 'Minetest.lnk'
-$targetPath = Join-Path "$toolsLocation" "minetest-5.9.1-win$(Get-OSArchitectureWidth)\bin\minetest.exe"
+$shortcutFilePath = Join-Path $programs 'Luanti.lnk'
+$targetPath = Join-Path "$toolsLocation" "luanti-5.9.1-win$(Get-OSArchitectureWidth)\bin\minetest.exe"
 Install-ChocolateyShortcut -ShortcutFilePath $shortcutFilePath -TargetPath $targetPath
