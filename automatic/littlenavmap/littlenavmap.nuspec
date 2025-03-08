@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>littlenavmap</id>
-    <version>3.0.12</version>
+    <version>3.0.16</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/littlenavmap</packageSourceUrl>
     <owners>chtof</owners>
     <title>Little Navmap</title>
