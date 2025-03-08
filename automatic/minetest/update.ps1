@@ -1,14 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-[Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
-
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $releases = 'https://www.minetest.net/downloads/'
-    $regex32  = 'minetest-([\d\._]+)-win32.zip'
-    $regex64  = 'minetest-(?<Version>[\d\._]+)-win64.zip'
+    $releases = 'https://www.luanti.org/downloads/'
+    $regex32  = 'luanti-([\d\._]+)-win32.zip'
+    $regex64  = 'luanti-(?<Version>[\d\._]+)-win64.zip'
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing	
 	$url32 = $download_page.links | ? href -match $regex32
@@ -34,7 +32,7 @@ function global:au_SearchReplace {
         "tools\chocolateyInstall.ps1" = @{
           "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\)(.*)`""   = "`${1}$($Latest.FileName32)`""
           "(?i)(^\s*file64\s*=\s*`"[$]toolsDir\\)(.*)`"" = "`${1}$($Latest.FileName64)`""
-          "(`"[$]toolsLocation`" `"minetest-)[\d\.]+(-win.*)"     = "`${1}$($Latest.Version)`${2}"          
+          "(`"[$]toolsLocation`" `"luanti-)[\d\.]+(-win.*)"     = "`${1}$($Latest.Version)`${2}"          
         }
     }
 }
