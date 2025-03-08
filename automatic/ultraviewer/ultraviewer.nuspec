@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ultraviewer</id>
-    <version>6.6.80</version>
+    <version>6.6.113</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/ultraviewer</packageSourceUrl>
     <owners>chtof</owners>
     <title>UltraViewer</title>
@@ -82,7 +82,7 @@ You run UltraViewer and send ID and Password displayed on your UltraViewer to yo
 ]]></description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <dependencies>
-      <dependency id="ultraviewer.install" version="6.6.80" />
+      <dependency id="ultraviewer.install" version="6.6.113" />
     </dependencies>
   </metadata>
   <files></files>
