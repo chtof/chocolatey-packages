@@ -5,9 +5,9 @@ function global:au_GetLatest {
 	#$releases = 'https://gridtracker.org/index.php/downloads/gridtracker'
     $releases = 'https://gridtracker.org/index.php/downloads/gridtracker-downloads'
     #https://downloads.gridtracker.org/v1.23.0402/GridTracker-Installer.1.23.0402.exe
+	#https://download2.gridtracker.org/GridTracker2-2.250201.1-setup.exe
 
-    #$regex = '/gridtracker-releases/v(?<Version>[\d-]+).*/files'
-    $regex = '/GridTracker-Installer.(?<Version>[\d.]+).exe'
+    $regex = '/GridTracker\d*-(Installer.)?(?<Version>[\d.]+)(-setup)?.exe'
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$url = ($download_page.links | ? href -match $regex | select -First 1).href
 
