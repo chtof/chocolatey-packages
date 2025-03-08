@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pyzo.install</id>
-    <version>4.16.0</version>
+    <version>4.19.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/pyzo.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>Pyzo (Install)</title>

@@ -2,9 +2,9 @@
 SendMode "Input"  ; Recommended for new scripts due to its superior speed and reliability.
 SetControlDelay -1
 
-Post_install_scriptDir := "C:\Program Files\GNU Octave\Octave-9.2.0\post-install.bat"
+Post_install_scriptDir := "C:\Program Files\GNU Octave\Octave-9.4.0\post-install.bat"
 
-winTitle := "GNU Octave ahk_class #32770" ; ahk_exe Octave-9.2.0-w64-installer.exe
+winTitle := "GNU Octave ahk_class #32770" ; ahk_exe Octave-9.4.0-w64-installer.exe
 
 SetTitleMatchMode "RegEx"
 WinWait(winTitle, "the installer was unable to find a Java Runtime Environment|Welcome to GNU Octave Setup", 600)

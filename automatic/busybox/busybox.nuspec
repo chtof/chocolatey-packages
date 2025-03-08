@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>busybox</id>
-    <version>5398.0</version>
+    <version>5579.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/busybox</packageSourceUrl>
     <owners>chtof</owners>
     <title>BusyBox-w32</title>

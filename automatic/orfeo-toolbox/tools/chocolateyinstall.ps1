@@ -1,13 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$version = '9.0.0'
+$version = '9.1.0'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$toolsDir"
 
-  url64         = 'https://www.orfeo-toolbox.org/packages/OTB-9.0.0-Win64.zip'
-  checksum64    = '416076eb20732bd655140911eec0e242527df5fa19615a2d241840bfcc8ecf0c'
+  url64         = 'https://www.orfeo-toolbox.org/packages/OTB-9.1.0-Win64.zip'
+  checksum64    = '5c64cc023956327f104729b55303db5572a81161a9ed36eef316bcedf466b987'
   checksumType64= 'sha256'
 }
 

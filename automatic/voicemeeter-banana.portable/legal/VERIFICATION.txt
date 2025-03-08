@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://download.vb-audio.com/Download_CABLE/VoicemeeterSetup_v2113.zip
-   x64: https://download.vb-audio.com/Download_CABLE/VoicemeeterSetup_v2113.zip
+   x32: https://download.vb-audio.com/Download_CABLE/VoicemeeterSetup_v2119.zip
+   x64: https://download.vb-audio.com/Download_CABLE/VoicemeeterSetup_v2119.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 23B180E9D278130408FA81DB67FE40B8558B3AA1AAB51F8423ECCA8BEADB5390
-   checksum64: 23B180E9D278130408FA81DB67FE40B8558B3AA1AAB51F8423ECCA8BEADB5390
+   checksum32: ED1C1D195EFE51C51E7725025E838B4D87111790A8FA69AD879522D791B7B253
+   checksum64: ED1C1D195EFE51C51E7725025E838B4D87111790A8FA69AD879522D791B7B253
  
 File 'LICENSE.txt' is obtained from:
    https://www.vb-audio.com/Services/licensing.htm

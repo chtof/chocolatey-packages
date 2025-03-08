@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>google2srt.portable</id>
-    <version>0.7.10</version>
+    <version>0.7.11</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/google2srt.portable</packageSourceUrl>
     <owners>chtof</owners>
     <title>Google2SRT (Portable)</title>

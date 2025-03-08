@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pyzo</id>
-    <version>4.16.0</version>
+    <version>4.19.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/pyzo</packageSourceUrl>
     <owners>chtof</owners>
     <title>Pyzo</title>
@@ -25,7 +25,7 @@
 ]]></description>
     <releaseNotes>https://github.com/pyzo/pyzo/wiki/Release_notes</releaseNotes>
     <dependencies>
-      <dependency id="pyzo.install" version="4.16.0" />
+      <dependency id="pyzo.install" version="4.19.0" />
     </dependencies>
   </metadata>
   <files></files>

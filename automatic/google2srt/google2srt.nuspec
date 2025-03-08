@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>google2srt</id>
-    <version>0.7.10</version>
+    <version>0.7.11</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/google2srt</packageSourceUrl>
     <owners>chtof</owners>
     <title>Google2SRT</title>
@@ -37,7 +37,7 @@ Java JRE: Google2SRT cannot be installed on systems with JRE version lower than 
 ]]></description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <dependencies>
-      <dependency id="google2srt.install" version="[0.7.10]" />
+      <dependency id="google2srt.install" version="[0.7.11]" />
     </dependencies>
   </metadata>
   <files></files>

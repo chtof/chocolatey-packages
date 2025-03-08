@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>wsjtx</id>
-    <version>2.6.1</version>
+    <version>2.7.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/wsjtx</packageSourceUrl>
     <owners>chtof</owners>
     <title>WSJT-X</title>
@@ -14,7 +14,7 @@
     <licenseUrl>https://wsjt.sourceforge.io/wsjtx.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://sourceforge.net/p/wsjt/wsjtx/ci/master/tree/</projectSourceUrl>
-    <docsUrl>https://wsjt.sourceforge.io/wsjtx-doc/wsjtx-main-2.6.1.html</docsUrl>
+    <docsUrl>https://wsjt.sourceforge.io/wsjtx-doc/wsjtx-main-2.7.0.html</docsUrl>
     <bugTrackerUrl>https://sourceforge.net/p/wsjt/mailman/</bugTrackerUrl>
     <tags>wsjtx HAM radio amateur FT8 JT4 JT9 JT65 QRA64 ISCAT MSK144 WSPR echo</tags>
     <summary>WSJT-X - Digital Modes for Weak Signal Communicaitons in Amateur Radio</summary>
@@ -26,7 +26,7 @@ FT8 is operationally similar but uses T/R cycles only 15 s long.  MSK144 is desi
 
 As described more fully on its own page, WSPR mode implements a protocol designed for probing potential propagation paths with low-power transmissions.  WSPR is now fully implemented within WSJT-X, including programmable "band-hopping". 
 ]]></description>
-    <releaseNotes>https://wsjt.sourceforge.io/wsjtx-doc/Release_Notes_2.6.1.txt</releaseNotes>
+    <releaseNotes>https://wsjt.sourceforge.io/wsjtx-doc/Release_Notes_2.7.0.txt</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>multipar.portable</id>
-    <version>1.3.3.3</version>
+    <version>1.3.3.4</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/multipar.portable</packageSourceUrl>
     <owners>chtof</owners>
     <title>MultiPar (Portable)</title>

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>basilisk.install</id>
-    <version>2022.01.27</version>
+    <version>2025.02.20</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/basilisk.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>Basilisk Browser (Install)</title>

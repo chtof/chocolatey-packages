@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>hugin</id>
-    <version>2023.0.0.20240101</version>
+    <version>2024.0.1</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/hugin</packageSourceUrl>
     <owners>chtof</owners>
     <title>Hugin</title>
@@ -40,7 +40,7 @@ Starting with version 2011.2.0, Hugin is scriptable in Python. The scripting fun
 ]]></description>
     <releaseNotes>http://hugin.sourceforge.net/releases</releaseNotes>
     <dependencies>
-      <dependency id="hugin.install" version="[2023.0.0.20240101]" />
+      <dependency id="hugin.install" version="[2024.0.1]" />
     </dependencies>
   </metadata>
   <files></files>

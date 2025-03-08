@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pspad.portable</id>
-    <version>5.0.7.20240203</version>
+    <version>5.5.1</version>
     <title>PSPad (Portable)</title>
     <authors>Jan Fiala</authors>
     <owners>chtof</owners>

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>torrent-file-editor</id>
-    <version>0.3.18</version>
+    <version>1.0.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/torrent-file-editor</packageSourceUrl>
     <owners>chtof</owners>
     <title>Torrent File Editor</title>

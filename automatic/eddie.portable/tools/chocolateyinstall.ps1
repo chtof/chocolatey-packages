@@ -4,8 +4,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   destination = "$toolsDir"
-  file        = "$toolsDir\eddie-ui_2.21.8_windows-10_x86_portable.exe"
-  file64      = "$toolsDir\eddie-ui_2.21.8_windows-10_x64_installer.exe"
+  file        = "$toolsDir\eddie-ui_2.24.6_windows-10_x86_portable.exe"
+  file64      = "$toolsDir\eddie-ui_2.24.6_windows-10_x64_installer.exe"
 }
 
 Get-ChocolateyUnzip @packageArgs
@@ -20,5 +20,5 @@ foreach ($file in $files) {
 # Install start menu shortcut
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
 $shortcutFilePath = Join-Path $programs "Eddie-UI.lnk"
-$targetPath = Join-Path "$toolsDir" "eddie-ui_2.21.8_windows-10_x64_portable\Eddie-UI.exe"
+$targetPath = Join-Path "$toolsDir" "eddie-ui_2.24.6_windows-10_x64_portable\Eddie-UI.exe"
 Install-ChocolateyShortcut -RunAsAdmin -shortcutFilePath "$shortcutFilePath" -targetPath "$targetPath"

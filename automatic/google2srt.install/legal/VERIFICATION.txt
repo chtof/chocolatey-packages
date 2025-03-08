@@ -7,15 +7,15 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://freefr.dl.sourceforge.net/project/google2srt/Google2SRT/0.7.10/google2srt-0.7.10.msi
-   x64: https://freefr.dl.sourceforge.net/project/google2srt/Google2SRT/0.7.10/google2srt-0.7.10.msi
+   x32: https://freefr.dl.sourceforge.net/project/google2srt/Google2SRT/0.7.11/google2srt-0.7.11.msi
+   x64: https://freefr.dl.sourceforge.net/project/google2srt/Google2SRT/0.7.11/google2srt-0.7.11.msi
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 93A89AABA675446C7C4AA3F8FDEBFA0A63AD329316549D8485CBC8873A3D787C
-   checksum64: 93A89AABA675446C7C4AA3F8FDEBFA0A63AD329316549D8485CBC8873A3D787C
+   checksum32: 3F6DCFA5C5B63F238431813B04C7358D70F732D5F6CD48CC96089F1018678C24
+   checksum64: 3F6DCFA5C5B63F238431813B04C7358D70F732D5F6CD48CC96089F1018678C24
  
 File 'LICENSE.txt' is obtained from: The software installer.

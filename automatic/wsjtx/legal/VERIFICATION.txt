@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://physics.princeton.edu/pulsar/k1jt/wsjtx-2.5.4-win32.exe
-   x64: https://physics.princeton.edu/pulsar/k1jt/wsjtx-2.5.4-win32.exe
+   x32: https://sourceforge.net/projects/wsjt/files/wsjtx-2.7.0/wsjtx-2.7.0-win32.exe
+   x64: https://sourceforge.net/projects/wsjt/files/wsjtx-2.7.0/wsjtx-2.7.0-win64.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 865701D5BA5A885F7B420F3EFBFDDA34F5747C5D2EE7F333D3831CBEC1C8FC35
-   checksum64: 865701D5BA5A885F7B420F3EFBFDDA34F5747C5D2EE7F333D3831CBEC1C8FC35
+   checksum32: 4AD6F63401349E1FB59FF2D7CC4BC5194977308A1D223CDED988AA2D02684573
+   checksum64: A79C062926F2898891CD40365071ADE31243FA0FF59C60BB4B2B4F1C317BD517
  
 File 'LICENSE.txt' is obtained from:
    https://physics.princeton.edu/pulsar/k1jt/wsjtx.html

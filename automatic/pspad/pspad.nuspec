@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pspad</id>
-    <version>5.0.7.20230917</version>
+    <version>5.5.1.825</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/pspad</packageSourceUrl>
     <owners>chtof</owners>
     <title>PSPad</title>

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>moonlight-qt</id>
-    <version>6.0.1</version>
+    <version>6.1.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/moonlight-qt</packageSourceUrl>
     <owners>chtof</owners>
     <title>Moonlight PC</title>
@@ -59,7 +59,7 @@ Moonlight developers are not accepting monetary donations at this time and curre
 ]]></description>
   <releaseNotes>https://github.com/moonlight-stream/moonlight-qt/releases</releaseNotes>
   <dependencies>
-    <dependency id="moonlight-qt.install" version="[6.0.1]" />
+    <dependency id="moonlight-qt.install" version="[6.1.0]" />
   </dependencies>
   </metadata>
   <files></files>
