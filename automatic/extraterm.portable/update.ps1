@@ -8,10 +8,6 @@ function global:au_GetLatest {
         repository = 'sedwards2009/extraterm'        
         regex64    = 'extratermqt-(?<Version>[\d\.]*)-windows-x64.zip$'        
    }
-
-   # append "-pre" to version
-   $output[1].Version += '-pre'
-
    return $output
 }
 
