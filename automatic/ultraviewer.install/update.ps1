@@ -13,7 +13,7 @@ function global:au_GetLatest {
 
     return @{
         Version = $matches.Version
-        URL32   = $url.href
+        URL32   = "https://www.ultraviewer.net/en/"+$url.href
     }
 }
 
