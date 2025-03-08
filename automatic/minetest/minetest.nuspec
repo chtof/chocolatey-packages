@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>minetest</id>
-    <version>5.9.1</version>
+    <version>5.11.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/minetest</packageSourceUrl>
     <owners>chtof</owners>
     <title>Minetest</title>
