@@ -3,17 +3,16 @@ import-module au
 
 function global:au_GetLatest {
     $releases     = 'https://www.ne.jp/asahi/foresth/home/'
-	$regexVersion = 'SepAVI Ver(?<Version>[\d\._]+)'
+	$regexVersion = '(?<Version>[\d\._]+)'
     $regex        = 'savi([\d\._]+).zip'
  
-	$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	$download_page = Invoke-WebRequest -Uri $releases
 	$url = $download_page.links | ? href -match $regex | select -Last 1
 
-    $HTML = New-Object -Com "HTMLFile"
-    $HTML.IHTMLDocument2_write($download_page.Content)
-    ($HTML.all.tags("strong") |% InnerText | Out-String) -match $regexVersion | Out-Null
+	$download_page.links | ? href -match $regex | Select -First 1 | Out-Null   
+	$download_page.ParsedHtml.querySelector('body > table > tbody > tr > td li > div > strong > a[name="savi"]').nextSibling.nodeValue.Trim() -match $regexVersion | Out-Null
 
-     return @{ Version = $matches.Version ; URL32 = $releases + $url.href }
+    return @{ Version = $matches.Version ; URL32 = $releases + $url.href }
 }
 
 function global:au_SearchReplace {
