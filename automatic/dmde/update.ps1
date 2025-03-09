@@ -13,8 +13,8 @@ function global:au_GetLatest {
     
      return @{
         Version = $matches.Version -Replace '-','.'
-        URL32   = $url32.href
-        URL64   = $url64.href
+        URL32   = 'https://dmde.com' + $url32.href
+        URL64   = 'https://dmde.com' + $url64.href
     }
 }
 
