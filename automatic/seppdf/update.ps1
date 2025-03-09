@@ -19,11 +19,9 @@ function global:au_GetLatest {
     $regexVersion = 'SepPDF Ver(?<Version>[\d\.]+)'
 	$regex        = 'spdf([\d\._]+).zip'
 
-	$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	$download_page = Invoke-WebRequest -Uri $releases
 	$download_page.links | ? href -match $regex | Select -First 1 | Out-Null   
-    $HTML = New-Object -Com "HTMLFile"
-    $HTML.IHTMLDocument2_write($download_page.Content)
-    ($HTML.all.tags("strong") |% InnerText | Out-String) -match $regexVersion | Out-Null
+	$download_page.ParsedHtml.querySelector("STRONG").InnerText -match $regexVersion | Out-Null
 
     return @{ Version = $matches.Version }
 }
