@@ -15,7 +15,7 @@ function global:au_GetLatest {
 
     return @{
         Version = $version
-        URL64   = Get-RedirectedURL $($url.href +'gp' + $versionSoftware +'-win64-mingw.exe')
+        URL64   = (Get-RedirectedURL $($url.href +'gp' + $versionSoftware +'-win64-mingw.exe')) -Replace ('\?viasf=1','')
     }
 }
 
