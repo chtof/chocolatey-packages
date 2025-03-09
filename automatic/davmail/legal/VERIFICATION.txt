@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://phoenixnap.dl.sourceforge.net/project/davmail/davmail/6.2.2/davmail-6.2.2-3546-setup.exe
-   x64: https://versaweb.dl.sourceforge.net/project/davmail/davmail/6.2.2/davmail-6.2.2-3546-setup64.exe
+   x32: https://phoenixnap.dl.sourceforge.net/project/davmail/davmail/6.3.0/davmail-6.3.0-3627-setup.exe
+   x64: https://phoenixnap.dl.sourceforge.net/project/davmail/davmail/6.3.0/davmail-6.3.0-3627-setup64.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 3284AC29950F03CC69EB0BDBF6ABC80879E60B16B55560D98AF7EFF7D05CD151
-   checksum64: 86BAA0C772016BF93E8C6019402C36384961DA2E9370BD8E49AB727A0F75BCE0
+   checksum32: 817CDCF4D7213FF217968E7C7BB6F3FCE32FD2CEB8C37F7072764588CB938943
+   checksum64: 0CE6DEACF25E00C84246274338960B77F60499A486444CD94987AB174B91970B
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/mguessan/davmail/master/LICENSE

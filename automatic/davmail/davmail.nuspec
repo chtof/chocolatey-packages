@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>davmail</id>
-    <version>6.2.2.3546</version>
+    <version>6.3.0.3627</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/davmail</packageSourceUrl>
     <owners>chtof</owners>
     <title>DavMail Gateway - Workstation (personal) mode</title>
