@@ -6,7 +6,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 function global:au_GetLatest {
    return github_GetInfo -ArgumentList @{
         repository = 'gitextensions/gitextensions'
-        regex	   = '/releases/download/.*/GitExtensions-Portable(-x64)?-(?<Version>[\d\.]+)-[\w]+.zip$'
+        regex64	   = '/releases/download/.*/GitExtensions-Portable(-x64)?-(?<Version>[\d\.]+)-[\w]+.zip$'
    }
 }
 
