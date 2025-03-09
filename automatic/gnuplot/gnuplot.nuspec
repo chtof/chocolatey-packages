@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gnuplot</id>
-    <version>6.0.0</version>
+    <version>6.0.2</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/gnuplot</packageSourceUrl>
     <owners>chtof</owners>
     <title>Gnuplot</title>
