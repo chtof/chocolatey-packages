@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
 
-  url          = 'https://dl2.ultraviewer.net/UltraViewer_setup_6.6.80_en.exe'
-  checksum     = 'a7a7419a44b9e4a858b2d59f9a6876dda83e5e7841376a496e5501ffaa521883'
+  url          = 'https://www.ultraviewer.net/en/UltraViewer_setup_6.6_en.exe'
+  checksum     = '169468ed8f7c755f834a7b2f95f077de5f0c94e79c9e1dcc63e9483616a9033a'
   checksumType = 'sha256'  
 
   silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'

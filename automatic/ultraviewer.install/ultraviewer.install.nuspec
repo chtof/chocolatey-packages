@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ultraviewer.install</id>
-    <version>6.6.80</version>
+    <version>6.6.113</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/ultraviewer.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>UltraViewer (Install)</title>
