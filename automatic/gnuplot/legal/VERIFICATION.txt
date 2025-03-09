@@ -7,14 +7,14 @@ Package can be verified like this:
 
 1. Download:
  
-   x64: https://gigenet.dl.sourceforge.net/project/gnuplot/gnuplot/6.0.0/gp600-win64-mingw.exe
+   x64: https://psychz.dl.sourceforge.net/project/gnuplot/gnuplot/6.0.2/gp602-win64-mingw.exe
  
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
    checksum type: sha256
-   checksum64: 9e64d7560094e9ba813862576fa379de8271521de21ccb2db475b39eaa1aa774
+   checksum64: 5f541273a2d66a3c0c90fd43790993c4b22a96f421b5cb3e82d2bcbdbaacafbe
 
 File 'LICENSE.txt' is obtained from:
    https://sourceforge.net/p/gnuplot/gnuplot-main/ci/master/tree/Copyright?format=raw
