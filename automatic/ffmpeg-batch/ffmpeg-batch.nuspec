@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ffmpeg-batch</id>
-    <version>3.0.5</version>
+    <version>3.2.1</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/ffmpeg-batch.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>FFmpeg Batch AV Converter</title>
@@ -39,7 +39,7 @@
 ]]></description>
     <releaseNotes>https://sourceforge.net/p/ffmpeg-batch/wiki/Changelog</releaseNotes>
     <dependencies>
-      <dependency id="ffmpeg-batch.install" version="3.0.5" />
+      <dependency id="ffmpeg-batch.install" version="3.2.1" />
     </dependencies>
   </metadata>
   <files></files>

@@ -7,14 +7,14 @@ Package can be verified like this:
 
 1. Download:
 
-   x64: https://cytranet.dl.sourceforge.net/project/ffmpeg-batch/FFBatch_AV_Converter_3.0.5_64bit.exe
+   x64: https://cfhcable.dl.sourceforge.net/project/ffmpeg-batch/FFBatch_AV_Converter_3.2.1_64bit.exe
 
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
    checksum type: sha256
-   checksum64: 04F397699FB6B64949EBE6C11E646766D1C9435F965613270E2DBE42B0E375A8
+   checksum64: 79E2715685BB25E20B9A656DAF7509B87912D65122B2930A4C73DDB816E8E04D
 
 File 'LICENSE.txt' is obtained from:
    https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode.txt
