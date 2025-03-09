@@ -18,8 +18,8 @@ function global:au_GetLatest {
 
     return @{
         Version = $fullVersion -Replace '-', '.'
-        URL32   = Get-RedirectedUrl ('https://sourceforge.net/projects/davmail/files/davmail/' + $versionMajor + '/davmail-' + $fullVersion + '-setup.exe')
-        URL64   = Get-RedirectedUrl ('https://sourceforge.net/projects/davmail/files/davmail/' + $versionMajor + '/davmail-' + $fullVersion + '-setup64.exe')
+        URL32   = (Get-RedirectedUrl ('https://sourceforge.net/projects/davmail/files/davmail/' + $versionMajor + '/davmail-' + $fullVersion + '-setup.exe')) -Replace ('\?viasf=1', '')
+        URL64   = (Get-RedirectedUrl ('https://sourceforge.net/projects/davmail/files/davmail/' + $versionMajor + '/davmail-' + $fullVersion + '-setup64.exe')) -Replace ('\?viasf=1', '')
     }
 }
 
