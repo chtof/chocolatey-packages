@@ -13,8 +13,8 @@ function global:au_GetLatest {
 
   return @{
     Version = $matches.Version
-    URL32   = Get-RedirectedUrl $url32.href
-    URL64   = Get-RedirectedUrl $url64.href
+    URL32   = (Get-RedirectedUrl $url32.href) -Replace ('\?viasf=1', '')
+    URL64   = (Get-RedirectedUrl $url64.href) -Replace ('\?viasf=1', '')
   }
 }
 
