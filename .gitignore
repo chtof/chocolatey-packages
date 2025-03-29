@@ -37,3 +37,4 @@ manual/klog/ReadMe.md
 *.exe
 *.vsix
 *.msi
+*.tar.xz
