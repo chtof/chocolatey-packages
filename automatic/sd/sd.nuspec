@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata> 
     <id>sd</id>
-    <version>22.19</version>
+    <version>22.20</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/sd</packageSourceUrl>
     <owners>chtof</owners>
     <title>SD</title>

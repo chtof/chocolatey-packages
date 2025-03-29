@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ffmpeg-batch.install</id>
-    <version>3.2.1</version>
+    <version>3.2.2</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/ffmpeg-batch.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>FFmpeg Batch AV Converter (Install)</title>
