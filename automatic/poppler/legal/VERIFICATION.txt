@@ -7,14 +7,14 @@ Package can be verified like this:
  
 1. Download:
  
-   x64: https://anaconda.org/conda-forge/poppler/22.11.0/download/win-64/poppler-22.11.0-ha6c1112_0.tar.bz2
+   x64: https://poppler.freedesktop.org/poppler-25.03.0.tar.xz
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum64: A5C61AF5621C52A79A115AB72BB2A4F2DCDD03044484F2BA6848B76326DF8EE0
+   checksum64: 97DA4FF88517A6BBD729529F195F85C8D7A0C3BB4A3D57CB0C685CBB052FE837
 
 File 'LICENSE.txt' is obtained from:
    https://cgit.freedesktop.org/poppler/poppler/plain/COPYING
