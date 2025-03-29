@@ -1,21 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
-
-[Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+. ..\..\helpers\GitHub_Helper.ps1
 
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $releases = 'https://www.ausweisapp.bund.de/download'
-    $regex   = 'AusweisApp-(?<Version>[\d\.]+).msi'
-
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$url = ($download_page.links | ? href -match $regex).href
-
-    return @{
-        Version = $matches.Version
-        URL32   = 'https://www.ausweisapp.bund.de/' + $url
-    }
+   return github_GetInfo -ArgumentList @{
+        repository = 'Governikus/AusweisApp'
+        regex32    = 'AusweisApp-(?<Version>[\d\.]+).msi$'
+   }
 }
 
 function global:au_SearchReplace {
