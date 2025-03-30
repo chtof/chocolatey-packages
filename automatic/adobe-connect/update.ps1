@@ -25,8 +25,8 @@ function global:au_GetLatest {
 
     return @{
         Version = $version
-        URL32   = 'https://www.adobe.com/go/' + $url_suffix32
-        URL64   = 'https://www.adobe.com/go/' + $url_suffix64
+        URL32   = Get-RedirectedUrl ('https://www.adobe.com/go/' + $url_suffix32)
+        URL64   = get-RedirectedUrl ('https://www.adobe.com/go/' + $url_suffix64)
     }
 }
 
