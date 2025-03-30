@@ -6,7 +6,7 @@
     <version>2.14.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/bbc-iplayer</packageSourceUrl>
     <owners>chtof</owners>
-    <title>BBC iPlayer</title>
+    <title>[DEPRECATED] BBC iPlayer</title>
     <authors>British Broadcasting Corporation</authors>
     <projectUrl>https://www.bbc.co.uk/iplayer/install</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/bbc-iplayer/bbc-iplayer.png</iconUrl>
@@ -19,18 +19,8 @@
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>bbc-iplayer bbc iplayer</tags>
     <summary>A desktop app to download and watch BBC TV programmes.</summary>
-    <description><![CDATA[Downloading allows you to enjoy your favourite BBC programmes without being connected to the Internet.
-
-- Watch while downloading
-Now there’s no need to wait for downloads to finish before you start watching.
-
-- Improved downloads library
-Want to sort by series? Or see which download expires first? Now you can.
-
-- In-app episode list
-Watching a series? Download episodes straight from the app. Much simpler.
-
-![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/bbc-iplayer/screenshot.png)
+    <description><![CDATA[
+	https://www.bbc.co.uk/iplayer/help/questions/recent-changes-to-iplayer/ipd-closure
 ]]></description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
   </metadata>
