@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>poppler</id>
-    <version>25.03.0</version>
+    <version>25.04.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/poppler</packageSourceUrl>
     <owners>chtof</owners>
     <title>Poppler</title>
