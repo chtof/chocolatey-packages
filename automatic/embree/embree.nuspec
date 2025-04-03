@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>embree</id>
-    <version>4.3.3</version>
+    <version>4.4.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/embree</packageSourceUrl>
     <owners>chtof</owners>
     <title>Intel® Embree</title>
@@ -45,7 +45,7 @@ Embree is optimized for Intel CPUs supporting SSE, AVX, AVX2, and AVX-512 instru
 ]]></description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <dependencies>
-      <dependency id="embree.install" version="4.3.3" />
+      <dependency id="embree.install" version="4.4.0" />
     </dependencies>
   </metadata>
   <files></files>
