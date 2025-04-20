@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>jack</id>
-    <version>1.9.22.20240121</version>
+    <version>1.9.22.20250421</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/jack</packageSourceUrl>
     <owners>chtof</owners>
     <title>JACK Audio Connection Kit</title>
