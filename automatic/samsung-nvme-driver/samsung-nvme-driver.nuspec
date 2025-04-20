@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>samsung-nvme-driver</id>
-    <version>3.3</version>
+    <version>3.3.0.20250420</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/samsung-nvme-driver</packageSourceUrl>
     <owners>chtof</owners>
     <title>Samsung NVMe Driver</title>
