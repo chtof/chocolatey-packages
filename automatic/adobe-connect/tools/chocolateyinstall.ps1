@@ -4,10 +4,10 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'MSI'
 
-  url32         = 'https://www.adobe.com/go/Connect11_32msi'
-  checksum32    = '4e9811cd975f6ee9a415db5b9d8bd3a4beaa4546700c1031d5b26395492e2548'
-  url64         = 'https://www.adobe.com/go/Connect11msi'
-  checksum64    = 'b1b7390c0122618593bf5c4af867f7f0849ec2d39126d29a3a6390ee0db1aaef'
+  url32         = 'https://download.adobe.com/pub/connect/updaters/meeting/11_0/ConnectApp11_2024_9_149_32.msi'
+  checksum32    = '77f153a4ee286b9b90588c6961373ada80f4b67abca0ff74596f3b4884bb382e'
+  url64         = 'https://download.adobe.com/pub/connect/updaters/meeting/11_0/ConnectApp11_2024_11_71.msi'
+  checksum64    = '56c2d4aa211e333d6ba23f2843094da4d10d928f7a9ceb01baf1f1229c298b99'
   checksumType  = 'sha256'
 
   silentArgs    = "/qn /norestart /l*v `"$env:TEMP\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>geogebra-geometry</id>
-    <version>6.0.879.0</version>
+    <version>6.0.883.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/geogebra-geometry</packageSourceUrl>
     <owners>chtof</owners>
     <title>GeoGebra Geometry (Portable)</title>
