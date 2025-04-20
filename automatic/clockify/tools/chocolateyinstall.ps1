@@ -4,7 +4,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
 
   url           = 'https://clockify.me/downloads/clockify-setup.msi'
-  checksum      = '86fa6f52876e95355158b7a630584b83c3453b9b4d40bc87f57255ed5913b9f8f1d94d9fdade0c4a0b976bc0d03c60c060edb74035e0f2dce52813d432cd6485'
+  checksum      = 'd5ead03c397c67adb1c9061a6394bf50997c2243a076e96ce18ee1ebb63000f382b1fe366dec5d1fa665f50c96dfa032b942d51f5e99c7b5210d89583cbd443b'
   checksumType  = 'sha512'
 
   fileType      = 'MSI'
