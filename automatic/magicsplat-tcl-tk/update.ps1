@@ -8,8 +8,8 @@ function global:au_GetLatest {
   $regex64 = 'tcl-[\d\.]+-installer-(?<Version>[\d\.]+)-x64.msi'
 
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-  $url32 = $download_page.links | ? href -match $regex32 | Select -First 1
-  $url64 = $download_page.links | ? href -match $regex64 | Select -First 1
+  $url32 = $download_page.links | Sort -Descending -Property href | ? href -match $regex32 | Select -First 1
+  $url64 = $download_page.links | Sort -Descending -Property href | ? href -match $regex64 | Select -First 1
 
   return @{
     Version = $matches.Version
