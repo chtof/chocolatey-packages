@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>clockify</id>
-    <version>2.0.2.1782</version>
+    <version>2.0.2.1840</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/clockify</packageSourceUrl>
     <owners>chtof</owners>
     <title>Clockify</title>
