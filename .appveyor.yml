@@ -49,7 +49,6 @@ environment:
 
 init:
 #- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
-- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 - git config --global user.email "chocolatey@realdimensions.net"
 - git config --global user.name "Chocolatey"
 - git config --global core.safecrlf false
@@ -99,8 +98,8 @@ build_script:
     ./update_all.ps1 -ForcedPackages $forced
     7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
-#on_finish:
-#  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+on_finish:
+- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 
 artifacts:
