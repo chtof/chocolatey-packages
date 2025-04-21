@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mboxviewer</id>
-    <version>1.0.3.48</version>
+    <version>1.0.3.49</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/mboxviewer</packageSourceUrl>
     <owners>chtof</owners>
     <title>Mbox Viewer</title>
