@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>basilisk.portable</id>
-    <version>2025.02.20</version>
+    <version>2025.04.22</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/basilisk.portable</packageSourceUrl>
     <owners>chtof</owners>
     <title>Basilisk Browser (Portable)</title>
