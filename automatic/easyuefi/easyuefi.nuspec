@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>easyuefi</id>
-    <version>5.8</version>
+    <version>5.9</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/easyuefi</packageSourceUrl>
     <owners>chtof</owners>
     <title>EasyUEFI (Free Trial)</title>
