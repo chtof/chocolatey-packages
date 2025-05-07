@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sublimemerge</id>
-    <version>0.0.2107-dev</version>
+    <version>0.0.2108-dev</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/sublimemerge</packageSourceUrl>
     <owners>chtof</owners>
     <title>Sublime Merge</title>
