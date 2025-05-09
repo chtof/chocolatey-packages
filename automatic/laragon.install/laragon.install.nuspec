@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>    
     <id>laragon.install</id>    
-    <version>6.0.0</version>    
+    <version>8.1.0.20250509</version>    
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/laragon.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>Laragon (Install)</title>
@@ -96,7 +96,6 @@ Here is the GUI of Laragon:
     <releaseNotes>https://github.com/leokhoa/laragon/releases</releaseNotes>
   </metadata>
   <files>
-    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
