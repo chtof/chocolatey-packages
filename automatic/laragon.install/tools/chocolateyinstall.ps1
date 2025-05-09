@@ -30,9 +30,14 @@ $tasks = $arr_tasks -Join ","
 
 ### INSTALLATION
 $packageArgs = @{
-  packageName = "$env:ChocolateyPackageName"
-  file64      = "$toolsDir\laragon-wamp.exe"
+  packageName   = "$env:ChocolateyPackageName"
+  unzipLocation = "$toolsDir"
+  fileType      = 'EXE'
+  url64         = 'https://github.com//leokhoa/laragon/releases/download/8.1.0/laragon-wamp.exe'
+
+  checksum64    = '3C3A57F4A53FEDB0F83D7A4B365D1172AAD6429AB94E964B65F3F48E191BB230'
+  checksumType  = 'sha256'
+  
   silentArgs  = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /components= /tasks=""$tasks"""
 }
-
-Install-ChocolateyInstallPackage @packageArgs
+Install-ChocolateyPackage @packageArgs
