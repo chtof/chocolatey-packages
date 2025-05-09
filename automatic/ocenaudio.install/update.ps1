@@ -7,22 +7,19 @@ function global:au_BeforeUpdate() {
 
 function global:au_GetLatest {	
     $releases = 'https://www.ocenaudio.com'
-    $regex    = '\<h1\>ocenaudio (?<Version>[\d\.]+)\</h1\>'
+    $regexVersion = '\<h1\>ocenaudio (?<Version>[\d\.]+)\</h1\>'
 
     (Invoke-WebRequest -Uri $releases).RawContent  -match $regex | Out-Null
 
     return @{
-        Version = $matches.Version
-        URL32   = 'https://www.ocenaudio.com/downloads/index.php/ocenaudio.exe'
-        URL64   = 'https://www.ocenaudio.com/downloads/index.php/ocenaudio64.exe'
+        Version = $matches.Version        
+        URL64   = 'https://www.ocenaudio.com/downloads/index.php/ocenaudio_windows64.exe'
     }
 }
 
 function global:au_SearchReplace {
     @{
-        "tools\chocolateyInstall.ps1" = @{
-			"(^(\s)*url\s*=\s*)('.*')"        = "`$1'$($Latest.URL32)'"
-            "(^(\s)*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
+        "tools\chocolateyInstall.ps1" = @{			
             "(^(\s)*url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
             "(^(\s)*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
