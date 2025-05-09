@@ -5,12 +5,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = "$toolsDir"
 
-  url            = 'https://www.ocenaudio.com/downloads/index.php/ocenaudio_portable.zip'
-  checksum       = '3a8d80a904b37103ec03d0226acfa75addc287201e02def009cd0c7f32b57586'
-  checksumType   = 'sha256'
-
-  url64          = 'https://www.ocenaudio.com/downloads/index.php/ocenaudio64_portable.zip'
-  checksum64     = '3a8d80a904b37103ec03d0226acfa75addc287201e02def009cd0c7f32b57586'
+  url64          = 'https://www.ocenaudio.com/downloads/index.php/ocenaudio_windows64.zip'  
+  checksum64     = '847e9b0c483a615b8a6f11705e7787b645deb37c5b85f9da07dc8d72f6a7b619'
   checksumType64 = 'sha256'
 }
 
