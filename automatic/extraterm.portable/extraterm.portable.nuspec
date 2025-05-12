@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>extraterm.portable</id>
-    <version>0.76.1-pre</version>
+    <version>0.81.1</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/extraterm.portable</packageSourceUrl>
     <owners>chtof</owners>
     <title>Extraterm (Portable)</title>
