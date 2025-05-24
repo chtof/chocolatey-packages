@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com/rime/weasel/releases/download/0.17.0/weasel-0.17.0.0-installer.exe
-   x64: https://github.com/rime/weasel/releases/download/0.17.0/weasel-0.17.0.0-installer.exe
+   x32: https://github.com/rime/weasel/releases/download/0.17.3/weasel-0.17.3.0-installer.exe
+   x64: https://github.com/rime/weasel/releases/download/0.17.3/weasel-0.17.3.0-installer.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 26E0B907F5558B52DE09AB4096254B7EDE3BDC9933DCC858B337E5C97C23E498
-   checksum64: 26E0B907F5558B52DE09AB4096254B7EDE3BDC9933DCC858B337E5C97C23E498
+   checksum32: 4F1DA8D81D3BB6261D8C965ABB19FFD3DA7A25874BA77A10E8BA0D58A367B366
+   checksum64: 4F1DA8D81D3BB6261D8C965ABB19FFD3DA7A25874BA77A10E8BA0D58A367B366
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/rime/weasel/master/LICENSE.txt
