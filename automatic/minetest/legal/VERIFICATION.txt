@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com/luanti-org/luanti/releases/download/5.11.0/luanti-5.11.0-win32.zip
-   x64: https://github.com/luanti-org/luanti/releases/download/5.11.0/luanti-5.11.0-win64.zip
+   x32: https://github.com/luanti-org/luanti/releases/download/5.12.0/luanti-5.12.0-win32.zip
+   x64: https://github.com/luanti-org/luanti/releases/download/5.12.0/luanti-5.12.0-win64.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: DB5F57AA9BE3FEECD28F64C5DEE9E47082A455193CD1D3657B7250811AD30F21
-   checksum64: 61838E82EED301FDDB9F38240E5CD946198FC00A0DC7BECFC0DC646B760FE75C
+   checksum32: A3573D2A0C277D3E25290ADA8A1E366F35F5B412018D42D508674A6256AEABFA
+   checksum64: 729189192EF7B3F83F6775F6F8357E15F6A9AB01E940E03729E0ADFB9B8F05CA
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/minetest/minetest/master/LICENSE.txt
