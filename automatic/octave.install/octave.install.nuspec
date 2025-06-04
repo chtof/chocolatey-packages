@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>octave.install</id>
-    <version>10.1.0</version>
+    <version>10.2.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/octave.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>GNU Octave (Install)</title>
