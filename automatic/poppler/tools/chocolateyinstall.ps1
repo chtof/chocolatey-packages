@@ -4,14 +4,14 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   destination = "$toolsDir"
-  file64      = "$toolsDir\poppler-25.05.0.tar.xz"  
+  file64      = "$toolsDir\poppler-25.06.0.tar.xz"  
 }
 Get-ChocolateyUnzip @packageArgs
 
 $packageArgs_tar = @{
   packageName = $env:ChocolateyPackageName
   destination = "$toolsDir"
-  file64      = "$toolsDir\poppler-25.05.0.tar.xz" -Replace (".xz$","")  # tar file
+  file64      = "$toolsDir\poppler-25.06.0.tar.xz" -Replace (".xz$","")  # tar file
 }
 Get-ChocolateyUnzip @packageArgs_tar
 
