@@ -7,14 +7,14 @@ Package can be verified like this:
  
 1. Download:
  
-   x64: https://github.com//sedwards2009/extraterm/releases/download/v0.81.1/extratermqt-0.81.1-windows-x64.zip
+   x64: https://github.com//sedwards2009/extraterm/releases/download/v0.81.2/extratermqt-0.81.2-windows-x64.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum64: 5374DC7817EE5526B6044DA9DF49A907CE3EA8DD5291A273CD50ABA596D33C0F
+   checksum64: E2BFDA87C690A8933DEAF15BD452124EAAC67A836E53D1FBE8AA0ADF5172F9EB
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/sedwards2009/extraterm/v0.42.2/LICENSE.txt

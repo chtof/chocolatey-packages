@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>extraterm</id>
-    <version>0.81.1</version>
+    <version>0.81.2</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/extraterm</packageSourceUrl>
     <owners>chtof</owners>
     <title>Extraterm</title>
@@ -63,7 +63,7 @@ Backwards compatibility with the decades of existing terminal based applications
 ]]></description>
     <releaseNotes>https://github.com/sedwards2009/extraterm/releases</releaseNotes>
   <dependencies>
-    <dependency id="extraterm.install" version="[0.81.1]" />
+    <dependency id="extraterm.install" version="[0.81.2]" />
   </dependencies>
   </metadata>
   <files></files>
