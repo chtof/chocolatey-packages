@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>eclipse-cpp</id>
-    <version>2025.03</version>
+    <version>2025.06</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/eclipse-cpp</packageSourceUrl>
     <owners>chtof</owners>
     <title>Eclipse IDE for C/C++ Developers</title>

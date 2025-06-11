@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$toolsDir"
 
-  url           = 'http://ftp-stud.fht-esslingen.de/pub/Mirrors/eclipse/technology/epp/downloads/release/2025-03/R/eclipse-java-2025-03-R-win32-x86_64.zip'
-  checksum      = '626f2703f1e55f8c1f2f583c42b314640269793d41f718b465f5c19f3f065cd8'
+  url           = 'http://ftp-stud.fht-esslingen.de/pub/Mirrors/eclipse/technology/epp/downloads/release/2025-06/R/eclipse-java-2025-06-R-win32-x86_64.zip'
+  checksum      = '990ae24b07f1ade626afdca643d5cfceed7904d6106c6230bfb5496d62bc479f'
   checksumType  = 'sha256'
 }
 
