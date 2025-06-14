@@ -5,12 +5,12 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
 
-  url           = 'https://dl.basilisk-browser.org/basilisk-20250422154345.win32.7z'
-  checksum      = '5e40b73d863c348f883ee252d25d7ea554f3aade17756d1c1d5298bc0812ff1a'
+  url           = 'https://dl.basilisk-browser.org/basilisk-20250613175206.win32.7z'
+  checksum      = '9f9e15f4cace53fda357372a5fa148de8cff0aa1c274d64064a1a46daf708b0f'
   checksumType  = 'sha256'
   
-  url64         = 'https://dl.basilisk-browser.org/basilisk-20250422154345.win64.7z'
-  checksum64    = '7fddd2544cedd170f02abac0bd1be8f7985652aea7936ebc5c113e4d063888c2'
+  url64         = 'https://dl.basilisk-browser.org/basilisk-20250613175044.win64.7z'
+  checksum64    = '00c9804520ced7e190684e632c53427476d20411b4056bb604e344889bc41279'
   checksumType64= 'sha256'
 }
 
