@@ -3,7 +3,7 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName    
-  file          = "$toolsDir\PhonerLiteSetup_3.30.exe"    
+  file          = "$toolsDir\PhonerLiteSetup_3.31.exe"    
   silentArgs	= "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 }
 
