@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>launchyqt</id>
-    <version>3.1.7</version>
+    <version>3.1.8</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/launchyqt</packageSourceUrl>
     <owners>chtof</owners>
     <title>Launchy QT</title>

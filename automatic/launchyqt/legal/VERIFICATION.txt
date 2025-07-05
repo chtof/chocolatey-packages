@@ -7,14 +7,14 @@ Package can be verified like this:
  
 1. Download:
  
-   x64: https://github.com//samsonwang/LaunchyQt/releases/download/v3.1.7/Launchy-3.1.7-win-x64.7z
+   x64: https://github.com//samsonwang/LaunchyQt/releases/download/v3.1.8/Launchy-3.1.8-win-x64.7z
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum64: 396569421AD70F38A8F235AD88506BFC90E26497084350697537BDFF1531108A
+   checksum64: 2EE1B5B2B8CA2D62DAA4DDABAD4B2BC9DEA2C9AB1C2AE97B62705E6CD70D1522
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/samsonwang/LaunchyQt/master/LICENSE

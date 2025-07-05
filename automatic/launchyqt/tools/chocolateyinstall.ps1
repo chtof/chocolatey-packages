@@ -7,7 +7,7 @@ Get-ChildItem -Directory -Path $toolsDir -Filter Launchy* | Remove-Item -Force -
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   destination   = "$toolsDir"
-  file64        = "$toolsDir\Launchy-3.1.7-win-x64.7z"
+  file64        = "$toolsDir\Launchy-3.1.8-win-x64.7z"
 }
 
 foreach ($file in 'python.exe', 'pythonw.exe') {
