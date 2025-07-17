@@ -7,7 +7,7 @@ $packageArgs = @{
   file         =  'bping.exe'
 
   url           = 'https://gizmoware.net/bping/bping.zip'
-  checksum      = '266B391E2166F3059F17F7ED0499E64377BBA1C8AFD0A7F9AB7A11A03781940C'
+  checksum      = '266b391e2166f3059f17f7ed0499e64377bba1c8afd0a7f9ab7a11a03781940c'
   checksumType  = 'sha256'
 }
 
