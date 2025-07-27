@@ -4,7 +4,7 @@ $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
 
   url          = 'https://www.murgee.com/auto-mouse-click/download/setup.exe'
-  checksum     = 'AAFC6E2C3B2AF162095867773AA3157E144A2D0BFAA7A36299C55695928CA082'
+  checksum     = '9AB4F6A90948BDF83F6965A99FCC7237899E13DAF21097DB07973C3C9518B17B'
   checksumType = 'sha256'
 
   silentArgs   = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
