@@ -33,9 +33,9 @@ $packageArgs = @{
   packageName   = "$env:ChocolateyPackageName"
   unzipLocation = "$toolsDir"
   fileType      = 'EXE'
-  url64         = 'https://github.com//leokhoa/laragon/releases/download/8.1.0/laragon-wamp.exe'
+  url64         = 'https://github.com//leokhoa/laragon/releases/download/8.2.3/laragon-wamp.exe'
 
-  checksum64    = '3C3A57F4A53FEDB0F83D7A4B365D1172AAD6429AB94E964B65F3F48E191BB230'
+  checksum64    = '0CAB142F271FD38DD1CCAC6765EE544855B6745C6E5963DCFB99A61D8792E4EA'
   checksumType  = 'sha256'
   
   silentArgs  = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /components= /tasks=""$tasks"""
