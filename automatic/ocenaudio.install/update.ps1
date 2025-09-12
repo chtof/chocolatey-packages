@@ -9,7 +9,7 @@ function global:au_GetLatest {
     $releases = 'https://www.ocenaudio.com'
     $regex = '\<h1\>ocenaudio (?<Version>[\d\.]+)\</h1\>'
 
-    (Invoke-WebRequest -Uri $releases).RawContent  -match $regex | Out-Null
+    (Invoke-WebRequest -Uri $releases).Content  -match $regex | Out-Null
 
     return @{
         Version = $matches.Version        
@@ -27,5 +27,5 @@ function global:au_SearchReplace {
 }
 
 if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-  update -ChecksumFor none -noCheckUrl
+  update -ChecksumFor 64 none -noCheckUrl
 }
