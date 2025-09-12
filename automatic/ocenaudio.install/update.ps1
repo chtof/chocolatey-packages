@@ -7,7 +7,7 @@ function global:au_BeforeUpdate() {
 
 function global:au_GetLatest {	
     $releases = 'https://www.ocenaudio.com'
-    $regexVersion = '\<h1\>ocenaudio (?<Version>[\d\.]+)\</h1\>'
+    $regex = '\<h1\>ocenaudio (?<Version>[\d\.]+)\</h1\>'
 
     (Invoke-WebRequest -Uri $releases).RawContent  -match $regex | Out-Null
 
