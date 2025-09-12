@@ -14,7 +14,7 @@ Package can be verified like this:
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum64: DFED31F9A1DB183D12AB9779D9D96EA0A453180ADAF049F09A774FF91A7666B8
+   checksum64: B80DA78A8AD03A9CEC8A63CAE93740096735475CC13676FD7C3D7CFFDE0FD38A
  
 File 'LICENSE.txt' is obtained from:
    https://www.gnu.org/licenses/gpl-3.0.txt
