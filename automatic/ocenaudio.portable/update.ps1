@@ -9,7 +9,7 @@ function global:au_GetLatest {
     $releases = 'https://www.ocenaudio.com'
     $regex    = '\<h1\>ocenaudio (?<Version>[\d\.]+)\</h1\>'
 
-    (Invoke-WebRequest -Uri $releases).RawContent  -match $regex | Out-Null
+    (Invoke-WebRequest -Uri $releases).Content  -match $regex | Out-Null
 
     return @{
         Version = $matches.Version
