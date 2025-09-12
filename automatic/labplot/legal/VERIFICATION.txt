@@ -7,14 +7,14 @@ Package can be verified like this:
  
 1. Download:
  
-   x64: https://paducahix.mm.fcix.net/kdeftp/stable/labplot/labplot-2.10.1-64bit-setup.exe
+   x64: https://mnvoip.mm.fcix.net/kdeftp/stable/labplot/labplot-2.12.1-x86_64-setup.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type:	sha256
-   checksum64: 671716bc3eb8dc58571522e8a3a76505dda6b7ebed949c2d421ff8a5703f5ad3
+   checksum64: 122f03b8939571e3951982376c4a7b11b6080eb8770ec35fdc4257215a4981a8
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/KDE/labplot/master/COPYING
