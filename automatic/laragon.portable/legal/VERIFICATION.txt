@@ -7,14 +7,14 @@ Package can be verified like this:
  
 1. Download:
  
-   x64: 
+   x64: https://github.com//leokhoa/laragon/archive/refs/tags/8.3.0.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum64: BDFBAC9114BB5270179951F2B321850EA9BF42F7CBFACB4DBA07C4FED0B0D45D
+   checksum64: ED1A4D543518BFCC00258F19907D0D0E989CDCFF9C71D39059AE327074DD84DC
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/leokhoa/docs.laragon.org/master/LICENSE
