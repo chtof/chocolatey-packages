@@ -4,10 +4,9 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
     
   url64          = 'https://www.ocenaudio.com/downloads/index.php/ocenaudio_windows64.exe'
-  checksum64     = '3a8d80a904b37103ec03d0226acfa75addc287201e02def009cd0c7f32b57586'
+  checksum64     = '2CB8837B784A1F09127BE38D66B6C30F6E083CD00C68FAC76EDB90867E22A52F'
   checksumType64 = 'sha256'
-
-  silentArgs     = "/S"
+  silentArgs     = "/allusers /S"
 }
 
 Install-ChocolateyPackage @packageArgs
