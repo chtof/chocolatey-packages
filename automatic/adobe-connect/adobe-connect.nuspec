@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>adobe-connect</id>
-    <version>2025.8.189</version>
+    <version>2025.9.15</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/adobe-connect</packageSourceUrl>
     <owners>chtof</owners>
     <title>Adobe Connect</title>
