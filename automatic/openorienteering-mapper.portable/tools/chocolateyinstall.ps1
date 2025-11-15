@@ -4,8 +4,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   destination = "$toolsDir"
-  file        = "$toolsDir\OpenOrienteering-Mapper-0.9.5-Windows-x86.zip"
-  file64      = "$toolsDir\OpenOrienteering-Mapper-0.9.5-Windows-x64.zip"
+  file        = "$toolsDir\OpenOrienteering-Mapper-0.9.6-Windows-x86.zip"
+  file64      = "$toolsDir\OpenOrienteering-Mapper-0.9.6-Windows-x64.zip"
 }
 
 Get-ChocolateyUnzip @packageArgs
@@ -25,5 +25,5 @@ if (Get-OSArchitectureWidth -compare 32) {
 }
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
 $shortcutFilePath = Join-Path $programs "OpenOrienteering Mapper.lnk"
-$targetPath = Join-Path $toolsDir "OpenOrienteering-Mapper-0.9.5-Windows-x${architectureWidth}\Mapper.exe"
+$targetPath = Join-Path $toolsDir "OpenOrienteering-Mapper-0.9.6-Windows-x${architectureWidth}\Mapper.exe"
 Install-ChocolateyShortcut -shortcutFilePath $shortcutFilePath -targetPath $targetPath

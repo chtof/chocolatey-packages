@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>openorienteering-mapper</id>
-    <version>0.9.5</version>
+    <version>0.9.6</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/openorienteering-mapper</packageSourceUrl>
     <owners>chtof</owners>
     <title>OpenOrienteering Mapper</title>
@@ -25,7 +25,7 @@
 ]]></description>
     <releaseNotes>https://github.com/OpenOrienteering/mapper/releases</releaseNotes>
     <dependencies>
-      <dependency id="openorienteering-mapper.install" version="[0.9.5]" />
+      <dependency id="openorienteering-mapper.install" version="[0.9.6]" />
     </dependencies>
   </metadata>
   <files></files>
