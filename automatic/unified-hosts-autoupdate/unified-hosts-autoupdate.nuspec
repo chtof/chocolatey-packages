@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unified-hosts-autoupdate</id>
-    <version>1.50</version>
+    <version>1.52</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/unified-hosts-autoupdate</packageSourceUrl>
     <owners>chtof</owners>
     <title>Unified Hosts AutoUpdate</title>
