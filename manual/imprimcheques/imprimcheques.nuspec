@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>    
     <id>imprimcheques</id>    
-    <version>6.0.0</version>    
+    <version>6.2.0</version>    
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/manual/imprimcheques</packageSourceUrl>    
     <owners>chtof</owners>    
     <title>ImprimChèques</title>
@@ -29,7 +29,7 @@ See http://lalimacefolle.com/imprimcheques.php for all features (in french).
 ]]></description>
     <releaseNotes>http://lalimacefolle.com/Historique.TXT</releaseNotes>
     <dependencies>      
-      <dependency id="autohotkey.portable" version="1.1.30" />
+      <dependency id="autohotkey.portable" version="2.0.19" />
     </dependencies>
   </metadata>
   <files>
