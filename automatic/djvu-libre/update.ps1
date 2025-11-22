@@ -13,7 +13,7 @@ function global:au_GetLatest {
 
     return @{
         Version = $matches.Version + '.' + $matches.VersionDjView.Replace('.','')        
-        URL32 = Get-RedirectedUrl ('https://downloads.sourceforge.net/project/djvu/DjVuLibre_Windows/' + $matches.Version + '+' + $matches.VersionDjView + '/DjVuLibre-' + $matches.Version + '_DjView-' + $matches.VersionDjView + '_Setup.exe')
+        URL32 = (Get-RedirectedUrl ('https://downloads.sourceforge.net/project/djvu/DjVuLibre_Windows/' + $matches.Version + '+' + $matches.VersionDjView + '/DjVuLibre-' + $matches.Version + '_DjView-' + $matches.VersionDjView + '_Setup.exe')) -Replace ('\?viasf=1', '')
     }
 }
 
