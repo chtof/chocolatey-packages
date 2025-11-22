@@ -6,9 +6,9 @@
     <version>2.5</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/manual/httping</packageSourceUrl>
     <owners>chtof</owners>
-    <title>Httping</title>
+    <title>[Deprecated] Httping</title>
     <authors>Folkert van Heusden</authors>
-    <projectUrl>https://www.vanheusden.com</projectUrl>
+    <projectUrl>https://www.vanheusden.com/httping</projectUrl>
 	  <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/manual/httping/httping.png</iconUrl>
     <copyright>Copyright 2018 Folkert van Heusden</copyright>
     <licenseUrl>https://raw.githubusercontent.com/flok99/httping/master/license.txt</licenseUrl>
@@ -20,10 +20,7 @@
     <tags>httping monitoring http ping </tags>
     <summary>Httping is like _ping_ but for http-requests.</summary>
     <description><![CDATA[
-Give it an url, and it'll show you how long it takes to connect, send a request and retrieve the reply (only the headers). Be aware that the transmission across the network also takes time! So it measures the latency of the webserver + network.
-It supports, of course, IPv6.
-
-![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/manual/httping/screenshot.png)
+The version of httping for Windows is no longer available.
 ]]></description>
     <releaseNotes>https://github.com/flok99/httping/releases</releaseNotes>
   </metadata>
