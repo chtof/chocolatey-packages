@@ -6,7 +6,7 @@
     <version>3.6.2</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/manual/playlist-creator.portable</packageSourceUrl>
     <owners>chtof</owners>
-    <title>Playlist Creator (Portable)</title>
+    <title>[Deprecated] Playlist Creator (Portable)</title>
     <authors>Oddgravity</authors>
     <projectUrl>https://www.oddgravity.de/app-opc.php</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/manual/playlist-creator.portable/playlist-creator.portable.png</iconUrl>

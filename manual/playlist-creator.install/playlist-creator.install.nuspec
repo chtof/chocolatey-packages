@@ -6,7 +6,7 @@
     <version>3.6.2</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/manual/playlist-creator.install</packageSourceUrl>
     <owners>chtof</owners>
-    <title>Playlist Creator (Install)</title>
+    <title>[Deprecated] Playlist Creator (Install)</title>
     <authors>Oddgravity</authors>
     <projectUrl>https://www.oddgravity.de/app-opc.php</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/manual/playlist-creator.install/playlist-creator.install.png</iconUrl>
