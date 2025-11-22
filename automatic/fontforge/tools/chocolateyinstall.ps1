@@ -3,7 +3,7 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
-  file        = "$toolsDir\FontForge-2023-01-01-Windows.exe"
+  file64        = "$toolsDir\FontForge-2023-01-01-Windows.exe"
   silentArgs  = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 }
 
