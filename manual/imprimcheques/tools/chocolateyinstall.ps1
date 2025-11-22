@@ -9,8 +9,8 @@ $packageArgs = @{
   fileType      = 'exe'
   file          = "$toolsDir\\imprimcheques\\Install_ImprChq.exe"
   
-  url           = 'http://lalimacefolle.com/download/imprimcheques.zip'
-  checksum      = '933D45BBD7623105BE19804B96D58E5BB674DC2E054D917B5A76CEF7EBAC0774'
+  url           = 'https://lalimacefolle.com/download/imprimcheques.zip'  
+  checksum      = '19f2aa876a1ddf91a167d66b0ea07efd03f0566cd6116b8d7090cac997a5b5d0'
   checksumType  = 'sha256'
   
   silentArgs    = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
