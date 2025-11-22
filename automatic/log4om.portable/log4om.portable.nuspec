@@ -65,7 +65,7 @@ __Users of Log4OM version 1 must export an ADIF file from version 1 and import i
 - Added Aircraft Scatter in the propagation mode list and moved the whole list to external configuration file (propagation.csv)
 ]]></releaseNotes>
     <dependencies>
-      <dependency id="dotnetfx" version="[4.6.2]" />
+      <dependency id="dotnetfx" version="4.6.2" />
       <dependency id="omnirig" version="1.18" />
     </dependencies>
   </metadata>
