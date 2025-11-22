@@ -4,7 +4,7 @@ import-module au
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $releases = 'https://www.luanti.org/downloads/'
+    $releases = 'https://www.luanti.org/en/downloads/'
     $regex32  = 'luanti-([\d\._]+)-win32.zip'
     $regex64  = 'luanti-(?<Version>[\d\._]+)-win64.zip'
 
