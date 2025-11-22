@@ -2,12 +2,13 @@
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
+  filetype      = 'MSI'
 
-  url           = 'https://github.com/azirevpn/azclient/releases/download/v0.5/AzireVPN-0.5.exe'
-  checksum      = '74ad2f2b5cbe8f1f073c5f25e14df80cd431caffa39b7d656ec879eb86bb39ef'
+  url           = 'https://manager.azirevpn.com/assets/dl/azirevpn.msi'
+  checksum      = '5d19f85a83602211ecaf28cb52869842c3d2dcff3737c6d3cc4160180e161bbb'
   checksumType  = 'sha256'
   
-  silentArgs	= "/S _?=$Env:PROGRAMFILES\$packageName"
+  silentArgs  = "/qn /norestart /l*v `"$env:TEMP\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
 }
 
 Install-ChocolateyPackage @packageArgs
