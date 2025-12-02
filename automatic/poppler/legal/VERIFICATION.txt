@@ -7,14 +7,14 @@ Package can be verified like this:
  
 1. Download:
  
-   x64: https://poppler.freedesktop.org/poppler-25.11.0.tar.xz
+   x64: https://poppler.freedesktop.org/poppler-25.12.0.tar.xz
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum64: 63F155142B77349E2BCCAEF148E754E7506AB1641E713B83AF4F54A8F8B15369
+   checksum64: C18B40EB36B1A0C5B86E29CA054BF0770304583DA4F2CDD42FE86ECA6A20DE48
 
 File 'LICENSE.txt' is obtained from:
    https://cgit.freedesktop.org/poppler/poppler/plain/COPYING
