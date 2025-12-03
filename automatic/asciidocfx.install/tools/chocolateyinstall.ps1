@@ -6,7 +6,7 @@ $packageArgs = @{
   destination   = "$toolsDir"
 
   url           = 'https://github.com/asciidocfx/AsciidocFX/releases/download/v1.8.10/AsciidocFX_Windows.exe'
-  checksum      = '97407be0621bc1d82b83eb95ed29b473dc8f4e02da79d00486b45987169f9431'
+  checksum      = 'eb68b0e12d4a4bcd760dc07e6bef8f7f30db12f38acbd7bb82ca567de50f62ea'
   checksumType  = 'sha256'
 
   silentArgs    = '-q'
