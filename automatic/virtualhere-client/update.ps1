@@ -2,7 +2,8 @@
 import-module au
 
 function global:au_BeforeUpdate() {    
-    $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
+    #$Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
+    Get-RemoteFiles -Purge
 }
 
 function global:au_GetLatest {
@@ -25,4 +26,4 @@ function global:au_SearchReplace {
     }
 }
 
-update -ChecksumFor 64 -NoCheckUrl
+update -ChecksumFor None -NoCheckUrl
