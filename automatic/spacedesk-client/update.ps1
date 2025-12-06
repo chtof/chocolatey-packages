@@ -1,8 +1,8 @@
 ﻿import-module au
 
 function global:au_GetLatest {
-    $releases = 'https://spacedesk.net'
-    $regex    = 'msi version: (?<Version>[\d\.]+)\</span\>'
+    $releases = 'https://www.spacedesk.net/download/'
+    $regex    = 'msi version: (?<Version>[\d\.]+)(\</span\>|\</div\>)'
 
     $url = Get-RedirectedUrl https://spacedesk.net/downloadclient
     (Invoke-WebRequest -Uri $releases).RawContent -match $regex | Out-Null
