@@ -7,7 +7,7 @@ function global:au_BeforeUpdate() {
 
 function global:au_GetLatest {
 	$releases = 'https://virtualhere.com/usb_client_software'
-	$regex    = '\>Version (?<Version>[\d\.]+)\<'
+	$regex    = '\>Version (?<Version>[\d\.]+)\ *\<'
 
     (Invoke-WebRequest -Uri $releases).RawContent -match $regex | Out-Null
 
