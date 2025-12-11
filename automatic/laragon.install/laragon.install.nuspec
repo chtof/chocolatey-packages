@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>    
     <id>laragon.install</id>    
-    <version>8.3.0</version>    
+    <version>8.4.0</version>    
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/laragon.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>Laragon (Install)</title>
