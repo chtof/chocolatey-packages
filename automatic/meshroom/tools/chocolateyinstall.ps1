@@ -5,12 +5,12 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = "$toolsDir"
 
-  url64          = 'https://github.com/alicevision/meshroom/releases/download/v2021.1.0/Meshroom-2021.1.0-win64.zip'
-  checksum64     = '25b12e074e1d1fa6c0fbbf3b11317c50b368d28f740f2a70cca0a739138da7bc'
+  url64          = 'https://zenodo.org/records/16887472/files/Meshroom-2025.1.0-Windows.zip'
+  checksum64     = '0c14a3fe03458801ec135fcffc2f0bec9b005eaf7d622c0ec3e0e92071db0c89'
   checksumType64 = 'sha256'
 }
 
-Install-ChocolateyZipPackage @packageArgs
+Install-ChocolateyZipPackage @packageArgs -DisableLogging
 
 # Install start menu shortcuts
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
