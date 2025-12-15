@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>meshroom</id>
-    <version>2021.1.0.20230718</version>
+    <version>2025.1.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/meshroom</packageSourceUrl>
     <owners>chtof</owners>
-    <title>[Deprecated] Meshroom</title>
+    <title>Meshroom</title>
     <authors>AliceVision Team.</authors>
     <projectUrl>https://github.com/alicevision/meshroom</projectUrl>
 	<iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/meshroom/meshroom.png</iconUrl>
@@ -20,7 +20,7 @@
     <tags>meshroom 3D reconstruction alicevision photogrammetric computer vision framework</tags>
     <summary>Meshroom is a free, open-source 3D Reconstruction Software based on the AliceVision Photogrammetric Computer Vision framework.</summary>
     <description><![CDATA[
-      Meshroom can't be longer provided as Chocolatey as it is now hosted on Fosshub: https://docs.chocolatey.org/en-us/community-repository/moderation/package-validator/rules/cpmr0028
+      Meshroom is a free, open-source 3D Reconstruction Software based on the AliceVision Photogrammetric Computer Vision framework.
 ]]></description>
     <releaseNotes>https://github.com/alicevision/meshroom/releases</releaseNotes>
   </metadata>
