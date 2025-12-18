@@ -6,7 +6,7 @@ $packageArgs = @{
   unzipLocation  = "$toolsDir"
 
   url64          = 'https://zenodo.org/records/16887472/files/Meshroom-2025.1.0-Windows.zip'
-  checksum64     = '0c14a3fe03458801ec135fcffc2f0bec9b005eaf7d622c0ec3e0e92071db0c89'
+  checksum64     = '14E51F20B18015C5E821717576C092AAB257168E13583381C0EB2A00D5793C57'
   checksumType64 = 'sha256'
 }
 
