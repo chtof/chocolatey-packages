@@ -5,7 +5,7 @@ SetControlDelay 20
 SetWorkingDir A_ScriptDir  ; Ensures a consistent starting directory.
 
 winTitle1 := "VB-Audio Voicemeeter Installation"              
-WinWait(winTitle1,, 30)
+WinWait(winTitle1,, 180)
 WinActivate
 ControlSend "{Enter}","",winTitle1
 
