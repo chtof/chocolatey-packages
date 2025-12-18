@@ -4,7 +4,7 @@ SetWorkingDir A_ScriptDir  ; Ensures a consistent starting directory.
 
 SetTitleMatchMode 1  ; A windows's title must start with the specified WinTitle to be a match.
 winTitle1 := "VB-Audio Voicemeeter Installation"
-WinWait(winTitle1,, 30)
+WinWait(winTitle1,, 180)
 ControlSend "{Enter}",,"VB-Audio Voicemeeter Installation"
 
 Sleep 10000
