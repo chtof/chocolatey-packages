@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>flrig</id>
-    <version>2.0.09</version>
+    <version>2.0.10</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/flrig</packageSourceUrl>
     <owners>chtof</owners>
     <title>flrig</title>
