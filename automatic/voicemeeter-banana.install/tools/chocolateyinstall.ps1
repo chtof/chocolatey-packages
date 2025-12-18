@@ -12,7 +12,7 @@ $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   destination = "$toolsDir"
   file        = "$toolsDir\VoicemeeterProSetup.exe"
-  $validExitCodes = @(0, 1)
+  validExitCodes = @(0, 1)
 }
 
 Start-Process "AutoHotKey" -Verb runas -ArgumentList "`"$toolsDir\chocolateyinstall.ahk`""
