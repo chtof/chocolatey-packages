@@ -46,7 +46,7 @@ There is also a small online game feature which enables you to connect and exper
 ]]></description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <dependencies>
-      <dependency id="autohotkey.portable" version="1.1.30.03" />
+      <dependency id="autohotkey.portable" version="2.0.18" />
       <dependency id="vcredist2005" version="8.0.50727.619501" />
     </dependencies>
   </metadata>
