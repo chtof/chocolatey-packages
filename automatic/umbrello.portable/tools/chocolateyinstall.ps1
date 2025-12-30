@@ -14,7 +14,7 @@ foreach ( $file in 'dbus-daemon.exe', 'dbus-launch.exe', 'dbus-monitor.exe', 'db
   New-Item -path $toolsDir\umbrello-2.31.2\bin -name "$file.ignore" -type File -force | Out-Null
 }
 
-Get-ChocolateyUnzip @packageArgs
+Get-ChocolateyUnzip @packageArgs -DisableLogging
     
 # Install start menu shortcut
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
