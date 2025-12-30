@@ -7,7 +7,7 @@ $packageArgs = @{
   file        = "$toolsDir\Git-it-Win-ia32.zip"
 }
 
-Get-ChocolateyUnzip @packageArgs
+Get-ChocolateyUnzip @packageArgs -DisableLogging
 Remove-Item -Path $packageArgs.file
 
 # Don't create shims for any executables
