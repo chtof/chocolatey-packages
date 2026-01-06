@@ -4,7 +4,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
 
   url           = 'https://www.easyuefi.com/downloads/EasyUEFI_Trial.exe'
-  checksum      = '00b282b565157dd20dfb3c00f91cf4c90c33aca9f653eef814ab3c984aedd191'
+  checksum      = '96b8393bf4e95df44d623766a5d2b9d771e43ca689a24fc388feec75677db384'
   checksumType  = 'sha256'
 
   silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
