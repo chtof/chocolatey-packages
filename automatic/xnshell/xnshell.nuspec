@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>xnshell</id>
-    <version>4.20.0</version>
+    <version>4.20.0.20260106</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/xnshell</packageSourceUrl>
     <owners>chtof</owners>
     <title>XnView Shell Extension</title>
@@ -25,7 +25,7 @@
 ]]></description>
     <!-- <releaseNotes>https://newsgroup.xnview.com/viewtopic.php?f=35&t=19027</releaseNotes> -->
   <dependencies>
-    <dependency id="xnshell.install" version="[4.20.0]" />
+    <dependency id="xnshell.install" version="4.20.0.20260106" />
   </dependencies>
   </metadata>
   <files>    
