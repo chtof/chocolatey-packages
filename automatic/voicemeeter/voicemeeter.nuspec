@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>voicemeeter</id>
-    <version>1.0.8.8</version>
+    <version>1.1.2.2</version>
     <title>Voicemeeter Virtual Audio Mixer</title>
     <authors>Vincent Burel</authors>
     <owners>chtof</owners>
@@ -28,7 +28,7 @@ For any professional use, you may pay the recommended license price on the websh
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/voicemeeter</packageSourceUrl>
     <docsUrl>https://www.vb-audio.com/Voicemeeter/#Documentation</docsUrl>
     <dependencies>
-      <dependency id="voicemeeter.install" version="[1.0.8.8]" />
+      <dependency id="voicemeeter.install" version="[1.1.2.2]" />
     </dependencies>
   </metadata>
    <files></files>
