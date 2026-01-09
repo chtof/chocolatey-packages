@@ -34,7 +34,7 @@ For Volume licensing / special deals, especially for company deployment or comme
 ]]></description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
   <dependencies>
-    <dependency id="autohotkey.portable" version="1.1.30" />
+    <dependency id="autohotkey.portable" version="2.0.0" />
   </dependencies>
   </metadata>
   <files>
