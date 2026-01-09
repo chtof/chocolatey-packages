@@ -7,7 +7,7 @@ $packageArgs = @{
   fileType      = 'zip'
   url           = 'https://www.z-download.de/down/zcron.zip'
 
-  checksum      = ''
+  checksum      = '38d576cfd86ebcaa6951ddaafe8c8e8a773a52520af9a2dbc953c53d69c0a2ed'
   checksumType  = 'sha256'  
 }
 
