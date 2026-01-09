@@ -21,7 +21,7 @@ Sleep 10000
 
 SetTitleMatchMode 1  ; A windows's title must start with the specified WinTitle to be a match.
 winTitle2 := "REBOOT YOUR SYSTEM"
-WinWait(winTitle2,, 60)
+WinWait(winTitle2,, 180)
 WinActivate
 Sleep 1000
 ;ControlClick, OK, %winTitle2% ahk_class #32770
