@@ -11,9 +11,10 @@ Get-ChocolateyUnzip @packageArgs
 Remove-Item -Path $packageArgs.file
 
 $packageArgs = @{
-  packageName = $env:ChocolateyPackageName
-  destination = "$toolsDir"
-  file        = "$toolsDir\VoicemeeterSetup.exe"
+  packageName     = $env:ChocolateyPackageName
+  destination     = "$toolsDir"
+  file            = "$toolsDir\VoicemeeterSetup.exe"
+  validExitCodes  = @(0, 1)
 }
 
 Start-Process "AutoHotKey" -Verb runas -ArgumentList "`"$toolsDir\chocolateyinstall.ahk`""
