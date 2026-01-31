@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dos2unix</id>
-    <version>7.5.3</version>
+    <version>7.5.4</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/dos2unix</packageSourceUrl>
     <owners>chtof</owners>
     <title>Dos2Unix / Unix2Dos - Text file format converters</title>
