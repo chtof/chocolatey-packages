@@ -4,15 +4,16 @@ $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
   softwareName = 'ocenaudio'
   fileType     = 'exe'
-  silentArgs   = "/S"
+  silentArgs   = "/AllUsers /S"
 }
 
-$uninstalled = $false
 [array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
 
 if ($key.Count -eq 1) {
   $key | % {
-    $packageArgs['file'] = "$($_.UninstallString)"
+    $UninstallString = $key.UninstallString -split '"\s+'
+    $UninstallString[0] = $UninstallString[0] -replace '"',''
+    $packageArgs['file'] = "$($UninstallString[0])"
     Uninstall-ChocolateyPackage @packageArgs
   }
 } elseif ($key.Count -eq 0) {
