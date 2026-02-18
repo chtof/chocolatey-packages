@@ -4,7 +4,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   destination = "$toolsDir"
-  file        = "$toolsDir\LibreHardwareMonitor-net472.zip"  
+  file        = "$toolsDir\LibreHardwareMonitor.NET.10.zip"  
 }
 
 Get-ChocolateyUnzip @packageArgs
