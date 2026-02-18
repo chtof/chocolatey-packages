@@ -11,7 +11,10 @@ function global:au_GetLatest {
 	#$url = $download_page.links | ? href -match $regex
     $download_page.RawContent -match $regex | Out-Null
     
-    return @{ Version = $matches.Version ; URL64 = Get-RedirectedUrl ("https://sourceforge.net/projects/hugin/files" + $matches.0) }
+    return @{
+        Version = $matches.Version
+        URL64 = (Get-RedirectedUrl ("https://sourceforge.net/projects/hugin/files" + $matches.0)) -Replace '\?viasf=1',''
+    }
 }
 
 function global:au_SearchReplace {
