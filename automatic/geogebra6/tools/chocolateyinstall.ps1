@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$file     = 'GeoGebraGraphing-Windows-Installer-6-0-915-1.exe'
+$file     = 'GeoGebraGraphing-Windows-Installer-6-0-916-2.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
