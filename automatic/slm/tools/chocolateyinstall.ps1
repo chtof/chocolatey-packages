@@ -5,7 +5,7 @@ $packageArgs = @{
   filetype     = 'MSI'
 
   url          = 'https://download.softros.com/SoftrosLANMessengerSetup.msi'
-  checksum     = 'f6fcf2544ed49899709a3b6e4490541e29fb681051a68aea8afbb4a386a92ce2'
+  checksum     = 'ad96ee3fc3ece964e607be6d5338a3fbedd62edcbd8ebfc3e662fbce2057e89e'
   checksumType = 'sha256'
 
   silentArgs   = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
