@@ -5,6 +5,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'PCW-Fistcheck'
   fileType      = 'exe'
+  silentArgs    = '/VERYSILENT'
 }
 
 $uninstalled = $false
@@ -13,7 +14,7 @@ $uninstalled = $false
 if ($key.Count -eq 1) {
   $key | % {
     $packageArgs['file'] = "$($_.UninstallString)"
-    Start-Process "AutoHotKey" -Verb runas -ArgumentList "`"$toolsDir\chocolateyuninstall.ahk`""
+    #Start-Process "AutoHotKey" -Verb runas -ArgumentList "`"$toolsDir\chocolateyuninstall.ahk`""
     Uninstall-ChocolateyPackage @packageArgs
   }
 } elseif ($key.Count -eq 0) {

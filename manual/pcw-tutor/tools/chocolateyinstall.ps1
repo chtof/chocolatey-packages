@@ -5,14 +5,15 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$toolsDir"
   fileType      = 'exe'
-  file          = "$toolsDir\PCW-Tutor-6.0.0-setup.exe"
+  file          = "$toolsDir\PCW-Tutor-7.1.1-setup.exe"
+  silentArgs    = '/SILENT'
 
-  url           = 'https://www.qsl.net/dj7hs/PCW-Tutor-60-setup.zip'
-  checksum      = '1FF32CEFD077C5790D0C932C88730AF515475FEEC259C89D9F58550D796F01E8'
+  url           = 'https://www.qsl.net/dj7hs/PCW-Tutor-setup.zip'
+  checksum      = '56870018841091e19b0481cce45e7bd033a37a8a49504710da0f41fe1f434798'
   checksumType  = 'sha256'
   
 }
 
 Install-ChocolateyZipPackage @packageArgs
-Start-Process "AutoHotKey" -Verb runas -ArgumentList "`"$toolsDir\chocolateyinstall.ahk`""
+#Start-Process "AutoHotKey" -Verb runas -ArgumentList "`"$toolsDir\chocolateyinstall.ahk`""
 Install-ChocolateyInstallPackage @packageArgs
