@@ -5,12 +5,12 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$toolsDir"
 
-  url           = 'https://github.com//chrismaltby/gb-studio/releases/download/v4.2.1/gb-studio-windows-32bit-standalone.zip'
-  checksum      = '10dcd07cef0f7d751598b015e5ae25a156e8218596ac6c58dacbcecf11d8c492'
+  url           = 'https://github.com//chrismaltby/gb-studio/releases/download/v4.2.2/gb-studio-windows-32bit-standalone.zip'
+  checksum      = 'ac36dd44915b589cb6271d908309deb590bb9e67ba89ca7c0cf74edad9dfb2cf'
   checksumType  = 'sha256'
 
-  url64         = 'https://github.com//chrismaltby/gb-studio/releases/download/v4.2.1/gb-studio-windows-64bit-standalone.zip'
-  checksum64    = '10b56fb4f2edfb3ac849a0a7b265ec548b7bfcdfc8baaf3b399067440649e556'
+  url64         = 'https://github.com//chrismaltby/gb-studio/releases/download/v4.2.2/gb-studio-windows-64bit-standalone.zip'
+  checksum64    = '6b4f3297379f9adb979aa9a7db28c739623c231d081b6d2dba26c910a34de2ba'
   checksumType64= 'sha256'
 }
 
