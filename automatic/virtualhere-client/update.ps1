@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-#function global:au_BeforeUpdate() {    
-#    Get-RemoteFiles -Purge
-#}
+function global:au_BeforeUpdate() {    
+    $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64
+}
 
 function global:au_GetLatest {
 	$releases = 'https://virtualhere.com/usb_client_software'
