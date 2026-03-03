@@ -3,12 +3,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>poppler</id>
-    <version>26.02.0</version>
+    <version>25.12.0.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/poppler</packageSourceUrl>
     <owners>chtof</owners>
     <title>Poppler</title>
     <authors>Derek Noonburg, Albert Astals Cid.</authors>
-    <projectUrl>https://poppler.freedesktop.org</projectUrl>
+    <projectUrl>https://github.com/oschwartz10612/poppler-windows</projectUrl>
     <!--<iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/poppler/poppler.png</iconUrl>-->
     <!-- <copyright>Year Software Vendor</copyright> -->
     <licenseUrl>https://cgit.freedesktop.org/poppler/poppler/plain/COPYING</licenseUrl>
