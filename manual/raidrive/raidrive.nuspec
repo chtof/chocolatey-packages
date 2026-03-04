@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>raidrive</id>
-    <version>2022.6.92</version>
+    <version>2023.9.170</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/manual/raidrive</packageSourceUrl>
     <owners>chtof</owners>
     <title>RaiDrive</title>
