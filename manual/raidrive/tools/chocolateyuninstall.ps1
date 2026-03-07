@@ -8,7 +8,7 @@ $packageArgs = @{
 }
 
 $uninstalled = $false
-Remove-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\Raidrive 2023.9.170"
+Remove-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\Raidrive 2023.9.256"
 [array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
 
 if ($key.Count -eq 1) {
