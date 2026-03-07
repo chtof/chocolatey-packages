@@ -1,7 +1,7 @@
 #NoTrayIcon
 SetTitleMatchMode 2 ; A windows's title can contain WinTitle anywhere inside it to be a match
 SendMode "Input"    ; Recommended for new scripts due to its superior speed and reliability.
-SetControlDelay -1
+SetControlDelay 0
 
 winTitle := "Setup - JACK2"
 
