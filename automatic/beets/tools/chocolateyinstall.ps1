@@ -1,5 +1,5 @@
 ﻿Update-SessionEnvironment
-$version = '2.6.2'
+$version = '2.7.0'
  
 $proxy = Get-EffectiveProxy
 if ($proxy) {
