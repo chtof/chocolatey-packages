@@ -7,14 +7,14 @@ Package can be verified like this:
 
 1. Download:
 
-   x64: https://netactuate.dl.sourceforge.net/project/ffmpeg-batch/FFBatch_AV_Converter_3.2.7_64bit.exe
+   x64: https://psychz.dl.sourceforge.net/project/ffmpeg-batch/FFBatch_AV_Converter_3.2.8_64bit.exe
 
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
    checksum type: sha256
-   checksum64: 2FBC04916B47A4BDB34499FA10F8812FA48635F4D98DBA58997F02C07CD879B1
+   checksum64: 89D1F0C945A8694F2C8A3A051A0A58EAA52F95D8A2BA5D65AE8FC99621BA40B8
 
 File 'LICENSE.txt' is obtained from:
    https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode.txt
