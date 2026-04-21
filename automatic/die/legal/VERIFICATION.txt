@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com/horsicq/DIE-engine/releases/download/3.10/die_win32_portable_3.10_x86.zip
-   x64: https://github.com/horsicq/DIE-engine/releases/download/3.10/die_win64_portable_3.10_x64.zip
+   x32: https://github.com/horsicq/DIE-engine/releases/download/3.20/die_win32_portable_3.20_x86.zip
+   x64: https://github.com/horsicq/DIE-engine/releases/download/3.20/die_win64_portable_3.20_x64.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: DBD639A9BEBCEAF84E63C47BDB4A64E3FBB7677EC834321FE9B8574FE7781B10
-   checksum64: 6E84AC8D3ABDFBA60078A36FA7F6B492B20C2AF2C502E0A4579F41367AC37C80
+   checksum32: FDD2CBE6C5811796669EB0A8AB65F4C38F62CD60D6BFAC305DE227B0E6F2ED01
+   checksum64: 9974C6073740E0572A32848BF05D86A62956274CBD266C4565B234D9A8B6B904
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/horsicq/Detect-It-Easy/master/LICENSE
