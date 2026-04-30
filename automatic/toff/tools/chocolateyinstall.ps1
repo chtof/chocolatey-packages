@@ -7,7 +7,7 @@ $packageArgs = @{
   file         =  'toff.exe'
 
   url           = 'https://dennisbabkin.com/php/downloads/TOff.zip'
-  checksum      = '75bb3e195597c66de2424f1b13ab6298e16902907e6309f2f5b922165801bb1d'
+  checksum      = 'A434E34AFA876DF9403C5EAFB0364E3674406EAA015C3A0C4F46A754F1B091FF'
   checksumType  = 'sha256'
 }
 
