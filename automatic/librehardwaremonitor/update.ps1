@@ -5,8 +5,8 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
    return github_GetInfo -ArgumentList @{
-        repository = 'LibreHardwareMonitor/LibreHardwareMonitor'
-        regex32    = '/LibreHardwareMonitor-net472.zip$'
+        repository = 'LibreHardwareMonitor/LibreHardwareMonitor'        
+        regex32    = '/LibreHardwareMonitor[-.]net.?[0-9]+.zip$'        
    }
 }
 

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>hugin.install</id>
-    <version>2023.0.0.20240101</version>
+    <version>2025.0.1</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/hugin.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>Hugin (Install)</title>

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ultraviewer</id>
-    <version>6.6.127</version>
+    <version>6.6.127.20260303</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/ultraviewer</packageSourceUrl>
     <owners>chtof</owners>
     <title>UltraViewer</title>
@@ -38,9 +38,6 @@ You can control multiple computers simultaneously or share your screen with mult
 
 - Latest version
 See new version features and information.
-
-- Support all versions of Windows
-Window XP, Window 7, Window 8, Window 10, Window Server.
 
 - Support anywhere
 Remote control support your partner from anywhere.
@@ -82,7 +79,7 @@ You run UltraViewer and send ID and Password displayed on your UltraViewer to yo
 ]]></description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <dependencies>
-      <dependency id="ultraviewer.install" version="6.6.127" />
+      <dependency id="ultraviewer.install" version="[6.6.127.20260303]" />
     </dependencies>
   </metadata>
   <files></files>

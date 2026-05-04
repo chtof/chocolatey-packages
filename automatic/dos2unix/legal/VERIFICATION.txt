@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.4-win32-nls.zip
-   x64: https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.4-win64-nls.zip
+   x32: https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.5-win32-nls.zip
+   x64: https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.5-win64-nls.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: A9C6FA13EF631F22FB117E75CB1488334C6C7A7AE2B374EE3ADF3895277AD22F
-   checksum64: 1CE2E59DF5F9005B9C8EC43B847782B3D52286A77A163E5C86585D4AE43CBD92
+   checksum32: 878D4FA0E747952BA1C1D6B40C4E27EC2CBE8647D1FB8A1346E2CB3B0C491814
+   checksum64: 4DF2EEF2915CC3D9F6278B58EC3097D856CA60F6C803E5D60E4A9B616C1E94AA
  
 File 'LICENSE.txt' is obtained from:
    https://waterlan.home.xs4all.nl/dos2unix/COPYING.txt

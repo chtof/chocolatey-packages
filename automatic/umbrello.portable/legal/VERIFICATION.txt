@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://download.kde.org/stable/umbrello/latest/win32/umbrello-mingw32-2.31.2-lp151.49.1-portable.7z
-   x64: https://download.kde.org/stable/umbrello/latest/win64/umbrello-mingw64-2.31.2-lp151.121.1-portable.7z
+   x32: https://download.kde.org/stable/umbrello/latest/win32/umbrello-mingw32-2.32.0-54.1-portable.7z
+   x64: https://download.kde.org/stable/umbrello/latest/win64/umbrello-mingw64-2.32.0-126.1-portable.7z
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 6B1C7A9AA2E5F0A2016EE12A8EF87E48D412515F52ADA7EB739CE1454F18472E
-   checksum64: 9A07500F461D2FFF56D1379A6CBF69D136E84F5A13945CD7244E724A8BEABD46
+   checksum32: 546B3B467EDB31DB825A3D048D71AA52BA1D7562140F59888EE9B0066AFD40C9
+   checksum64: 32432219DE0FE3F9C6AAC4D86959D3701F1DF2239B888FA1F8F191EF2F232563
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/KDE/umbrello/master/COPYING

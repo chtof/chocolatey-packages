@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>toff</id>
-    <version>2.5.8.20191106</version>
+    <version>2.5.8.20260501</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/toff</packageSourceUrl>
     <owners>chtof</owners>
     <title>TOff</title>

@@ -7,14 +7,14 @@ Package can be verified like this:
  
 1. Download:
 
-   x64: https://github.com//RenderKit/embree/releases/download/v4.4.0/embree-4.4.0.x64.windows.zip
+   x64: https://github.com//RenderKit/embree/releases/download/v4.4.1/embree-4.4.1.x64.windows.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum64: D951E5E6BD295C54CDD66BE9CDB44A4E8C42FB38A99F94F79305E48765FC3454
+   checksum64: 5AA1FA3161A720F9C610B06C652B80F421CB2B1FE8221FDF92B74157336FDF8F
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/embree/embree/master/LICENSE.txt

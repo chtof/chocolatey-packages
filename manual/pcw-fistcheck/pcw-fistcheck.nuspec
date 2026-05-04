@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pcw-fistcheck</id>
-    <version>3.0.1</version>
+    <version>3.9.9.2</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/manual/pcw-fistcheck</packageSourceUrl>
     <owners>chtof</owners>
     <title>Precision CW Fistcheck</title>
@@ -29,7 +29,7 @@ The program will show you what you are keying, mark and space, dots and dashes. 
 ]]></description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <dependencies>
-      <dependency id="autohotkey.portable" version="1.1.32" />
+      <dependency id="autohotkey.portable" version="2.0.18" />
     </dependencies>
   </metadata>
   <files>

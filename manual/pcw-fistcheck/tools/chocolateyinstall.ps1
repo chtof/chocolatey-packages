@@ -5,14 +5,15 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$toolsDir"
   fileType      = 'EXE'
-  file          = "$toolsDir\PCW-Fistcheck-3.0.1-setup.exe"
+  file          = "$toolsDir\PCW-Fistcheck-3.9.9.2-setup.exe"
+  silentArgs    = '/SILENT'
 
   url           = 'https://www.qsl.net/dj7hs/PCW-Fistcheck-setup.zip'
-  checksum      = 'F343F3FB46D11F6B578BF53D8B2A784D0C5097D23F8C9BA5DD63E85FA4F2C27F'
+  checksum      = '7b42705df4001668dcf9b586f1bdd1ecacba91edc3634b510d5547a10066a542'
   checksumType  = 'sha256'
   
 }
 
 Install-ChocolateyZipPackage @packageArgs
-Start-Process "AutoHotKey" -Verb runas -ArgumentList "`"$toolsDir\chocolateyinstall.ahk`""
+#Start-Process "AutoHotKey" -Verb runas -ArgumentList "`"$toolsDir\chocolateyinstall.ahk`""
 Install-ChocolateyInstallPackage @packageArgs
