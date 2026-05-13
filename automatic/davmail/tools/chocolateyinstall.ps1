@@ -2,9 +2,8 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
-  packageName = $env:ChocolateyPackageName
-  file        = "$toolsDir\davmail-6.5.1-3873-setup.exe"
-  file64      = "$toolsDir\davmail-6.5.1-3873-setup64.exe"
+  packageName = $env:ChocolateyPackageName  
+  file64      = "$toolsDir\davmail-6.7.0-4068-setup64.exe"
   silentArgs  = "/S"
 }
 
