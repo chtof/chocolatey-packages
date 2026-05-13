@@ -4,8 +4,8 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   destination = "$toolsDir"
-  file        = "$toolsDir\dust3d-1.0.0-beta.29-x86.zip"
-  file64        = "$toolsDir\dust3d-1.0.0-beta.29.zip"
+  file        = "$toolsDir\dust3d-1.0.1.zip"
+  file64        = "$toolsDir\"
 }
 
 Get-ChocolateyUnzip @packageArgs
