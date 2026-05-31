@@ -3,7 +3,7 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
-  file        = "$toolsDir\neatmouse-1.05.004-setup.exe"
+  file        = "$toolsDir\neatmouse-1.05.005-setup.exe"
   silentArgs  = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 }
 
