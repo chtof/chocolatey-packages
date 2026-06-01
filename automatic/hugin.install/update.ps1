@@ -13,7 +13,7 @@ function global:au_GetLatest {
     
     return @{
         Version = $matches.Version
-        URL64 = (Get-RedirectedUrl ("https://sourceforge.net/projects/hugin/files" + $matches.0)) -Replace '\?viasf=1',''
+        URL64 = (Get-RedirectedUrl ("https://sourceforge.net/projects/hugin/files" + $matches.0)) -Replace '\?viasf=.*',''
     }
 }
 
