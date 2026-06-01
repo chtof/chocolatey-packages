@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>marktext</id>
-    <version>0.17.1</version>
+    <version>0.19.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/marktext</packageSourceUrl>
     <owners>chtof</owners>
     <title>Mark Text</title>
@@ -33,7 +33,7 @@
 ]]></description>
     <releaseNotes>https://github.com/marktext/marktext/releases</releaseNotes>
     <dependencies>
-      <dependency id="marktext.install" version="[0.17.1]" />
+      <dependency id="marktext.install" version="[0.19.0]" />
     </dependencies>
   </metadata>
   <files></files>
