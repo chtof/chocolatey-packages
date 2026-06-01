@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>uncrustify</id>
-    <version>077.1</version>
+    <version>083.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/uncrustify</packageSourceUrl>
     <owners>chtof</owners>
     <title>Uncrustify Code Beautifier</title>
