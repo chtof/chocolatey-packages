@@ -23,6 +23,9 @@ function global:au_GetLatest {
     #$versionBeta  = $matches.VersionBeta
     #$filenameBeta = $matches.FileNameBeta
 
+    #$releases = 'https://sourceforge.net/projects/cudatext/files/'
+    #$regex    = '(?<FileNameBeta>cudatext-win-x64-(?<VersionBeta>[\d\.]+).zip)'
+
     $downloadPage = (Invoke-WebRequest -Uri $releases).Content
 
     $downloadPage -match $regexReleaseId | Out-Null
