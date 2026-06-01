@@ -6,7 +6,7 @@ $packageArgs = @{
   unzipLocation  = "$toolsDir"
   
   url64        = 'https://github.com//marktext/marktext/releases/download/v0.19.0/marktext-win-x64-0.19.0.zip' 
-  checksum64   = ''
+  checksum64   = 'c80806949e04fa355552c78c75737f7e8ecf1a388d32374f0e11525923b9d7b4'
 
   checksumType = 'sha256'  
 }
