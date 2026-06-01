@@ -10,13 +10,13 @@ function global:au_GetLatest {
   
   (Invoke-WebRequest -Uri $releases) -match $regex | Out-Null  
   $version      = $matches.Version
-  $versionNuget = $version -replace '-','.'
+  $versionNuget = $version -Replace '-','.' -Replace '(\d+).(\d+).(\d+)', '$1$2.$3'
   $versionFile  = $matches.VersionFile
 
   return @{
     Version = $versionNuget   
-    URL32   = Get-RedirectedUrl ('https://downloads.sourceforge.net/project/uncrustify/uncrustify-' + $version + '/uncrustify-' + $versionFile + '-win32.zip')
-    URL64   = Get-RedirectedUrl ('https://downloads.sourceforge.net/project/uncrustify/uncrustify-' + $version + '/uncrustify-' + $versionFile + '-win64.zip')
+    URL32   = (Get-RedirectedUrl ('https://downloads.sourceforge.net/project/uncrustify/uncrustify-' + $version + '/uncrustify-' + $versionFile + '-win32.zip'))  -Replace '\?viasf=.*',''
+    URL64   = (Get-RedirectedUrl ('https://downloads.sourceforge.net/project/uncrustify/uncrustify-' + $version + '/uncrustify-' + $versionFile + '-win64.zip'))  -Replace '\?viasf=.*',''
   }
 }
 
