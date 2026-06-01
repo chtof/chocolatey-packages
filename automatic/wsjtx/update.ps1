@@ -3,7 +3,7 @@
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {    
-    $releases = 'https://wsjt.sourceforge.io/wsjtx.html'
+    $releases = 'https://wsjt.sourceforge.io/downloads.html'
     $regex32  = 'wsjtx-[\d\.]+-win32.exe$'
     $regex64  = 'wsjtx-(?<Version>[\d\.]+)-win64.exe$'
 
