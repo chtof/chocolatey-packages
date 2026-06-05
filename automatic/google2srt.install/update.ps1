@@ -11,7 +11,7 @@ function global:au_GetLatest {
 
     return @{
         Version = $version
-        URL32   = 'https://freefr.dl.sourceforge.net/project/google2srt/Google2SRT/' + $version + '/google2srt-' + $version + '.msi'
+        URL32   = Get-RedirectedUrl 'https://downloads.sourceforge.net/project/google2srt/Google2SRT/' + $version + '/google2srt-' + $version + '.msi'
     }
 }
 
