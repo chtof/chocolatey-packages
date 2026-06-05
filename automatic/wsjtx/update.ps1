@@ -30,12 +30,7 @@ function global:au_SearchReplace {
         "tools\chocolateyinstall.ps1" = @{        
           "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\)(.*)`"" = "`$1$($Latest.FileName32)`""
           "(?i)(^\s*file64\s*=\s*`"[$]toolsDir\\)(.*)`"" = "`$1$($Latest.FileName64)`""
-        }
-
-        "wsjtx.nuspec" = @{
-            "(<docsUrl>https://wsjt.sourceforge.io/wsjtx-doc/wsjtx-main-)2.6.1(.html</docsUrl>)" = "`${1}$($Latest.Version)`${2}"
-            "(<releaseNotes>https://wsjt.sourceforge.io/wsjtx-doc/Release_Notes_)2.6.1(.txt</releaseNotes>)" = "`${1}$($Latest.Version)`${2}"
-        }
+        }       
     }
 }
 
