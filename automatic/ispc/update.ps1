@@ -1,20 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
+. ..\..\helpers\GitHub_Helper.ps1
 
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $releases = 'https://ispc.github.io/downloads.html'
-    #$regex   = 'ispc-v(?<Version>[\d\.]+)-windows.msi'
-    $regex   = 'ispc-v(?<Version>[\d\.]+)-windows.zip'
-
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$url = $download_page.links | ? href -match $regex | Select -First 1
-
-    return @{        
-        Version = $matches.Version
-        URL32   = $url.href
-    }
+   return github_GetInfo -ArgumentList @{
+        repository = 'ispc/ispc'
+        regex32  = 'ispc-v(?<Version>[\d\.]+)-windows.zip$'        
+   }
 }
 
 function global:au_SearchReplace {
