@@ -4,10 +4,16 @@
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-   return github_GetInfo -ArgumentList @{
+    $data = github_GetInfo -ArgumentList @{
         repository = 'fontforge/fontforge'
         regex64    = 'FontForge-(?<Version>[\d-]+)-Windows-x64.exe$'
-   }
+    }
+
+    If ($data.Version -match '[\d]{8}') {
+        $data.Version = $data.Version -Replace '([\d]{4})([\d]{2})([\d]{2})', '$1.$2.$3'
+    }
+   
+   return data
 }
 
 function global:au_SearchReplace {
