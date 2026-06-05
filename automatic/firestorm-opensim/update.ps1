@@ -43,6 +43,7 @@ function global:au_GetLatest {
     }
     $url32 = $download_page.links | ? href -match $regex32
     $url64 = $download_page.links | ? href -match $regex64
+    #https://downloads.firestormviewer.org/release/windows/Phoenix-FirestormOS-Releasex64_AVX2-7-2-4-80712_Setup.exe
 
     return @{
         Version = ($matches.Version).Replace('-','.')
