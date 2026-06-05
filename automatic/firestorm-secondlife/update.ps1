@@ -8,8 +8,8 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
     $releases = 'https://www.firestormviewer.org/windows'
-    $regex32  = 'Phoenix-Firestorm(OS)?-release-(?<Version>[\d-]+)_Setup.exe'
-    $regex64  = 'Phoenix-Firestorm(OS)?-releasex64-(?<Version>[\d-]+)_Setup.exe'
+    $regex32  = 'Phoenix-Firestorm-release-(?<Version>[\d-]+)_Setup.exe'
+    $regex64  = 'Phoenix-Firestorm-releasex64-(?<Version>[\d-]+)_Setup.exe'
 
     #$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
@@ -43,6 +43,7 @@ function global:au_GetLatest {
       "upgrade-insecure-requests"="1"
     }
 
+    # https://downloads.firestormviewer.org/release/windows/Phoenix-Firestorm-Releasex64_AVX2-7-2-4-80712_Setup.exe
     $url32 = $download_page.links | ? href -match $regex32
     $url64 = $download_page.links | ? href -match $regex64
 
