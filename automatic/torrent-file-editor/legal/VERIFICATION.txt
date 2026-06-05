@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com//torrent-file-editor/torrent-file-editor/releases/download/v1.0.2/torrent-file-editor-1.0.2-x32.exe
-   x64: https://github.com//torrent-file-editor/torrent-file-editor/releases/download/v1.0.2/torrent-file-editor-1.0.2-x64.exe
+   x32: https://github.com//torrent-file-editor/torrent-file-editor/releases/download/v1.0.3/torrent-file-editor-1.0.3-x32.exe
+   x64: https://github.com//torrent-file-editor/torrent-file-editor/releases/download/v1.0.3/torrent-file-editor-1.0.3-x64.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 89477BFBCF121F0D9F76C56F35D24CC89FBED9F6D720A431428E41B07A32102B
-   checksum64: C74317E0A1C8DC7F9CCDC93CF6087D85456283A4E144B9FF16617A796A4D336D
+   checksum32: 5675D7BF8E62AF00E40E182B6FCDCAE09AD2C10CDAEC5CA755C0616F09D4F884
+   checksum64: A97A5566C93B9B4F6658ADAC2BC2136CD106FCE5E06E11F4B30400148A499719
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/torrent-file-editor/torrent-file-editor/master/LICENSE
