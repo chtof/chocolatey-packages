@@ -4,11 +4,20 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
   destination = "$toolsDir"
-  file        = "$toolsDir\dust3d-1.0.3.zip"  
+  file        = "$toolsDir\dust3d-1.1.3.zip"
 }
 
 Get-ChocolateyUnzip @packageArgs
 Remove-Item -Path $packageArgs.file
+
+$packageArgsSubFolder = @{
+  packageName  = $env:ChocolateyPackageName
+  destination  = "$toolsDir"
+  fileFullPath = (Get-ChildItem -Recurse -Filter '*.zip' $toolsDir).FullName
+}
+
+Get-ChocolateyUnzip @packageArgsSubFolder
+Remove-Item -Path $packageArgsSubFolder.fileFullPath
 
 # Install start menu shortcut
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
