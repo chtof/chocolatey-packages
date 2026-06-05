@@ -10,8 +10,8 @@ function global:au_GetLatest {
     $version = $matches.Version
 
     return @{
-        Version = $version
-        URL32   = 'https://freefr.dl.sourceforge.net/project/google2srt/Google2SRT/' + $version + '/Google2SRT-' + $version + '.zip'
+        Version = $version        
+        URL32   = Get-RedirectedUrl 'https://downloads.sourceforge.net/project/google2srt/Google2SRT/' + $version + '/Google2SRT-' + $version + '.zip'
     }
 }
 
