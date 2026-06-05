@@ -1,15 +1,14 @@
 ﻿import-module au
 
 function global:au_GetLatest {
-    $releases = 'https://www.perforce.com/products/helix-alm/release-notes'
-    $regex    = '>Helix ALM (?<Version>[\d\.]+)<'
-
-    (Invoke-WebRequest -Uri $releases).RawContent -match $regex
-    $version = $matches.Version
+    $releases = 'https://filehost.perforce.com/alm/helixalm/'
+    $folder = (Invoke-WebRequest -Uri $releases -useBasicParsing).links.href | Select -Last 1
+    
+    $version = $folder -Replace 'r([\d\.]{8,})/', '$1'
 
     return @{
         Version = $version
-        URL32   = 'https://cdist2.perforce.com/alm/helixalm/r' + $version + '/ttwinclientinstall.exe'        
+        URL32   = $releases + $folder + 'ttwinclientinstall.exe'        
     }
 }
 
