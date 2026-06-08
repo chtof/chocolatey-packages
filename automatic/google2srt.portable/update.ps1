@@ -11,7 +11,7 @@ function global:au_GetLatest {
 
     return @{
         Version = $version        
-        URL32   = Get-RedirectedUrl 'https://downloads.sourceforge.net/project/google2srt/Google2SRT/' + $version + '/Google2SRT-' + $version + '.zip'
+        URL32   = (Get-RedirectedUrl ('https://downloads.sourceforge.net/project/google2srt/Google2SRT/' + $version + '/Google2SRT-' + $version + '.zip')) -Replace '\?viasf=.*',''
     }
 }
 
