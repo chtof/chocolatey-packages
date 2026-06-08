@@ -13,7 +13,7 @@ function global:au_GetLatest {
 
     return @{
         Version = $matches.Version        
-        URL64   = 'https://virtualhere.com/sites/default/files/usbserver/vhusbdwin64.exe'
+        URL64   = 'https://www.virtualhere.com/sites/default/files/usbserver/vhusbdwinw64.exe'        
     }
 }
 
