@@ -2,12 +2,12 @@
 
 function global:au_GetLatest {
 	$releases = 'https://rambax.com/simpletransfer/download'
-	$regex    = 'SimpleTransfer Desktop Setup (?<Version>[\d\.]+).exe'
+	$regex    = 'SimpleTransfer(%20)?Desktop(%20)?Setup(%20)?(?<Version>[\d\.]+).exe'    
 	
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$download_page.Content -match $regex | Out-Null
+    $url = (Invoke-WebRequest -Uri $releases -UseBasicParsing).links | ? href -match $regex
+	#$download_page.Content -match $regex | Out-Null
 	
-    return @{ Version = $matches.Version ; URL32 = 'https://rambax.com/simpletransfer/desktop/' + [uri]::EscapeDataString($matches.0) }
+    return @{ Version = $matches.Version ; URL32 = 'https://rambax.com' + $url.href }
 }
 
 function global:au_SearchReplace {
