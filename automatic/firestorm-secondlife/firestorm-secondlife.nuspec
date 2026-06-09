@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>firestorm-secondlife</id>
-    <version>6.6.17</version>
+    <version>7.2.4.80712</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/firestorm-secondlife</packageSourceUrl>
     <owners>chtof</owners>
     <title>Firestorm Viewer for Second Life</title>
@@ -27,7 +27,7 @@ The Phoenix Firestorm Project is currently active in developing the Firestorm Vi
 ]]></description>
     <releaseNotes>https://www.firestormviewer.org</releaseNotes>
     <dependencies>
-     <dependency id="autohotkey.portable" version="1.1.33.06" />
+     <dependency id="autohotkey.portable" version="2.0.11" />
     </dependencies>
   </metadata>
   <files>
