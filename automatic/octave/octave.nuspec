@@ -30,7 +30,7 @@ Octave has extensive tools for solving common numerical linear algebra problems,
 
 GNU Octave is also freely redistributable software. You may redistribute it and/or modify it under the terms of the [GNU General Public License (GPL)](https://www.gnu.org/copyleft/gpl.html) as published by the [Free Software Foundation](https://www.gnu.org).
 
-Octave was written by [John W. Eaton](mailto:jwe@octave.org) and [many others](https://hg.savannah.gnu.org/hgweb/octave/file/tip/doc/interpreter/contributors.in). Because Octave is [free software](https://www.gnu.org/philosophy/free-sw.html) you are encouraged to help make Octave more useful by writing and contributing additional functions for it, and by reporting any problems you may have.
+Octave was written by John W. Eaton and [many others](https://hg.savannah.gnu.org/hgweb/octave/file/tip/doc/interpreter/contributors.in). Because Octave is [free software](https://www.gnu.org/philosophy/free-sw.html) you are encouraged to help make Octave more useful by writing and contributing additional functions for it, and by reporting any problems you may have.
 
 Everyone is encouraged to share this software with others under the terms of the [GNU General Public License (GPL)](https://www.gnu.org/copyleft/gpl.html). You are also encouraged to help make Octave more useful by writing and contributing additional functions for it, and by reporting any problems you may have.
 
