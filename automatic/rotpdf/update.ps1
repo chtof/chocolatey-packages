@@ -3,7 +3,7 @@ import-module au
 
 function global:au_GetLatest {
     $releases     = 'https://www.ne.jp/asahi/foresth/home/'
-    $regexVersion = 'RotPDF.*?\r?\n\s*Ver(?<version>\d+\.\d+)'    
+    $regexVersion = 'RotPDF(?:.*?\r?\n\s*|\s*)Ver(?<version>\d+\.\d+)'    
 	$regex        = 'rpdf[\d\._]+.zip'
  
 	$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
