@@ -5,12 +5,16 @@ function global:au_GetLatest {
     $download_url   = 'https://chronoplexsoftware.com/myfamilytree/downloads'
     $download_page = Invoke-WebRequest -Uri $releases     
     $regex   = 'var appVersionNumber = "(?<Version>.*)";'
-    $regex_lp   = 'var applpVersionNumber = "(?<Version_lp>.*)";'
+    $regex_lp   = 'var langVersionNumber = "(?<Version_lp>.*)";'
     $download_page -match $regex
     $version = $matches.Version
     $download_page -match $regex_lp
     $version_lp = $matches.Version_lp
-    return @{ Version = $version ; URL32 = $download_url + "/myfamilytree_languagepack" + $version_lp + ".msi" ; URL64 = $download_url + "/myfamilytree_languagepack" + $version_lp + "x64.msi"}
+    return @{
+        Version = $version
+        URL32 = $download_url + "/myfamilytree_languagepack" + $version_lp + "x86.msi"
+        URL64 = $download_url + "/myfamilytree_languagepack" + $version_lp + "x64.msi"
+    }
 }
 
 function global:au_SearchReplace {
