@@ -1,7 +1,7 @@
 ﻿import-module au
 
 function global:au_GetLatest {
-    $releases       = 'https://chronoplexsoftware.com/myfamilytree/config.js'
+    $releases       = 'https://chronoplexsoftware.com/myfamilytree/updates/config.js'
     $download_url   = 'https://chronoplexsoftware.com/myfamilytree/downloads'
     $download_page = Invoke-WebRequest -Uri $releases     
 	$regex   = 'var appVersionNumber = "(?<Version>.*)";'
