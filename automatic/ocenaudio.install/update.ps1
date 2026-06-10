@@ -1,7 +1,6 @@
 import-module au
 
-function global:au_BeforeUpdate() {
-  $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
+function global:au_BeforeUpdate() {  
   $Latest.Checksum64 = Get-RemoteChecksum $Latest.Url64
 }
 
