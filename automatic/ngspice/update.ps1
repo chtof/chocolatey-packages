@@ -3,25 +3,21 @@ import-module au
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-  #$releases = 'https://sourceforge.net/projects/ngspice/files/ng-spice-rework'  
-  #$regex    = 'title="/ng-spice-rework/\d+/ngspice-(?<Version>[\d]+)_64.zip'
-  $releases  = 'https://sourceforge.net/p/ngspice/news/'
-  $regex     = 'ngspice-(?<Version>[\d]+) is available.'
-
-  $download_page = (Invoke-WebRequest -Uri $releases).RawContent -match $regex
-  $Version = $matches.Version
-
-  $regex    = '/ngspice-(?<Version>[\d]+)_64.(zip|7z)'
-  $releases = 'https://sourceforge.net/projects/ngspice/files/ng-spice-rework/' + $Version + '/'
-  $download_page = (Invoke-WebRequest -Uri $releases).RawContent -match $regex
-
-  #https://sourceforge.net/projects/ngspice/files/ng-spice-rework/39/
-  #https://sourceforge.net/projects/ngspice/files/ng-spice-rework/39/ngspice-39_64.7z/download
-
+  $releases = 'https://sourceforge.net/projects/ngspice/files/ng-spice-rework'  
+  $regex    = '/projects/ngspice/files/ng-spice-rework/[\d]+/$'
+  $version_url = (Invoke-WebRequest -Uri $releases -UseBasicParsing).links | ? href -match $regex | Select -Last 1
   
+
+
+  $releases = 'https://sourceforge.net' + $version_url.href
+  $regex    = '/ngspice-(?<version>[\d]+)_64.(zip|7z)'
+  
+  $download_page = (Invoke-WebRequest -Uri $releases -useBasicParsing).links | ? href -match $regex | Select -First 1
+  $version = $matches.version
+
   return @{
     Version = $Version + ".0"    
-    URL64 = Get-RedirectedURL('https://downloads.sourceforge.net/project/ngspice/ng-spice-rework/' + $matches.Version + $matches.0)
+    URL64 = (Get-RedirectedUrl $download_page.href) -Replace '\?viasf=.*', ''
   }
 }
 
