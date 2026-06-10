@@ -12,7 +12,7 @@ function global:au_GetLatest {
 
     return @{
         Version = $version
-        URL32 = "https://freefr.dl.sourceforge.net/project/mbox-viewer/v" + $version + '/mbox-viewer.exe-v' + $version + '.zip'
+        URL32  = (Get-RedirectedUrl ('https://downloads.sourceforge.net/project/mbox-viewer/v' + $version + '/mbox-viewer.exe-v' + $version + '.zip')) -Replace '\?viasf=.*', ''
     }
 }
 
