@@ -7,14 +7,14 @@ Package can be verified like this:
  
 1. Download:
  
-   x64: https://gigenet.dl.sourceforge.net/project/ngspice/ng-spice-rework/41/ngspice-41_64.7z
+   x64: https://cytranet.dl.sourceforge.net/project/ngspice/ng-spice-rework/46/ngspice-46_64.7z
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum64: 5EB43C516C3DB28048D9C0D26CAA423840AFBE5A2D47FFD47D380242C065932B
+   checksum64: 7ED713CD8D401DB724FFE99087C3122BF05A9CFA99DE02C6EEED44EE44785A33
  
 File 'LICENSE.txt' is obtained from:
    https://sourceforge.net/p/ngspice/ngspice/ci/master/tree/COPYING?format=raw
