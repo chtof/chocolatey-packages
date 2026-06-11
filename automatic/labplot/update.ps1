@@ -19,7 +19,7 @@ function global:au_GetLatest {
     $version = $matches.Version
     $url = Get-RedirectedUrl ('https://download.kde.org/stable/labplot/' + $majorVersion + '/labplot-' + $majorVersion + '-64bit-setup.exe')#>
 
-    $releases = 'https://labplot.kde.org/download/'
+    $releases = 'https://labplot.org/pages/download/'
     $regex    = 'labplot-(?<Version>[\d\.]+)((-x86)?[-_]64(bit)?-setup)?.exe'    
     $url = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).links | ? href -match $regex).href
 
