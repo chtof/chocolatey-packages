@@ -10,7 +10,7 @@ function global:au_GetLatest {
 
     return @{
         Version = $version
-        URL32 = $download_url + "/myfamilytree" + $version + ".msi"
+        URL32 = $download_url + "/myfamilytree" + $version + "x86.msi"
         URL64 = $download_url + "/myfamilytree" + $version + "x64.msi"
     }    
 }
