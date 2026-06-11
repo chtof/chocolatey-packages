@@ -7,7 +7,7 @@ function global:au_BeforeUpdate() {
 
 function global:au_GetLatest {
    return github_GetInfo -ArgumentList @{
-        repository = 'reds-heig/logisim-evolution'
+        repository = 'logisim-evolution/logisim-evolution'
         regex32    = 'logisim-evolution-(?<Version>[\d\.]+)-all.jar'
    }
 }
