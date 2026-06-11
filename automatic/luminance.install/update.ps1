@@ -11,8 +11,8 @@ function global:au_GetLatest {
   $version = $matches.Version
   
   return @{
-    Version = $version
-    URL64   = 'https://freefr.dl.sourceforge.net/project/qtpfsgui/luminance/' + $version + '/Luminance-HDR_v.' + $version + '_Windows_64.exe'
+    Version = $version    
+    URL64   = (Get-RedirectedUrl ('https://sourceforge.net/projects/qtpfsgui/files/luminance/' + $version + '/Luminance-HDR_v.' + $version + '_Windows_64.exe/download')) -Replace '\?viasf.*', ''
   }
 }
 
