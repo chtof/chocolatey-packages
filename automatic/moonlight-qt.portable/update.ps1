@@ -1,20 +1,13 @@
 import-module au
+. ..\..\helpers\GitHub_Helper.ps1
 
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $github_repository = "moonlight-stream/moonlight-qt"
-    $releases          = "https://github.com/" + $github_repository + "/releases/latest"    
-    $regex64           = 'MoonlightPortable-x64-(?<Version>[\d\.]+).zip'
-
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing	
-    $version       = $matches.Version
-    $url64         = $download_page.links | ? href -match $regex64 | Select -First 1
-
-    return @{
-        Version = $version        
-        URL64   = $url64.href
-    }
+   return github_GetInfo -ArgumentList @{
+        repository = 'moonlight-stream/moonlight-qt'        
+        regex64  = 'MoonlightPortable-x64-(?<Version>[\d\.]+).zip$'
+   }
 }
 
 function global:au_SearchReplace {
