@@ -7,7 +7,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
     $releases = 'https://launchpad.net/photofiltre-lx/+download'
-    $regex    = 'Photoflare_CE_(?<Version>[\d\.]+)_amd64_win_portable.zip'
+    $regex    = 'Photoflare_CE_[v]?(?<Version>[\d\.]+)_amd64_win_portable.zip'
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$url = $download_page.links | ? href -match $regex | Select -First 1
