@@ -4,7 +4,7 @@ import-module au
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $releases = 'https://luxcorerender.org/download'
+    $releases = 'https://luxcorerender.org/download-v2-6/'
     $regex    = 'luxcorerender-v(?<Version>[\d\.]+)-win64-opencl-sdk.zip'
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
