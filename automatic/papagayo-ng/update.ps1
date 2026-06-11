@@ -13,8 +13,8 @@ function global:au_GetLatest {
     $version = $matches.Version
 
     return @{
-        Version = $matches.Version
-        URL32 = 'https://netcologne.dl.sourceforge.net/project/papagayo-ng/stable/' +$version + '/' + $matches.File
+        Version = $matches.Version        
+        URL32 = (Get-RedirectedUrl ('https://downloads.sourceforge.net/project/papagayo-ng/stable/' + $version + '/' + $matches.File)) -Replace '\?viasf=.*',''
     }
 }
 
