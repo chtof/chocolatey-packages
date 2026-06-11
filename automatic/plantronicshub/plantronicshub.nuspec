@@ -6,7 +6,7 @@
     <version>3.25.54307.37251</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/plantronicshub</packageSourceUrl>
     <owners>chtof</owners>
-    <title>Plantronics Hub</title>
+    <title>[Deprecated] Plantronics Hub</title>
     <authors>Plantronics, Inc.</authors>
     <projectUrl>https://www.poly.com/us/en/support/downloads-apps/hub-desktop</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/plantronicshub/plantronicshub.png</iconUrl>
@@ -19,17 +19,7 @@
     <bugTrackerUrl>https://www.poly.com/us/en/support/contact</bugTrackerUrl>
     <tags>plantronicshub plantronics settings control</tags>
     <summary>Allows end-users to customize their settings and get visible status of their Plantronics audio device on their desktop.</summary>
-    <description><![CDATA[## PRODUCTIVITY AND CONTROL
-Plantronics Hub for Windows/Mac, part of the Plantronics software portfolio, is a client application that allows users to control the settings on their Plantronics audio device. Users can customize their ringtone and ring location, configure presence updates, and more. The software enhances the user experience by providing valuable information about the state of their Plantronics audio device, such as mute and battery status, easily visible at the bottom of the desktop.
-
-## CUSTOMIZE THE EXPERIENCE OF YOUR PLANTRONICS AUDIO DEVICE
-- Change device settings
-- Visible mute and battery status
-- Device-level call control with call answer/end, mute, and volume adjust
-- Update your headset firmware
-- Change language option for your voice prompts
-
-*Some features not available on every device. Download Plantronics Hub to see which features you can customize.*
+    <description><![CDATA[Poly Lens is the replacement of the old Plantronics Hub.
 ]]></description>
     <releaseNotes></releaseNotes>
     <dependencies>
