@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 [Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
@@ -7,12 +7,16 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
     $releases = 'https://launchpad.net/photofiltre-lx/+download'
-    $regex    = 'Photoflare_CE_(?<Version>[\d\.]+)_amd64.msi$'
-
+    #$regex    = 'Photoflare_CE_(?<Version>[\d\.]+)_amd64.msi$'
+    $regex    = 'Photoflare_CE_[v]?(?<Version>[\d\.]+)_amd64.exe$'
+    
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$url = $download_page.links | ? href -match $regex | Select -First 1
 
-    return @{ Version = $matches.Version ; URL64 = $url.href }
+    return @{
+        Version = $matches.Version
+        URL64 = $url.href
+    }
 }
 
 function global:au_SearchReplace {
