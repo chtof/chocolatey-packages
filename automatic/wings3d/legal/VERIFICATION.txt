@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://cytranet.dl.sourceforge.net/project/wings/wings/2.3/wings-2.3.exe
-   x64: https://zenlayer.dl.sourceforge.net/project/wings/wings/2.3/wings-x64-2.3.exe
+   x32: https://altushost-bul.dl.sourceforge.net/project/wings/wings/2.4.1/wings-2.4.1.exe
+   x64: https://altushost-bul.dl.sourceforge.net/project/wings/wings/2.4.1/wings-x64-2.4.1.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: EE9078DAD767DE4EAF0C9DFD85C93753A6C3FAD822A83A66F40730EC0BB29D29
-   checksum64: 5E425B2E91DD03DEB88697E0050EE6B3C1C31292B4A65D58FCDBFA6739270394
+   checksum32: B0083A78BB323F5605587EA956F60BECC0EFD318632FA6D032FEFB4BA4B8962C
+   checksum64: B78B03EB530D5C0BEA3535AD55C809FFFB22FBEE0B78F7C18A699CE1E3FB16AF
  
 Using AU:
  
