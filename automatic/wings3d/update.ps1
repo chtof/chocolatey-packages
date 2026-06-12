@@ -1,19 +1,19 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
     $releases = 'https://sourceforge.net/projects/wings/files/wings/'
-    $regex    = 'wings-x64-(?<Version>[\d\.]+).exe$'
+    $regex    = 'wings-x64-(?<Version>[\d\.]+).exe[$\ :]'
 
-    (Invoke-WebRequest -Uri $releases).RawContent -match $regex | Out-Null    
+    (Invoke-WebRequest -Uri $releases -UseBasicParsing) -match $regex | Out-Null    
     $version = $matches.Version
 
     return @{
         Version = $version        
-        URL32 = (Get-RedirectedUrl ('https://downloads.sourceforge.net/project/wings/wings/' + $version + '/wings-' + $version + '.exe')) -Replace ('\?viasf=1', '')
-        URL64 = (Get-RedirectedUrl ('https://downloads.sourceforge.net/project/wings/wings/' + $version + '/wings-x64-' + $version + '.exe')) -Replace ('\?viasf=1', '')
+        URL32 = (Get-RedirectedUrl ('https://downloads.sourceforge.net/project/wings/wings/' + $version + '/wings-' + $version + '.exe')) -Replace ('\?viasf=.*', '')
+        URL64 = (Get-RedirectedUrl ('https://downloads.sourceforge.net/project/wings/wings/' + $version + '/wings-x64-' + $version + '.exe')) -Replace ('\?viasf=.*', '')
     }
 }
 
