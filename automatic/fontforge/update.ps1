@@ -13,7 +13,7 @@ function global:au_GetLatest {
         $data.Version = $data.Version -Replace '([\d]{4})([\d]{2})([\d]{2})', '$1.$2.$3'
     }
    
-   return data
+   return $data
 }
 
 function global:au_SearchReplace {
