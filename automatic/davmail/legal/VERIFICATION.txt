@@ -7,14 +7,14 @@ Package can be verified like this:
  
 1. Download:
  
-   x64: https://altushost-bul.dl.sourceforge.net/project/davmail/davmail/6.7.0/davmail-6.7.0-4068-setup64.exe
+   x64: https://phoenixnap.dl.sourceforge.net/project/davmail/davmail/6.8.0/davmail-6.8.0-4181-setup64.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum64: 15AFB169AAA5020C19EB3219D77182C84474E481113BE03B9573F81E7808E9CF
+   checksum64: 63327DCE71D377D2DAC0EFF29E52B762797D2EA63B9A09BAC5F6FE6335CF0B3D
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/mguessan/davmail/master/LICENSE
