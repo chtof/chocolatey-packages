@@ -7,7 +7,6 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://cfhcable.dl.sourceforge.net/project/ffmpeg-batch/FFbatch_AV_Converter_Portable_2.7.7_32bit.exe
    x64: https://versaweb.dl.sourceforge.net/project/ffmpeg-batch/FFBatch_AV_Converter_Portable_3.0.1_64bit.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
@@ -15,7 +14,6 @@ Package can be verified like this:
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 3E50D4B356598AA3D3FB72BA10B73B39DB7BDA15954BB52F2233E53893F637B4
    checksum64: 72395DA2367A3FCF9D4183B7A3FD34FC1A69B5A360610090C38397740CFF05EB
  
 File 'LICENSE.txt' is obtained from:
