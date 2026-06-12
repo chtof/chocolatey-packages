@@ -16,7 +16,7 @@ function global:au_GetLatest {
   
   return @{
     Version = $version    
-    URL64   = Get-RedirectedUrl $url64
+    URL64   = (Get-RedirectedUrl $url64) -Replace '\?viasf=.*', ''
   }
 }
 
