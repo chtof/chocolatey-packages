@@ -4,7 +4,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = "kdevelop.portable"
   destination   = "$toolsDir"  
-  file64        = "$toolsDir\kdevelop-5.1.2-x64-portable.7z"
+  file64        = "$toolsDir\kdevelop-master-6702-windows-cl-msvc2022-x86_64.7z"
 }
 
 Get-ChocolateyUnzip @packageArgs
