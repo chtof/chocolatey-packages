@@ -3,14 +3,22 @@
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-  $releases = 'http://www.roomarranger.com/whatsnew.txt'
-  $regex = 'version (?<Version>[\d\.]+) \('
+  #$releases = 'http://www.roomarranger.com/whatsnew.txt'
+  #$regex = 'version (?<Version>[\d\.]+) \('
+
+  $releases = 'https://www.roomarranger.com'
+  $regex = '<span id="dlbox_verno">(?<Version>[\d\.]+)</span>'
 
   (Invoke-WebRequest -Uri $releases) -match $regex | Out-Null
-  $version_url = $matches.Version -Replace '\.', ''
+  $version = $matches.Version
+  If ($version -match '^[\d]+$') {
+    $version = $version -Replace '^([\d]+)$', '$1.0'
+  }
+
+  $version_url = $version -Replace '\.', ''
 
   return @{
-      Version = $matches.Version      
+      Version = $version
       URL64   = 'https://f000.backblazeb2.com/file/rooarr/rooarr' + $version_url + '_64bit.exe'      
     }
 }
