@@ -1,7 +1,5 @@
 import-module au
 
-function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
-
 function global:au_GetLatest {
 	$releases = 'https://cdn.kde.org/ci-builds/kdevelop/kdevelop/master/windows/'
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing    
@@ -14,18 +12,13 @@ function global:au_GetLatest {
 
 function global:au_SearchReplace {
     @{
-       "legal\VERIFICATION.txt"  = @{            
-            "(?i)(x64: ).*"             = "`${1}$($Latest.URL64)"
-            "(?i)(checksum type:\s+).*" = "`${1}$($Latest.ChecksumType64)"            
-            "(?i)(checksum64:).*"       = "`${1} $($Latest.Checksum64)"
-        }
-
         "tools\chocolateyinstall.ps1" = @{          
-          "(?i)(^\s*file64\s*=\s*`"[$]toolsDir\\)(.*)`""   = "`$1$($Latest.FileName64)`""
+            "(^(\s)*url64bit\s*=\s*)('.*')"   = "`$1'$($Latest.URL64)'"
+            "(^(\s)*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
 
 If ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-    update -checksumFor None
+    update -checksumFor 64
 }
