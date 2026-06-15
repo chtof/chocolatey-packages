@@ -38,8 +38,7 @@ Screenshot of KDevelop 5 under Windows with the native Windows 10 style
 ]]></description>
   <releaseNotes>https://www.kdevelop.org/news/kdevelop-531-released</releaseNotes>
   </metadata>
-  <files>
-    <file src="legal\**" target="legal" />
+  <files>    
     <file src="tools\**" target="tools" />
   </files>
 </package>
