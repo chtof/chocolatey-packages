@@ -4,11 +4,12 @@
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-   return github_GetInfo -ArgumentList @{
+   #return github_GetInfo -ArgumentList @{
+    github_GetInfo -ArgumentList @{
         repository = 'libvips/nip2'
         regex32    = 'nip2-(?<Version>[\d\.]*)-setup.zip$'
         exclude_versions = @('8.9.1')
-   }
+    }
 }
 
 function global:au_SearchReplace {
