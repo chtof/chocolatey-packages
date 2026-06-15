@@ -2,20 +2,22 @@ import-module au
 
 function global:au_GetLatest {
     $releases        = 'https://build.openvpn.net/downloads/releases'
-    #$releasesVersion = 'https://community.openvpn.net/openvpn/wiki/GettingTapWindows'
-    $releasesVersion = 'https://raw.githubusercontent.com/OpenVPN/tap-windows6/master/version.m4'
-    $regexProductVersion     = 'define\(\[PRODUCT_VERSION\], \[(?<ProductVersion>[\d\.]+)\]\)'
-    $regexProductTapWinBuild = 'define\(\[PRODUCT_TAP_WIN_BUILD\], \[(?<ProductTapWinBuild>[\d\.]+)\]\)'    
+    ##$releasesVersion = 'https://community.openvpn.net/openvpn/wiki/GettingTapWindows'
+    #$releasesVersion = 'https://raw.githubusercontent.com/OpenVPN/tap-windows6/master/version.m4'
+    #$regexProductVersion     = 'define\(\[PRODUCT_VERSION\], \[(?<ProductVersion>[\d\.]+)\]\)'
+    #$regexProductTapWinBuild = 'define\(\[PRODUCT_TAP_WIN_BUILD\], \[(?<ProductTapWinBuild>[\d\.]+)\]\)'    
+    $regex = 'tap-windows-(?<Version>[\d\.]+).zip$'
     
-    $download_page = (Invoke-WebRequest -Uri $releasesVersion -UseBasicParsing).RawContent
-    $download_page -match $regexProductVersion | Out-Null
-    $productVersion = $matches.ProductVersion
-    $download_page -match $regexProductTapWinBuild | Out-Null
-    $productTapWinBuild = $matches.ProductTapWinBuild
+    #$download_page = (Invoke-WebRequest -Uri $releasesVersion -UseBasicParsing).RawContent
+    #$download_page -match $regexProductVersion | Out-Null
+    #$productVersion = $matches.ProductVersion
+    #$download_page -match $regexProductTapWinBuild | Out-Null
+    #$productTapWinBuild = $matches.ProductTapWinBuild
+    $url = (Invoke-WebRequest -Uri $releases -UseBasicParsing).links | ? href -match $regex | Select -First 1
 
     return @{
-        Version = $productVersion        
-        URL32   = $releases + "/tap-windows-$productVersion.zip"
+        Version = $matches.Version  
+        URL32   = $releases + $url.href
     }
 }
 
@@ -29,4 +31,5 @@ function global:au_SearchReplace {
     }
 }
 
-update -NoCheckUrl
+#update -NoCheckUrl
+update
