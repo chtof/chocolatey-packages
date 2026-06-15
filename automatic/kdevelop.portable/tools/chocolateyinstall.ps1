@@ -8,7 +8,7 @@ $packageArgs = @{
   
 
   url64bit       = 'https://cdn.kde.org/ci-builds/kdevelop/kdevelop/master/windows/kdevelop-master-6718-windows-cl-msvc2022-x86_64.7z'
-  checksum64     = ''
+  checksum64     = 'bc984845372bb253b55a1ddb7bfe1fe27669358df4f73f3a8c325f0d31836f32'
   checksumType64 = 'sha256'
 }
 
