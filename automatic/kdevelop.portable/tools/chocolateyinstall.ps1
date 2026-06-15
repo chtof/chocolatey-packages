@@ -1,14 +1,19 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
+
 $packageArgs = @{
-  packageName   = "kdevelop.portable"
-  destination   = "$toolsDir"  
-  file64        = "$toolsDir\kdevelop-master-6702-windows-cl-msvc2022-x86_64.7z"
+  packageName    = $env:ChocolateyPackageName
+  unzipLocation  = "$toolsDir"
+  
+
+  url64bit       = 'https://cdn.kde.org/ci-builds/kdevelop/kdevelop/master/windows/kdevelop-master-6718-windows-cl-msvc2022-x86_64.7z'
+  checksum64     = ''
+  checksumType64 = 'sha256'
 }
 
-Get-ChocolateyUnzip @packageArgs
-
+Install-ChocolateyZipPackage @packageArgs
+ 
 # Install start menu shortcut
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
 $shortcutFilePath = Join-Path $programs "KDevelop.lnk"
