@@ -7,4 +7,17 @@ $packageArgs = @{
   silentArgs  = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 }
 
-Install-ChocolateyInstallPackage @packageArgs
+
+$installed = Get-UninstallRegistryKey -SoftwareName 'FontForge version *'
+
+If ($installed) {
+  # Upgrade
+  Write-Host "Upgrading..."
+  Start-Process "AutoHotKey" -Verb runas -ArgumentList "`"$toolsDir\chocolateyUpgrade.ahk`""  
+}
+
+Install-ChocolateyInstallPackage @packageArgs  
+
+
+
+
