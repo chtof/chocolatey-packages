@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>iawriter</id>
-    <version>1.2.7320.18263</version>
+    <version>2.1.9644.17275</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/iawriter</packageSourceUrl>
     <owners>chtof</owners>
     <title>iA Writer</title>
