@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
     
-  url           = 'https://s3-eu-west-1.amazonaws.com/iawriter/windows/ia_writer_installer_1.2.7320.18263.exe'
-  checksum      = 'DB8A3FFC1C4D4A391DEAAAFFAF0770EAA40063A1ED2B583C9F81C21DD2116847'
+  url           = 'https://files.ia.net/writer/windows/2.1.9644.17275/iawriter-2.1.9644.17275-build20260528-release.exe'
+  checksum      = '71ab90403b0a029da292154ae340881eed3e1bb752e42f2b79ebc853e8126fce'
   checksumType  = 'sha256'
 
   silentArgs    = "/qn /norestart /l*v `"$env:TEMP\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
