@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
 
-  url          = 'https://download2.gridtracker.org/GridTracker2-2.260613.0-setup.exe'
-  checksum     = '3b86ba5e162af0b7e9d1c2d51d48634f931ee57032f4351c01cc1bd9fe1f96b1'
+  url          = 'https://download2.gridtracker.org/GridTracker2-2.260701.1-setup.exe'
+  checksum     = 'b60737c5e7557a4e81fa6fb7ccc26d2b148a8f5a0821852105d5ee529b51060b'
   checksumType = 'sha256'
 
   silentArgs   = '/S'
