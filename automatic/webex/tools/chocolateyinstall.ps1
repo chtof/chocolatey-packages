@@ -16,10 +16,6 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   filetype      = 'MSI'
 
-  url           = 'https://binaries.webex.com/WebexTeamsDesktop-Windows-Gold/Webex_x86.msi'
-  checksum      = '997BC77229CE12B7143A0CBC998E5E02F9949B80BFA88BB9B8B0647CFC9AF69D'
-  checksumType  = 'sha256'
-
   url64         = 'https://binaries.webex.com/WebexTeamsDesktop-Windows-Gold/Webex.msi'
   checksum64    = '50A428AE1C2B86CCC07495D1F7C9D12C97E03ECD3C67F4F4A089C43E447D4F6B'
   checksumType64= 'sha256'
