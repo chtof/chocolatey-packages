@@ -7,14 +7,14 @@ Package can be verified like this:
  
 1. Download:
    
-   x64: https://gigenet.dl.sourceforge.net/project/kid3/kid3/3.9.5/kid3-3.9.5-win32-x64.zip
+   x64: https://psychz.dl.sourceforge.net/project/kid3/kid3/3.10.1/kid3-3.10.1-win32-x64.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum64: 0c1027747409bbb321fbb6781adc9643acc355e0ca19730c2c979504caa24a29
+   checksum64: 34827bd2d3d507223d532ccbdf982092714f24cd8bb551ac179c26d5b1665bbd
  
 File 'LICENSE.txt' is obtained from:
    https://sourceforge.net/p/kid3/code/ci/master/tree/LICENSE
