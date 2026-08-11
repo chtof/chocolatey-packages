@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>wsjtz</id>
-    <version>2.0.16</version>
+    <version>2.0.18</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/wsjtz</packageSourceUrl>
     <owners>chtof</owners>
     <title>WSJT-Z</title>
@@ -19,12 +19,11 @@
     <bugTrackerUrl>https://github.com/sq9fve/wsjt-z/issues</bugTrackerUrl>
     <tags>wsjtz wsjtz ham radio amateur ft8 ft4 ft2 jt4 jt9 jt65 q65 msk144 wspr echo freqcal</tags>
     <summary>A modified WSJT-X with extended automation, advanced filtering, and an enhanced decoder pipeline.</summary>
-    <description><![CDATA[
-WSJT-Z is a fork of [WSJT-X|https://wsjtx.github.io/wsjtx/index.html] by **Joe Taylor K1JT** and the WSJT Development Group. Initially developed as an automation project, WSJT-Z now focuses on extending the operating workflow with deeper filtering, smarter automation, and a more responsive UI -- while keeping full compatibility with the upstream WSJT-X protocols.
+    <description><![CDATA[WSJT-Z is a fork of [WSJT-X|https://wsjtx.github.io/wsjtx/index.html] by **Joe Taylor K1JT** and the WSJT Development Group. Initially developed as an automation project, WSJT-Z now focuses on extending the operating workflow with deeper filtering, smarter automation, and a more responsive UI � while keeping full compatibility with the upstream WSJT-X protocols.
 
 WSJT-Z supports **FT8, FT4, FT2, JT4 / JT9 / JT65, Q65, MSK144, WSPR, Echo and FreqCal**.
 
-⚠️ Always monitor your transceiver while using WSJT-Z, unless unattended/automated operation is explicitly permitted by the regulations in your country.
+?? Always monitor your transceiver while using WSJT-Z, unless unattended/automated operation is explicitly permitted by the regulations in your country.
 
 ![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/wsjtz/screenshot.png)
 ]]></description>

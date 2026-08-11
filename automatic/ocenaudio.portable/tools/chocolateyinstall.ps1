@@ -6,7 +6,7 @@ $packageArgs = @{
   unzipLocation  = "$toolsDir"
 
   url64          = 'https://www.ocenaudio.com/downloads/index.php/ocenaudio_windows64.zip'  
-  checksum64     = '643227896707d6cb7ebfbe4149948209767db773f39bd1baed1dc28fa7818dda'
+  checksum64     = '8f18683e339e0cb9a45ad4b4bdbc36a1723905e94107ba4ff9bc4115e4def885'
   checksumType64 = 'sha256'
 }
 

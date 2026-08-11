@@ -1,4 +1,4 @@
-﻿VERIFICATION
+VERIFICATION
  
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com/sq9fve/wsjt-z/releases/download/v2.0.16/wsjtz-3.0.0-2.0.16-win32.exe
-   x64: https://github.com/sq9fve/wsjt-z/releases/download/v2.0.16/wsjtz-3.0.0-2.0.16-win64.exe
+   x32: https://github.com//sq9fve/wsjt-z/releases/download/v2.0.18/wsjtz-3.0.0-2.0.18-win32.exe
+   x64: https://github.com//sq9fve/wsjt-z/releases/download/v2.0.18/wsjtz-3.0.0-2.0.18-win64.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 51CCE0E986F5E52283FD309F8CA4B45D5AD291C2E5031B184F94820F77198283
-   checksum64: 99A7CAFD00B060402284CEC7487B66EF79594BCFF66D179C965B4F6EB7F82BCB
+   checksum32: F8704B62B467E54D306918259C42B1710C04DE07085450343A8090E2AB3C310C
+   checksum64: EAC2487DE7F9003066A5FDD92ADEC510118536DED5D4911831F50D44D5FA5690
  
 File 'LICENSE.txt' is obtained from:
    https://github.com/sq9fve/wsjt-z/blob/master/COPYING
