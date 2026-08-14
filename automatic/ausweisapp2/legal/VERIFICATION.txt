@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com//Governikus/AusweisApp/releases/download/2.5.4/AusweisApp-2.5.4.msi
-   x64: https://github.com//Governikus/AusweisApp/releases/download/2.5.4/AusweisApp-2.5.4.msi
+   x32: https://github.com//Governikus/AusweisApp/releases/download/2.5.5/AusweisApp-2.5.5.msi
+   x64: https://github.com//Governikus/AusweisApp/releases/download/2.5.5/AusweisApp-2.5.5.msi
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: AFE6B5CA58ADCF3E6D95ABBC962C17BA108994D033D15988F0DFB218E40AFFF4
-   checksum64: AFE6B5CA58ADCF3E6D95ABBC962C17BA108994D033D15988F0DFB218E40AFFF4
+   checksum32: 5795694EE178ECBBFAB28031099E1BC23D27AAA3EB937D14B548129C0587F51F
+   checksum64: 5795694EE178ECBBFAB28031099E1BC23D27AAA3EB937D14B548129C0587F51F
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/Governikus/AusweisApp2/community/LICENSE.txt
