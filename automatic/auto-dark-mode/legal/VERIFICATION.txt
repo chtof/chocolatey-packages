@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com//AutoDarkMode/Windows-Auto-Night-Mode/releases/download/11.1.0.23/AutoDarkMode_Setup_11.1.0.23_x86.exe
-   x64: https://github.com//AutoDarkMode/Windows-Auto-Night-Mode/releases/download/11.1.0.23/AutoDarkMode_Setup_11.1.0.23_x86.exe
+   x32: https://github.com//AutoDarkMode/Windows-Auto-Night-Mode/releases/download/11.1.1.1/AutoDarkMode_Setup_11.1.1.1_x86.exe
+   x64: https://github.com//AutoDarkMode/Windows-Auto-Night-Mode/releases/download/11.1.1.1/AutoDarkMode_Setup_11.1.1.1_x86.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 3391B2E8CE4BA9CFD87B8153B507F4DFC4992593893C575EDAAEACA4A6598704
-   checksum64: 3391B2E8CE4BA9CFD87B8153B507F4DFC4992593893C575EDAAEACA4A6598704
+   checksum32: 89BCC3D49F87A5F7DFD245FA366EA426039111FED7E3DE44B5CBFC1C2871508A
+   checksum64: 89BCC3D49F87A5F7DFD245FA366EA426039111FED7E3DE44B5CBFC1C2871508A
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/Armin2208/Windows-Auto-Night-Mode/master/LICENSE
