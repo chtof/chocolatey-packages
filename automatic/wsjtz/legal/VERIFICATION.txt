@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com//sq9fve/wsjt-z/releases/download/v2.0.18/wsjtz-3.0.0-2.0.18-win32.exe
-   x64: https://github.com//sq9fve/wsjt-z/releases/download/v2.0.18/wsjtz-3.0.0-2.0.18-win64.exe
+   x32: https://github.com//sq9fve/wsjt-z/releases/download/v2.0.19/wsjtz-3.0.0-2.0.19-win32.exe
+   x64: https://github.com//sq9fve/wsjt-z/releases/download/v2.0.19/wsjtz-3.0.0-2.0.19-win64.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: F8704B62B467E54D306918259C42B1710C04DE07085450343A8090E2AB3C310C
-   checksum64: EAC2487DE7F9003066A5FDD92ADEC510118536DED5D4911831F50D44D5FA5690
+   checksum32: F768C5E60DBCF84D0661AE95662E2057901C2DB7D9EAD37361682678415A50A6
+   checksum64: EE2617A568172FFCED609A9FDBBEC1B803B7A9A66EA77AB100953FF2800FB548
  
 File 'LICENSE.txt' is obtained from:
    https://github.com/sq9fve/wsjt-z/blob/master/COPYING
