@@ -6,16 +6,16 @@ in verifying that this package's contents are trustworthy.
 Package can be verified like this:
  
 1. Download:   
-   x32: https://psychz.dl.sourceforge.net/project/cudatext/release/1.236.0.3/cudatext-windows-i386-1.236.0.3.zip
-   x64: https://gigenet.dl.sourceforge.net/project/cudatext/release/1.236.0.3/cudatext-windows-amd64-1.236.0.3.zip
+   x32: https://gigenet.dl.sourceforge.net/project/cudatext/release/1.236.0.4/cudatext-windows-i386-1.236.0.4.zip
+   x64: https://pilotfiber.dl.sourceforge.net/project/cudatext/release/1.236.0.4/cudatext-windows-amd64-1.236.0.4.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 73616B21B824E622C6E282ED17A6220F226A96EAEEEFC1B2AEBED1A91031FDB1
-   checksum64: 3027AA72664E135850EF1FCB265E2B4FA1C98DA5FEE75620C95B2370F4FEB8FA
+   checksum32: B064A9F44855C266108D4B51A5FD0DBAFD93DB71B38A5A9D7E0535E0B2860BB0
+   checksum64: A64A75A59E97464191D0A1B5B3CDBF47813354EF74C6CA09611E44B56B67168E
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/Alexey-T/CudaText/master/license.txt
