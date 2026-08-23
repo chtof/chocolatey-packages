@@ -5,7 +5,7 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
 
   url64          = 'https://www.hamrick.com/files/vuex6498.exe'
-  checksum64     = 'fdd83689b9b553692a8d1011c0a08280851b4ad5ce1afd893345c640bc4a1b73'
+  checksum64     = 'e9329e74cd1138b8069419b9c7f915ed276e74c57191bba08b12d2b6cebcb901'
   checksumType64 = 'sha256'
 }
 
