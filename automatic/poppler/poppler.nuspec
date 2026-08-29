@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>poppler</id>
-    <version>26.02.0</version>
+    <version>26.6.0.2602000</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/poppler</packageSourceUrl>
     <owners>chtof</owners>
     <title>Poppler</title>
@@ -20,8 +20,12 @@
     <tags>poppler PDF rendering library xpdf</tags>
     <summary>Poppler is a PDF rendering library based on the xpdf-3.0 code base.</summary>
     <description><![CDATA[Poppler is a PDF rendering library based on the [xpdf-3.0](http://www.foolabs.com/xpdf) code base.
+
+This package installs the prebuilt, self-contained Windows binaries (all dependency DLLs included) from [oschwartz10612/poppler-windows](https://github.com/oschwartz10612/poppler-windows).
+
+**Versioning note:** chocolatey.org already hosts source-only poppler packages up to 26.6.0, so binary releases are published as `26.6.0.<encoded binary version>` (this package contains poppler **26.02.0**, poppler-windows release v26.02.0-0) until poppler-windows versions overtake 26.6.0.
 ]]></description>
-    <releaseNotes>https://poppler.freedesktop.org/releases.html</releaseNotes>
+    <releaseNotes>https://github.com/oschwartz10612/poppler-windows/releases/tag/v26.02.0-0</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
