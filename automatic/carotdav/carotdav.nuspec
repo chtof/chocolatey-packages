@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>carotdav</id>
-    <version>1.16.3</version>
+    <version>1.16.4</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/carotdav.portable</packageSourceUrl>
     <owners>chtof</owners>
     <title>CarotDAV</title>
@@ -87,7 +87,7 @@ CarotDAV collect no other information.
 ]]></description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <dependencies>
-      <dependency id="carotdav.portable" version="[1.16.3]" />
+      <dependency id="carotdav.portable" version="[1.16.4]" />
     </dependencies>
   </metadata>
   <files></files>
