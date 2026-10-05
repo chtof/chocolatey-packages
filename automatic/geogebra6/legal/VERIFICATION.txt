@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://download.geogebra.org/installers/6.0/graphing/GeoGebraGraphing-Windows-Installer-6-0-930-2.exe
-   x64: https://download.geogebra.org/installers/6.0/graphing/GeoGebraGraphing-Windows-Installer-6-0-930-2.exe
+   x32: https://download.geogebra.org/installers/6.0/graphing/GeoGebraGraphing-Windows-Installer-6-0-931-2.exe
+   x64: https://download.geogebra.org/installers/6.0/graphing/GeoGebraGraphing-Windows-Installer-6-0-931-2.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: B191D5EA0072A8CE1BEEBFE1178376225EA7805B627769B450CE3F513B48BBA3
-   checksum64: B191D5EA0072A8CE1BEEBFE1178376225EA7805B627769B450CE3F513B48BBA3
+   checksum32: 9F238DFFB7223700A51ED37CBE909B1CB42C8E36ED4FA53808430AB962CEF999
+   checksum64: 9F238DFFB7223700A51ED37CBE909B1CB42C8E36ED4FA53808430AB962CEF999
  
 File 'LICENSE.txt' is obtained from:
    https://www.geogebra.org/license
