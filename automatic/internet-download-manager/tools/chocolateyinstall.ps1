@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
 
-  url           = 'http://mirror2.internetdownloadmanager.com/idman643build12.exe'
-  checksum      = 'dcede94eb70503a948714db42f2f1d50208ab612ad366ead38c101951b4c4907'
+  url           = 'http://mirror2.internetdownloadmanager.com/idman643build14.exe'
+  checksum      = '5fbb5126ef5e7625d233f5c1c3bd664b6310c028fdfd1f0bc7ee81d15fc5983b'
   checksumType  = 'sha256'
 
   silentArgs	= "/skipdlgs"
