@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>offset-explorer</id>
-    <version>4.0</version>
+    <version>4.0.1</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/offset-explorer</packageSourceUrl>
     <owners>chtof</owners>
     <title>Offset Explorer (Formerly Kafka Tool)</title>
     <authors>DB Solo LLC</authors>
     <projectUrl>http://www.kafkatool.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/offset-explorer/offset-explorer.png</iconUrl>
-    <copyright>© 2015-2019 DB Solo, LLC. All rights reserved.</copyright>
+    <copyright>© 2015-2026 DB Solo, LLC. All rights reserved.</copyright>
     <licenseUrl>http://www.kafkatool.com/license.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
