@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = "$toolsDir"
   
-  url64        = 'https://github.com//marktext/marktext/releases/download/v0.21.2/marktext-win-x64-0.21.2.zip' 
-  checksum64   = '98c4624257ff3ffdce49dfdec6d29ab427e28f565ed5dfe27e41a2e08a9e5334'
+  url64        = 'https://github.com//marktext/marktext/releases/download/v0.22.0/marktext-win-x64-0.22.0.zip' 
+  checksum64   = '00b42855217653f879543b725a111e661f4493d40d2d3315412c1950f1c6b5bf'
 
   checksumType = 'sha256'  
 }
