@@ -8,13 +8,13 @@
     <owners>chtof</owners>
     <title>LosslessCut</title>
     <authors>Mikael Finstad</authors>
-    <projectUrl>https://github.com/mifi/lossless-cut</projectUrl>
+    <projectUrl>https://losslesscut.app/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/lossless-cut/lossless-cut.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <licenseUrl>https://raw.githubusercontent.com/mifi/lossless-cut/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/mifi/lossless-cut</projectSourceUrl>
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <docsUrl>https://losslesscut.app/docs</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/mifi/lossless-cut/issues</bugTrackerUrl>
     <tags>lossless-cut lossless trimming cutting video audio files</tags>
