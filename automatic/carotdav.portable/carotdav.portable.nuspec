@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>carotdav.portable</id>
-    <version>1.16.3</version>
+    <version>1.16.4</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/carotdav.portable</packageSourceUrl>
     <owners>chtof</owners>
     <title>CarotDAV (Portable)</title>

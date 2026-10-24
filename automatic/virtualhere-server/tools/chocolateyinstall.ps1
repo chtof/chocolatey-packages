@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileFullPath   = "$toolsDir\vhusbdwin$(Get-OSArchitectureWidth).exe"
 
-  url64          = 'https://virtualhere.com/sites/default/files/usbserver/vhusbdwin64.exe'
-  checksum64     = 'c37c7b30a334ba83c67072381b31661a9bae0baa33ba1f4aa3fa6de06cf04756'
+  url64          = 'https://www.virtualhere.com/sites/default/files/usbserver/vhusbdwinw64.exe'
+  checksum64     = '6ae762d598800f0f11ba4f317f09697177a569bada586cc518baabfc4e043eec'
   checksumType64 = 'sha256'
 }
 

@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
 
-  url64        = 'https://github.com//marktext/marktext/releases/download/v0.19.1/marktext-win-x64-0.19.1-setup.exe'
-  checksum64   = '0de6c0aa854728f3e5c21d74b4138f0a515d70cd80921eb3aed6b8e975838a2f'
+  url64        = 'https://github.com//marktext/marktext/releases/download/v0.23.0/marktext-win-x64-0.23.0-setup.exe'
+  checksum64   = '49bf66035f92072ce7dd8fa2f88b91f7036d674c05f872355a2d6e366fc53964'
   checksumType = 'sha256'
   
   silentArgs   = "/S"

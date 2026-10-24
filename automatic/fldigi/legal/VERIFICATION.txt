@@ -7,20 +7,20 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://pilotfiber.dl.sourceforge.net/project/fldigi/fldigi/fldigi-4.2.12_setup.exe
-   x64: https://pilotfiber.dl.sourceforge.net/project/fldigi/fldigi/fldigi-4.2.12_setup.exe
+   x32: https://gigenet.dl.sourceforge.net/project/fldigi/fldigi/fldigi-4.2.13_setup.exe
+   x64: https://gigenet.dl.sourceforge.net/project/fldigi/fldigi/fldigi-4.2.13_setup.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 9E8CBE465B8AFE4B5C5655D0E505E3DFDE650760FB8B78780F7B4E768D79540A
-   checksum64: 9E8CBE465B8AFE4B5C5655D0E505E3DFDE650760FB8B78780F7B4E768D79540A
+   checksum32: E923E55F8C3A7DFA323E1B6B532779BAE95B48BC49BA562C1213D2311042DD6D
+   checksum64: E923E55F8C3A7DFA323E1B6B532779BAE95B48BC49BA562C1213D2311042DD6D
  
 Using AU:
  
-   Get-RemoteChecksum https://pilotfiber.dl.sourceforge.net/project/fldigi/fldigi/fldigi-4.2.12_setup.exe
+   Get-RemoteChecksum https://gigenet.dl.sourceforge.net/project/fldigi/fldigi/fldigi-4.2.13_setup.exe
  
 File 'LICENSE.txt' is obtained from:
    https://sourceforge.net/p/fldigi/fldigi/ci/master/tree/COPYING

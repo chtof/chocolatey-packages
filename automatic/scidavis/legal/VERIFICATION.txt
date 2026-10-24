@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://downloads.sourceforge.net/project/scidavis/SciDAVis/2/2.7/scidavis.2.7-win-dist.msi
-   x64: https://downloads.sourceforge.net/project/scidavis/SciDAVis/2/2.7/scidavis.2.7-win-dist.msi
+   x32: https://downloads.sourceforge.net/project/scidavis/SciDAVis/2/2.8/scidavis-2.8-win-dist.msi
+   x64: https://downloads.sourceforge.net/project/scidavis/SciDAVis/2/2.8/scidavis-2.8-win-dist.msi
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: AF290BD8F5987ACFC22A71F1A40C023676E0DE1F349DF26AF51225287A433496
-   checksum64: AF290BD8F5987ACFC22A71F1A40C023676E0DE1F349DF26AF51225287A433496
+   checksum32: 11EE88A55ADB883830427EDBFAC12F723C54C5CC4C0C6880AE30139C2CA8F7A7
+   checksum64: 11EE88A55ADB883830427EDBFAC12F723C54C5CC4C0C6880AE30139C2CA8F7A7
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/highperformancecoder/scidavis/master/LICENSE

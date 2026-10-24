@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>photoflare.install</id>
-    <version>1.6.5</version>
+    <version>1.7.2</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/photoflare.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>PhotoFlare (Install)</title>

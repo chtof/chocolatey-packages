@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>stremio</id>
-    <version>4.4.168</version>
+    <version>5.0.24</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/stremio</packageSourceUrl>
     <owners>chtof</owners>
     <title>Stremio</title>

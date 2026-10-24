@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com//charmbracelet/glow/releases/download/v2.1.2/glow_2.1.2_Windows_i386.zip
-   x64: https://github.com//charmbracelet/glow/releases/download/v2.1.2/glow_2.1.2_Windows_x86_64.zip
+   x32: https://github.com//charmbracelet/glow/releases/download/v3.0.0/glow_3.0.0_Windows_i386.zip
+   x64: https://github.com//charmbracelet/glow/releases/download/v3.0.0/glow_3.0.0_Windows_x86_64.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 440220DC762CF933BF463EAEEF24FE1A816A81929FF47C02BFD511FA0153D3C3
-   checksum64: 9BC12FCE6061B0DD45325401B0D11EC2E45981B76EEF2B7FA3C0F941BA5C0B39
+   checksum32: AA9B01C3D21B8D340E04DC81C1EB4F071E8D83FFE7C623AC4A9F3F2FFDD75995
+   checksum64: D8907E07436ECBB6738BC0E3BBF8AA6159E351F95082E9DB3C3FC4200086F809
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/charmbracelet/glow/master/LICENSE

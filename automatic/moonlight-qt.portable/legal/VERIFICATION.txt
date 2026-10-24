@@ -7,14 +7,14 @@ Package can be verified like this:
  
 1. Download:
  
-   x64: https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.0.1/MoonlightPortable-x64-6.0.1.zip
+   x64: https://github.com//moonlight-stream/moonlight-qt/releases/download/v6.2.0/MoonlightPortable-x64-6.2.0.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
-   checksum type: sha256   
-   checksum64: CB245662E9BA400BF31FBE88F21EC6264C811D0FC75AF2EC921E81AA0051AB95
+   checksum type: sha256
+   checksum64: 6F91D268B41ED5CA8066D9D7578DC403B8DB190991FF48F00B1700465F8F7EBF
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/moonlight-stream/moonlight-qt/master/LICENSE
