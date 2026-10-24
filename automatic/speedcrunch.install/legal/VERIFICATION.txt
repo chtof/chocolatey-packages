@@ -1,4 +1,4 @@
-﻿VERIFICATION
+VERIFICATION
  
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
@@ -7,16 +7,14 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.12-win32.exe
-   x64: https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.12-win32.exe
+   x64: https://github.com//heldercorreia/speedcrunch/releases/download/v1.1.0/SpeedCrunch-1.1-windows-x64.exe
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 702C362C9A02C3A79D018A4D68428DC80FAD311ADAD506CC47B69927E47DBF89
-   checksum64: 702C362C9A02C3A79D018A4D68428DC80FAD311ADAD506CC47B69927E47DBF89
+   checksum64: D616461439702703E6600B50D06B30DE93E94201A40257CB7739C54A2ED1B0D5
  
 File 'LICENSE.txt' is obtained from:
-   https://bitbucket.org/heldercorreia/speedcrunch/raw/c0fc9c68d292030e92cd952f27e83b97a61aa2b8/LICENSE
+   https://raw.githubusercontent.com/heldercorreia/speedcrunch/refs/heads/main/LICENSE

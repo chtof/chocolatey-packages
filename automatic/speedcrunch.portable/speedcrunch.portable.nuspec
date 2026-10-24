@@ -1,62 +1,40 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>speedcrunch.portable</id>
-    <version>0.12</version>
+    <version>1.1.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/speedcrunch.portable</packageSourceUrl>
     <owners>chtof</owners>
     <title>SpeedCrunch (Portable)</title>
     <authors>The SpeedCrunch Developers</authors>
     <projectUrl>http://speedcrunch.org</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/speedcrunch.portable/speedcrunch.portable.png</iconUrl>
-    <copyright>© Copyright 2016, The SpeedCrunch Developers.</copyright>
-    <licenseUrl>https://bitbucket.org/heldercorreia/speedcrunch/raw/c0fc9c68d292030e92cd952f27e83b97a61aa2b8/LICENSE</licenseUrl>
+    <copyright>© Copyright 2026, The SpeedCrunch Developers.</copyright>
+    <licenseUrl>https://raw.githubusercontent.com/heldercorreia/speedcrunch/refs/heads/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://bitbucket.org/heldercorreia/speedcrunch/src/master</projectSourceUrl>
+    <projectSourceUrl>https://github.com/heldercorreia/speedcrunch</projectSourceUrl>
     <docsUrl>http://speedcrunch.org/introduction.html</docsUrl>
-    <mailingListUrl>https://www.facebook.com/groups/1783793218546797</mailingListUrl>
-    <bugTrackerUrl>https://bitbucket.org/heldercorreia/speedcrunch/issues</bugTrackerUrl>
+    <mailingListUrl>https://www.speedcrunch.org/community.html</mailingListUrl>
+    <bugTrackerUrl>https://github.com/heldercorreia/speedcrunch/issues</bugTrackerUrl>
     <tags>speedcrunch.portable high precision scientific calculator</tags>
-    <summary>SpeedCrunch is a high-precision scientific calculator featuring a fast, keyboard-driven user interface. It is free and open-source software, licensed under the GPL.</summary>
-    <description><![CDATA[
-![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/speedcrunch.portable/screenshot1.gif)
+    <summary>A free, open-source high-precision scientific calculator. Built for STEM professionals, students and teachers.</summary>
+    <description><![CDATA[![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/speedcrunch.portable/screenshot1.png)
 
-## Efficient & easy-to-use interface.
-
-![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/speedcrunch.portable/screenshot2.png)
-
-SpeedCrunch displays results as you type. Select a partial expression to evaluate only that part.
-
-Previous inputs and results are shown in a scrollable history and can be easily recalled. Customizable syntax highlighting allows you to spot mistakes easily.
-
-If you prefer the old-school way, an optional on-screen keypad is available as well.
+SpeedCrunch is a high-precision scientific calculator. It features a syntax-highlighted scrollable display and is designed to be fully used via keyboard. Some distinctive features are auto-completion of functions and variables, a formula book, and quick insertion of constants from various fields of knowledge. It is available for Windows, macOS, and Linux in a number of languages.
 
 
-## Powerful.
-
-![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/speedcrunch.portable/screenshot3.png)
-
-SpeedCrunch comes with over 80 built-in mathematical functions. You can also define your own functions.
-
-Variables allow you to store your results. Perform calculations with up to 50 digits of precision, using complex numbers, numeral bases, unit conversions, and more.
-
-Auto-completion allows you to speed up your task.
-
-
-## Library included.
-
-![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/speedcrunch.portable/screenshot4.png)
-
-A built-in formula book allows to you to review and insert commonly used formulas, such as the volume of a cone.
-
-Or insert one out of over 150 built-in scientific constants.
-
-
-## Cross-platform. And multi-language.
-SpeedCrunch is available for Windows, MacOS, and Linux, and comes in [a number of languages](https://www.transifex.com/heldercorreia/speedcrunch/languages).
+## Features
+- Up to 50 digits of precision, with [complex number support](https://www.speedcrunch.org/userguide/syntax.html#complex-numbers)
+- [140+ functions, and a myriad of units and constants](https://www.speedcrunch.org/reference/index.html)
+- [User-defined variables, functions, and units](https://www.speedcrunch.org/userguide/advanced.html)
+- [Vector and matrix support](https://www.speedcrunch.org/reference/basic.html#lists-and-matrices)
+- History rewriting, and per-result settings
+- [Keypad presets and a fully customizable layout](https://www.speedcrunch.org/userguide/interface.html#keypad)
+- [Multiple active sessions with tabs, panes, or windows](https://www.speedcrunch.org/userguide/interface.html#session-tabs-and-panes)
+- More than 40 translations, and over 40 color schemes
 ]]></description>
-    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+    <releaseNotes>https://github.com/heldercorreia/speedcrunch/releases/latest</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />

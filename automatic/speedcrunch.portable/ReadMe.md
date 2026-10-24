@@ -1,37 +1,16 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/speedcrunch.portable/speedcrunch.portable.png" width="48" height="48"/> [SpeedCrunch (Portable)](https://chocolatey.org/packages/speedcrunch.portable)
 
-![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/speedcrunch.portable/screenshot1.gif)
+![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/speedcrunch.portable/screenshot1.png)
 
-## Efficient & easy-to-use interface.
-
-![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/speedcrunch.portable/screenshot2.png)
-
-SpeedCrunch displays results as you type. Select a partial expression to evaluate only that part.
-
-Previous inputs and results are shown in a scrollable history and can be easily recalled. Customizable syntax highlighting allows you to spot mistakes easily.
-
-If you prefer the old-school way, an optional on-screen keypad is available as well.
+SpeedCrunch is a high-precision scientific calculator. It features a syntax-highlighted scrollable display and is designed to be fully used via keyboard. Some distinctive features are auto-completion of functions and variables, a formula book, and quick insertion of constants from various fields of knowledge. It is available for Windows, macOS, and Linux in a number of languages.
 
 
-## Powerful.
-
-![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/speedcrunch.portable/screenshot3.png)
-
-SpeedCrunch comes with over 80 built-in mathematical functions. You can also define your own functions.
-
-Variables allow you to store your results. Perform calculations with up to 50 digits of precision, using complex numbers, numeral bases, unit conversions, and more.
-
-Auto-completion allows you to speed up your task.
-
-
-## Library included.
-
-![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/speedcrunch.portable/screenshot4.png)
-
-A built-in formula book allows to you to review and insert commonly used formulas, such as the volume of a cone.
-
-Or insert one out of over 150 built-in scientific constants.
-
-
-## Cross-platform. And multi-language.
-SpeedCrunch is available for Windows, MacOS, and Linux, and comes in [a number of languages](https://www.transifex.com/heldercorreia/speedcrunch/languages).
+## Features
+- Up to 50 digits of precision, with [complex number support](https://www.speedcrunch.org/userguide/syntax.html#complex-numbers)
+- [140+ functions, and a myriad of units and constants](https://www.speedcrunch.org/reference/index.html)
+- [User-defined variables, functions, and units](https://www.speedcrunch.org/userguide/advanced.html)
+- [Vector and matrix support](https://www.speedcrunch.org/reference/basic.html#lists-and-matrices)
+- History rewriting, and per-result settings
+- [Keypad presets and a fully customizable layout](https://www.speedcrunch.org/userguide/interface.html#keypad)
+- [Multiple active sessions with tabs, panes, or windows](https://www.speedcrunch.org/userguide/interface.html#session-tabs-and-panes)
+- More than 40 translations, and over 40 color schemes
