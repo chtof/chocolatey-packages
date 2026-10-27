@@ -6,7 +6,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 function global:au_GetLatest {
    return github_GetInfo -ArgumentList @{
         repository = 'moonlight-stream/moonlight-qt'        
-        regex64  = 'MoonlightSetup-(?<Version>[\d\.]+).exe$'
+        regex32  = 'MoonlightSetup-(?<Version>[\d\.]+).exe$'
    }
 }
 
