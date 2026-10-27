@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>firestorm-secondlife</id>
-    <version>7.2.4.80712</version>
+    <version>7.2.5.81788</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/firestorm-secondlife</packageSourceUrl>
     <owners>chtof</owners>
     <title>Firestorm Viewer for Second Life</title>
