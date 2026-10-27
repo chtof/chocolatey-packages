@@ -19,5 +19,5 @@ Remove-Item -Path $packageArgs.file64
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
 $myDocuments = [Environment]::GetFolderPath("MyDocuments")
 $shortcutFilePath = Join-Path $programs "CudaText.lnk"
-$targetPath = Join-Path $pp.InstallationPath "cudatext.exe"
+$targetPath = Join-Path $pp.InstallationPath "cudatext\cudatext.exe"
 Install-ChocolateyShortcut -WorkingDirectory "$myDocuments" -shortcutFilePath $shortcutFilePath -targetPath $targetPath
