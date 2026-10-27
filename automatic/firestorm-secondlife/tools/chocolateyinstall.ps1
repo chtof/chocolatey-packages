@@ -4,8 +4,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
 
-  url64          = 'https://downloads.firestormviewer.org/release/windows/Phoenix-Firestorm-Releasex64_AVX2-7-2-4-80712_Setup.exe'
-  checksum64     = '46eff19c0030c2e9de56255d71ac476088ed170949a8a845821e7ff7acda16a0'
+  url64          = 'https://downloads.firestormviewer.org/release/windows/Phoenix-Firestorm-Releasex64_AVX2-7-2-5-81788_Setup.exe'
+  checksum64     = 'faac17c3507e14f9a26f6cec2568df00b7e93a8af792522f72b4a4421236b0f0'
   checksumType64 = 'sha256'
 
   silentArgs     = '/S'
