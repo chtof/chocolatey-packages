@@ -3,8 +3,8 @@
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-  $releases = 'http://phonerlite.de/download_en.htm'
-  $regex    = '<td>\s*?(?<Version>[\d\.]+)\s*?</td>'
+  $releases = 'http://phonerlite.de/download_en.htm'  
+  $regex    = '>Version\s+(?<Version>[\d\.]+)\s*?<'
 
   (Invoke-WebRequest -Uri $releases) -match $regex | Out-Null
   return @{ Version = $matches.Version ; URL32 = 'https://www.phoner.de/PhonerLiteSetup_' + $matches.Version + '.exe' }
