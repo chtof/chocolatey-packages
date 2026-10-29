@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>altcopy</id>
-    <version>1.0.7</version>
+    <version>1.0.7.20261029</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/altcopy</packageSourceUrl>
     <owners>chtof</owners>
     <title>Alt-C</title>
