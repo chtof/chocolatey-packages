@@ -1,23 +1,15 @@
 import-module au
 
-function global:au_GetLatest {
-    add-type @"
-    using System.Net;
-    using System.Security.Cryptography.X509Certificates;
-    public class TrustAllCertsPolicy : ICertificatePolicy {
-        public bool CheckValidationResult(
-            ServicePoint srvPoint, X509Certificate certificate,
-            WebRequest request, int certificateProblem) {
-            return true;
-        }
+function global:au_GetLatest {    
+    $releases = "https://altcopy.net/#download"
+    $regex32   = "/Alt-C_Setup_(?<Version>[\d\.]+)\.exe$"
+    # https://gitlab.com/-/project/86186390/uploads/6c7161c93f4600a286700fb06a8d3a79/Alt-C_Setup_1.0.7.exe
+    $url = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).links |? href -match $regex32).href
+    
+    return @{
+        Version = $matches.Version
+        URL32   = $url
     }
-"@
-[System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
-
-    $releases = 'https://altcopy.net/versionPC'
-    $version  = ((Invoke-WebRequest -uri $releases).RawContent.Split([Environment]::NewLine) | Select -Last 1) -Replace '\.000$', ''
-
-    return @{ Version = $version ; URL32 = 'https://altcopy.net/setup.exe' }
 }
 
 function global:au_SearchReplace {
