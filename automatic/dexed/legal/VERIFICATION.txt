@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com//asb2m10/dexed/releases/download/v1.0.1/Dexed-1.0.1-win.zip
-   x64: https://github.com//asb2m10/dexed/releases/download/v1.0.1/Dexed-1.0.1-win.zip
+   x32: https://github.com//asb2m10/dexed/releases/download/v1.1.0/Dexed-1.1.0-win.zip
+   x64: https://github.com//asb2m10/dexed/releases/download/v1.1.0/Dexed-1.1.0-win.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: 1F118445F2C5C411636BB41DDF8B456DB09AF74CD38F9EDE8A93A01020505F05
-   checksum64: 1F118445F2C5C411636BB41DDF8B456DB09AF74CD38F9EDE8A93A01020505F05
+   checksum32: 4773150A3DFA281D1CAEF583F493A41ED99EA95B054B5A3479780799ED6279CC
+   checksum64: 4773150A3DFA281D1CAEF583F493A41ED99EA95B054B5A3479780799ED6279CC
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/asb2m10/dexed/master/LICENSE
