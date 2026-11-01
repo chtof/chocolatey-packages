@@ -6,7 +6,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 function global:au_GetLatest {
    return github_GetInfo -ArgumentList @{
         repository = 'asb2m10/dexed'
-        regex32    = 'dexed-(?<Version>[\d\.]+)-win.zip$'
+        regex32    = 'dexed-(?<Version>[\d\.]+)-win.exe$'
    }
 }
 
