@@ -11,9 +11,11 @@ if (Test-Path $legacyShortcut) {
 if ($keys.Count -eq 1) {
   $key = $keys[0]
 
-  # aw-qt starts aw-server and the watchers as separate processes. Stop every aw-*
-  # process running from the install folder so none of its files are left locked.
-  # Matching on the path leaves any aw-* program installed elsewhere alone.
+  # Unlike Setup, the Inno Setup uninstaller does not use Restart Manager to close
+  # running applications, and aw-qt starts aw-server and the watchers as separate
+  # processes. Stop every aw-* process running from the install folder so none of
+  # its files are left behind locked. Matching on the path leaves any aw-* program
+  # installed elsewhere alone.
   if ($key.InstallLocation) {
     $installDir = $key.InstallLocation.TrimEnd('\') + '\'
     Get-Process aw-* -ErrorAction SilentlyContinue |
