@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>speedcrunch.install</id>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/speedcrunch.install</packageSourceUrl>
     <owners>chtof</owners>
     <title>SpeedCrunch (Install)</title>
@@ -22,6 +22,7 @@
     <description><![CDATA[![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/speedcrunch.install/screenshot1.png)
 
 SpeedCrunch is a high-precision scientific calculator. It features a syntax-highlighted scrollable display and is designed to be fully used via keyboard. Some distinctive features are auto-completion of functions and variables, a formula book, and quick insertion of constants from various fields of knowledge. It is available for Windows, macOS, and Linux in a number of languages.
+
 
 ## Features
 - Up to 50 digits of precision, with [complex number support](https://www.speedcrunch.org/userguide/syntax.html#complex-numbers)

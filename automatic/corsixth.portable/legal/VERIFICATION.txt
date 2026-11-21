@@ -7,16 +7,16 @@ Package can be verified like this:
  
 1. Download:
  
-   x32: https://github.com//CorsixTH/CorsixTH/releases/download/v0.70.1/CorsixTH-v0.70.1-Windows-x64.zip
-   x64: https://github.com//CorsixTH/CorsixTH/releases/download/v0.70.1/CorsixTH-v0.70.1-Windows-x64.zip
+   x32: https://github.com//CorsixTH/CorsixTH/releases/download/v0.70.2/CorsixTH-v0.70.2-Windows-x64.zip
+   x64: https://github.com//CorsixTH/CorsixTH/releases/download/v0.70.2/CorsixTH-v0.70.2-Windows-x64.zip
   
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
  
    checksum type: sha256
-   checksum32: E0E54833C81706F4E3413351869ECE9870A4D3C8915809C84E5F80A51895418C
-   checksum64: E0E54833C81706F4E3413351869ECE9870A4D3C8915809C84E5F80A51895418C
+   checksum32: 751F837E79ADA345F60FBA9C97B4D0B2AD7CEDCC157B5DD3C257AB7047D24EA2
+   checksum64: 751F837E79ADA345F60FBA9C97B4D0B2AD7CEDCC157B5DD3C257AB7047D24EA2
  
 File 'LICENSE.txt' is obtained from:
    https://raw.githubusercontent.com/CorsixTH/CorsixTH/master/LICENSE.txt
