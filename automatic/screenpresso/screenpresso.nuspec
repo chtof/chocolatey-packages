@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>screenpresso</id>
-    <version>2.1.24.20240421</version>
+    <version>2.4.3.0</version>
   <packageSourceUrl>https://bitbucket.org/learnpulse/screenpresso-chocolatey</packageSourceUrl>
     <title>Screenpresso</title>
     <authors>Learnpulse SAS</authors>
@@ -16,28 +16,18 @@
     <mailingListUrl>https://www.screenpresso.com/about-us/</mailingListUrl>
     <tags>screenpresso capture screencapture screenshot videocapture recording screen grab</tags>
     <summary>Screenpresso captures your desktop (screenshots and HD videos) for your training documents, collaborative design work, IT bug reports, and more...</summary>
-    <description>Screenpresso captures your desktop (screenshots and HD videos) for your training documents, collaborative design work, IT bug reports, and more...
-
-## [Main features](https://www.screenpresso.com/features):
-
+    <description><![CDATA[Screenpresso captures your desktop (screenshots and HD videos) for your training documents, collaborative design work, IT bug reports, and more...
+## [Main features](https://www.screenpresso.com/features)
 - Capture screenshots including scrolling parts
-
 - Capture your screen in HD videos
-
 - Smooth workflow
-
 - Powerful built-in image editor
-
 - Workspaces and libraries
-
 - Sharing of captures
-
 - Android screen capture
-
 - Document generator
-
 - Multilingual with support for 19 languages
-</description>
+]]></description>
     <releaseNotes>
     [Click here to access the official releases notes](https://www.screenpresso.com/releases/)
     </releaseNotes>
