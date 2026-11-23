@@ -4,7 +4,7 @@ function global:au_GetLatest {
     $releases = 'https://infinitekind.com/download-moneydance-personal-finance-software'
     $regex = '\<span class="download_detail"\>Moneydance [\d\.]+ \((?<Version>\d+)\)\</span\>'
 
-	(Invoke-WebRequest -Uri $releases).RawContent -match $regex | Out-Null
+	(Invoke-WebRequest -Uri $releases -UseBasicParsing).RawContent -match $regex | Out-Null
 
 	return @{
 		Version = "0.0." + $matches.Version
