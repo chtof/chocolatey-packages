@@ -7,7 +7,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 function global:au_GetLatest {
    return github_GetInfo -ArgumentList @{
         repository = 'Governikus/AusweisApp'
-        regex32    = 'AusweisApp-(?<Version>[\d\.]+)?(-AMD64).msi$'
+        regex64    = 'AusweisApp-(?<Version>[\d\.]+)?(-AMD64).msi$'
    }
 }
 
@@ -16,7 +16,7 @@ function global:au_SearchReplace {
        "legal\VERIFICATION.txt"  = @{            
             "(?i)(x64: ).*"             = "`${1}$($Latest.URL64)"
             "(?i)(checksum type:\s+).*" = "`${1}$($Latest.ChecksumType64)"            
-            "(?i)(checksum64:).*"       = "`${1} $($Latest.Checksum32)"
+            "(?i)(checksum64:).*"       = "`${1} $($Latest.Checksum64)"
         }
 
         "tools\chocolateyinstall.ps1" = @{        
