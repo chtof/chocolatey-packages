@@ -3,8 +3,8 @@
 function global:au_GetLatest {
 	$releases = 'https://www.easyuefi.com/index-us.html'
 	$regex    = 'EasyUEFI_Trial.exe'
-    $regexVersion = '<span>Version: (?<Version>[\d\.]+)</span>'
-	
+    $regexVersion = '"softwareVersion": "(?<Version>[\d\.]+)"'
+
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $download_page.Content -match $regexVersion    
     $version = $matches.Version
