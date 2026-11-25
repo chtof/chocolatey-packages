@@ -25,4 +25,4 @@ function global:au_SearchReplace {
     }
 }
 
-update
+update -checksumFor 64
