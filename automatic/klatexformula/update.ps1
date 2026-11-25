@@ -3,7 +3,7 @@ import-module au
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $releases = 'https://klatexformula.sourceforge.io/downloads'
+    $releases = 'https://klatexformula.sourceforge.io/downloads.html'
     $regex    = 'klatexformula-(?<Version>[\d\.]+)-win32.exe'
 
     (Invoke-WebRequest -Uri $releases -UseBasicParsing).links | ? href -match $regex | Out-Null
@@ -11,7 +11,7 @@ function global:au_GetLatest {
 
     return @{
         Version = $matches.Version
-        URL32   = Get-RedirectedUrl ('https://downloads.sourceforge.net/project/klatexformula/klatexformula/klatexformula-' + $version + '/klatexformula-' + $version + '-win32.exe')
+        URL32   = (Get-RedirectedUrl ('https://downloads.sourceforge.net/project/klatexformula/klatexformula/klatexformula-' + $version + '/klatexformula-' + $version + '-win32.exe')) -Replace '\?viasf=.*',''
         #URL32   = 'https://freefr.dl.sourceforge.net/project/klatexformula/klatexformula/klatexformula-' + $version + '/klatexformula-' + $version + '-win32.exe'
     }
 }
