@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>xdm</id>
-    <version>7.2.11</version>
+    <version>9.0.12</version>
     <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/xdm</packageSourceUrl>
     <owners>chtof</owners>
     <title>Xtreme Download Manager</title>
