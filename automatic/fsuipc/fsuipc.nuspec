@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>fsuipc</id>
+    <version>7.9.10</version>
+    <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/automatic/fsuipc</packageSourceUrl>
+    <owners>chtof</owners>
+    <title>FSUIPC</title>
+    <authors>John Dowson</authors>
+    <projectUrl>https://fsuipc.com</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/fsuipc/fsuipc.png</iconUrl>
+    <copyright>© 2026 John Dowson</copyright>
+    <licenseUrl>https://fsuipc.com/download/Install_FSUIPC7.zip</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <mailingListUrl>https://fsuipc.com/support/</mailingListUrl>
+    <bugTrackerUrl>https://fsuipc.com/support/</bugTrackerUrl>
+    <tags>fsuipc flight simulator universal inter-process communication interface module</tags>
+    <summary>FSUIPC (Flight Simulator Universal Inter-Process Communication) is an essential interface module that allows external add-ons and advanced flight hardware to communicate with Microsoft Flight Simulator and Prepar3D to read flight data and control aircraft functions.</summary>
+    <description><![CDATA[
+FSUIPC is an add-on utility program for various flight simulators whose main functions are two-fold:
+
+To provide a uniform interface to 3rd-party applications to communicate with the Flight Simulator. This interface is common over all versions of FSUIPC and all supported sumulators. This function of FSUIPC is provided free-of-charge (i.e. no license required). and facilitating the creation of custom applications by developers. A list of some of the 3rd-party products that use FSUIPC to interact with the Flight Simulator can be found here.
+2. To provide a replacement or enhancement to a flight simulators controller/device assignment capabilities. This allows assignments of your controllers buttons/switches/axis to many functions not directly available in the simulator, either via offst control (see below) or custom controls. Facilities are also provided for controlling lvars. For MSFS2020 and MSFS224, you can also use hvars and Input Events, and all MobiFlight â€œPresetsâ€ are available for diect assignment.
+Advanced axes  calibration facilities are also provided, and can be used regardless of where the axis is assigned.
+
+Other functionality is also provided, includes
+- extenive logging facilites
+- flight auto-save and load facilities
+- sending GPS data via COM ports
+- support for lua scripts with additional lua functions provided for FS support
+
+For further details on all functionality provided, please see the individual Product pages as the exact functionality can depend on the product or simulator used.
+
+![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/fsuipc/screenshot.png)
+]]></description>
+    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
